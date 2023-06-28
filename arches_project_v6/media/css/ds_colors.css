@@ -1,10 +1,20 @@
+/* Colors:
+Arches Blue Darker: #2d3c4b
+Arches Blue Greyed: #454545
+DataSpace Blue: #213B55
+DataSpace Blue Lighter: #2F4867
+DataSpace Blue Darker: #1E2D40
+DataSpace Blue Greyed : #1d2939 */
+
 .sidenav-brand
 { color: #213B55 }
 
-/* .sidenav,
-.sidenav-menu, */
 [class^="sidenav"],
 .navbar-header,
 .navbar-header:before,
-#mainnav
+#mainnav-container,
+#mainnav,
+#mainnav-menu>.active
 { background-color: #213B55 }
+
+/* #mainnav-menu>.active { background-color: #1E2D40 } */
