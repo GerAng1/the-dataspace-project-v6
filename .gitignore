@@ -1,0 +1,15 @@
+*.pyc
+*.log
+arches_project_v6/logs
+arches_project_v6/export_deliverables
+arches_project_v6/cantaloupe/*
+arches_project_v6/media/packages
+arches_project_v6/uploadedfiles/*
+arches_project_v6/settings_local.py
+.vscode/
+CACHE
+
+ENV/
+elasticsearch/
+cantaloupe/
+cidoc/

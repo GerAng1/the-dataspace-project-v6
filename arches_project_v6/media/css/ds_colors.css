@@ -1,0 +1,10 @@
+.sidenav-brand
+{ color: #213B55 }
+
+/* .sidenav,
+.sidenav-menu, */
+[class^="sidenav"],
+.navbar-header,
+.navbar-header:before,
+#mainnav
+{ background-color: #213B55 }

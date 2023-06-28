@@ -1,0 +1,168 @@
+/* Navbar */
+.nav-item>a:hover {
+    background: #1E2D40;
+    color: #13ce67 !important;
+}
+
+/* Scrollspy */
+.scrollspy-nav {
+    position: fixed;
+    right: 15px;
+    top: 190px;
+    z-index: 2500;
+    height: 180px;
+    width: 35px;
+    padding-top: 10px;
+    background: #2F4867;
+    border-radius: 15px;
+    opacity: .85
+}
+
+.scrollspy-icon {
+    font-size: 18px;
+}
+
+.scrollspy-list {
+    list-style: none;
+}
+
+.scrollspy-list li {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    right: 4px;
+    top:15px;
+    margin-bottom: 10px;
+}
+
+.scrollspy-link {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background: #aaa;
+    margin-bottom: 12px;
+    position: absolute;
+    right: 23px;
+}
+
+.scrollspy-link.active {
+    background: #fff;
+}
+
+.scrollspy-link:hover {
+    background: #ddd;
+}
+
+/* Down Button */
+.down-button {
+    position: absolute;
+    bottom: calc(0vh + 20px);
+    left: calc(50% - 25px);
+    z-index: 100;
+    background: #1E2D40;
+    border: 1.5px solid #fff;
+    border-radius: 50%;
+
+}
+
+.down-button-icon {
+    font-size: 33px;
+    opacity: .7;
+    margin: 0px 8px;
+}
+
+/* Footer */
+.footer-text {
+  font-size: 0.8rem;
+}
+
+/* Others */
+hr.card-inline-separator {
+  border: 1.5px solid #6A7D10;
+  border-radius: 5px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.resource-card {
+    height: 135px;
+    width: 135px;
+    border-radius: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.resource-icon {
+    height: 75px;
+    width: 75px;
+    padding: 0px;
+    margin: 10px 0px 0px;
+}
+
+.image-gradient {
+position: absolute;
+top: 60%;
+width: 100%;
+height: 40%;
+background-image: linear-gradient(transparent, rgba(0,0,0,.45));
+}
+
+img.models-image {
+  border-radius: 10%;
+  width: 90%;
+  height: 256px;
+  /* max-height: 300px;
+  min-height: 256px; */
+  object-fit: cover;
+}
+
+/* Flickity */
+.carousel-cell {
+  width: 30%;
+}
+
+/* no circle */
+.flickity-button {
+  background: transparent;
+}
+
+.flickity-button:hover {
+  background: transparent;
+}
+
+/* big previous & next buttons */
+.flickity-prev-next-button {
+  width: 100px;
+  height: 100px;
+}
+
+.flickity-prev-next-button .arrow:hover {
+  fill: #1E2D40;
+}
+
+.flickity-prev-next-button .arrow {
+  fill: #2F4867;
+}
+
+/* icon color */
+.flickity-button-icon {
+  fill: #2F4867;
+}
+/* hide disabled button */
+.flickity-button:disabled {
+  display: none;
+}
+
+/* position dots up a bit */
+.flickity-page-dots {
+  bottom: -22px;
+}
+/* dots are lines */
+.flickity-page-dots .dot {
+  height: 4px;
+  width: 40px;
+  margin: 0;
+  border-radius: 0;
+}
+/* End Flickity */

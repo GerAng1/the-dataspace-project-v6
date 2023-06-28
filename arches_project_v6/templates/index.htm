@@ -1,0 +1,570 @@
+<!-- Colors:
+Arches Blue Darker: #2d3c4b
+Arches Blue Greyed: #454545
+DataSpace Blue: #213B55
+DataSpace Blue Lighter: #2F4867
+DataSpace Blue Darker: #1E2D40
+DataSpace Blue Greyed : #1d2939 -->
+
+{% extends "main-base.htm" %}
+{% load static %}
+{% load template_tags %}
+{% load i18n %}
+
+{% block meta %}
+<meta name="description" content="ISPC's DataSpace Home Page">
+<meta name="author" content="Arches (Enzo Coccca & Gerardo Anglada)">
+<meta name="keywords" content="DataSpace, dataspace, cultural heritage, heritage">
+{% endblock %}
+
+{% block styles %}
+<link href="https://unpkg.com/flickity@2/dist/flickity.min.css" rel="stylesheet">
+<!-- <link href="{% static 'css/index.css' %}" rel="stylesheet"> -->
+{% endblock %}
+
+{% block body-tag %}
+<body data-bs-spy="scroll" data-bs-target="#scrollspy-list" data-bs-offset="0" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+{% endblock %}
+
+{% block left-navbar %}
+<ul class="navbar-nav text-center">
+    <li class="nav-item">
+      <a class="nav-link py-lg-3" href="#what-is">{% trans "What is it?" %}</a>
+    </li>
+    {{ block.super }}
+    <li class="nav-item dropdown d-none d-md-block">
+        <a class="nav-link py-lg-3 dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            {% trans "Search:" %}
+        </a>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href='{% url "search_home" %}?sort-results=asc'>
+                {% trans "All" %}
+            </a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href='{% url "search_home" %}?term-filter=%5B%7B"inverted"%3Atrue%2C"type"%3A"string"%2C"context"%3A""%2C"context_label"%3A""%2C"id"%3A"MOLAB"%2C"text"%3A"MOLAB"%2C"value"%3A"MOLAB"%7D%5D&sort-results=asc'>
+                {% trans "Marmora Phrygiae" %}
+            </a></li>
+            <li><a class="dropdown-item" href='{% url "search_home" %}?sort-results=desc&term-filter=%5B%7B"inverted"%3Afalse%2C"type"%3A"string"%2C"context"%3A""%2C"context_label"%3A""%2C"id"%3A"MOLAB"%2C"text"%3A"MOLAB"%2C"value"%3A"MOLAB"%7D%5D'>
+                {% trans "MOLAB.it Projects" %}
+            </a></li>
+            <li><a class="dropdown-item" href='#'>
+                {% trans "More coming soon" %}
+            </a></li>
+        </ul>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link py-lg-3" href="#popular-published">{% trans "Popular resources" %}</a>
+    </li>
+    {% if user|can_create_resource_instance and user.username != 'anonymous' %}
+    <li class="nav-item">
+        <a class="nav-link py-lg-3" href="{% url 'resource' %}">{% trans "Resource Manager" %}</a>
+    </li>
+    {% endif %}
+</ul>
+{% endblock %}
+
+{% block content %}
+<!-- Scrollspy -->
+<div id="scrollspy-list" class="scrollspy-nav d-none d-md-block">
+  <ul class="scrollspy-list text-center">
+    <li class="active">
+        <a class="scrollspy-link text-decoration-none" href="#carouselDataSpace" data-bs-container="body" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="left" data-bs-content="Top">
+          <i class="bi-text-indent-left scrollspy-icon"></i>
+        </a>
+    </li>
+
+    <li>
+        <a class="scrollspy-link text-decoration-none" href="#what-is" data-bs-container="body" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="left" data-bs-content="What is it?">
+          <i class="bi-text-indent-left scrollspy-icon"></i>
+        </a>
+    </li>
+
+    <li>
+        <a class="scrollspy-link text-decoration-none" href="#resources-services" data-bs-container="body" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="left" data-bs-content="Resources">
+          <i class="bi-text-indent-left scrollspy-icon"></i>
+        </a>
+    </li>
+
+    <li>
+        <a class="scrollspy-link text-decoration-none" href="#popular-published" data-bs-container="body" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="left" data-bs-content="Popular">
+          <i class="bi-text-indent-left scrollspy-icon"></i>
+        </a>
+    </li>
+  </ul>
+
+</div>
+<!-- End Scrollspy -->
+
+
+<!-- Carousel -->
+<div id="carouselDataSpace" class="carousel slide carousel-fade" style="height: calc(100vh - 100px);" data-bs-ride="carousel" data-bs-interval="4000">
+    <div class="carousel-indicators" style="margin-bottom: 3rem;">
+        <button type="button" data-bs-target="#carouselDataSpace" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselDataSpace" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselDataSpace" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselDataSpace" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselDataSpace" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    </div>
+
+    <div class="carousel-inner h-100">
+        <div class="carousel-item active h-100" >
+            <img src="{% static 'img/landing/Musei_Vaticani.jpeg' %}" class="d-block w-100 h-100" style="object-fit: cover;" alt="Slide 1 Photo">
+            <div class="image-gradient"></div>
+            <div class="carousel-caption text-start mb-5 pb-5">
+                <h1 class="fw-lighter" style="text-shadow: 0.2px 0.2px 2px #000;">
+                    {% trans "Diagnostic Investigation Datasets" %}
+                </h1>
+                <h3 class="fw-light" style="text-shadow: 0.2px 0.2px 2px #000;">
+                    {% trans "The study of a Mesoamerican manuscript" %}
+                </h3>
+            </div>
+        </div>
+
+        <div class="carousel-item h-100">
+            <img src="{% static 'img/landing/QB2006_falso colore.jpg' %}" class="d-block w-100 h-100" style="object-fit: cover;" alt="Slide 2 Photo">
+            <div class="image-gradient"></div>
+            <div class="carousel-caption text-start mb-5 pb-5">
+                <h1 class="fw-lighter" style="text-shadow: 0.2px 0.2px 2px #000;">
+                    {% trans "Digital Archaeological Maps for Ancient Topography" %}
+                </h1>
+                <h3 class="fw-light" style="text-shadow: 0.2px 0.2px 2px #000;">
+                    {% trans "Hatra (Iraq) in a pan-sharpened false-colored infrared image" %}
+                </h3>
+            </div>
+        </div>
+
+        <div class="carousel-item h-100">
+            <img src="{% static 'img/landing/Epigrafe.JPG' %}" class="d-block w-100 h-100" style="object-fit: cover;" alt="Slide 3 Photo">
+            <div class="image-gradient"></div>
+            <div class="carousel-caption text-start mb-5 pb-5">
+                <h1 class="fw-lighter" style="text-shadow: 0.2px 0.2px 2px #000;">
+                    {% trans "Support Tools for Heritage Databases" %}
+                </h1>
+                <h3 class="fw-light" style="text-shadow: 0.2px 0.2px 2px #000;">
+                  {% trans "The Digital Archive for the study of pre-islamic arabian inscriptions" %}
+                </h3>
+            </div>
+        </div>
+
+        <div class="carousel-item h-100">
+            <img src="{% static 'img/landing/DHiLab_ISPC_enhancement.jpg' %}" class="d-block w-100 h-100" style="object-fit: cover;" alt="Slide 4 Photo">
+            <div class="image-gradient"></div>
+            <div class="carousel-caption text-start mb-5 pb-5">
+                <h1 class="fw-lighter" style="text-shadow: 0.2px 0.2px 2px #000;">
+                    {% trans "Innovative Services for the immersive inspection of Heritage data" %}
+                </h1>
+                <h3 class="fw-light" style="text-shadow: 0.2px 0.2px 2px #000;">
+                    {% trans "Aton framework example" %}
+                </h3>
+            </div>
+        </div>
+
+        <div class="carousel-item h-100">
+            <img src="{% static 'img/landing/Alghero_2017.jpeg' %}" class="d-block w-100 h-100" style="object-fit: cover;" alt="Slide 5 Photo">
+            <div class="image-gradient"></div>
+            <div class="carousel-caption text-start mb-5 pb-5">
+                <h1 class="fw-lighter" style="text-shadow: 0.2px 0.2px 2px #000;">
+                    {% trans "Digital Training Resources for Heritage Sciences" %}
+                </h1>
+                <h3 class="fw-light" style="text-shadow: 0.2px 0.2px 2px #000;">
+                    {% trans "Alghero training camp" %}
+                </h3>
+            </div>
+        </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselDataSpace" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselDataSpace" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<div class="down-button d-none d-md-block">
+    <a href="#what-is">
+        <i class="bi-caret-down-fill down-button-icon"></i>
+    </a>
+</div>
+<!-- End Carousel -->
+
+
+<!-- What is it? -->
+<div class="container px-5 pt-5" id="what-is">
+    <div class="row px-5">
+
+        <div class="col-12 col-md-6 col-xl-4 my-auto">
+            <p>
+              {% trans "DataSpace is a platform for the sharing, accessing, and long-term conservation of data produced by the Institute of Cultural Heritage Sciences. It allows access to innovative digital tools & services to increase the knowledge and enhance the conservation of the Cultural Heritage in an interdisciplinary perspective." %}
+            </p>
+        </div>
+
+        <div class="col-12 col-md-6 col-xl-8">
+            <div class="ratio ratio-16x9 border">
+                <video poster="{% static 'img/landing/Bozza_cover.jpg' %}" controls autoplay muted>
+                    <source src="{% static 'img/landing/bozza_video.mp4' %}" type="video/mp4">
+                </video>
+            </div>
+            <hr class="card-inline-separator">
+            <p class="text-end lead">{% trans "ISPC DataSpace | Presentation Video" %}</p>
+        </div>
+
+    </div>
+</div>
+<!-- End What is it? -->
+
+
+<!-- Mini Section -->
+<div id="resources-services" class="container-fluid">
+    <div class="row py-5"></div>
+
+    <div class="row px-5" style="margin: -75px 100px;">
+        <div class="col my-2">
+            <div class="resource-card mx-auto" style="background: #0A3E7D;">
+                <a class="text-center text-decoration-none" href="#">
+                    <lord-icon
+                        src="https://cdn.lordicon.com/pvbutfdk.json"
+                        trigger="morph"
+                        colors="primary:#ffffff"
+                        class="resource-icon">
+                    </lord-icon>
+                    <p class="text-light fs-6 fw-semibold mb-4">{% trans "Researchers" %}</p>
+                </a>
+            </div>
+        </div>
+        <div class="col my-2">
+            <div class="resource-card mx-auto" style="background: #6A7D10;">
+                <a class="text-center text-decoration-none" href="#">
+                    <lord-icon
+                        src="https://cdn.lordicon.com/sygggnra.json"
+                        trigger="morph"
+                        colors="primary:#ffffff"
+                        class="resource-icon">
+                    </lord-icon>
+                    <p class="text-light fs-6 fw-semibold mb-4">{% trans "Institutions" %}</p>
+                </a>
+            </div>
+        </div>
+        <div class="col my-2">
+            <div class="resource-card mx-auto" style="background: #7D5100;">
+                <a class="text-center text-decoration-none" href="#">
+                    <lord-icon
+                        src="https://cdn.lordicon.com/stxtcyyo.json"
+                        trigger="morph"
+                        colors="primary:#ffffff"
+                        class="resource-icon">
+                    </lord-icon>
+                    <p class="text-light fs-6 fw-semibold mb-4">{% trans "Students" %}</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row py-5 bg-light"></div>
+</div>
+<!-- End Mini Section -->
+
+
+<!-- Resources & Services -->
+<div class="container-fluid px-5 pb-5 bg-light">
+    <h1 class="display-6 lead text-center">{% trans "Resources & Services" %}</h1>
+    <p class="text-muted text-center px-5">{% trans "Access and use the resources and services for heritage science researchers made available through our catalogues." %}</p>
+
+    <!-- Visible only on small screens -->
+    <!-- <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xxl-6 px-5 gy-3"> -->
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xxl-6 px-5 gy-3 d-md-none">
+
+        <div class="col">
+            <div class="card h-100">
+                <img src="{% static 'img/icons/research_icon.svg' %}" class="card-img-top mx-auto mt-3" style="height: 55px; width:55px;" alt="...">
+                <div class="card-body text-center">
+                    <h4 class="card-title">{% trans "Research Areas" %}</h4>
+                    <h4 class="card-subtitle mb-2 text-muted">21</h4>
+                    <p class="card-text">{% trans "A global overview of the. Etiam vitae elementum orci." %}</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100">
+                <img src="{% static 'img/icons/training_icon.svg' %}" class="card-img-top mx-auto mt-3" style="height: 55px; width:55px;" alt="...">
+                <div class="card-body text-center">
+                    <h4 class="card-title">{% trans "Training Resources" %}</h4>
+                    <h4 class="card-subtitle mb-2 text-muted">48</h4>
+                    <p class="card-text">{% trans "Educational resources in the broad field of the Heritage Science domain." %}</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100">
+                <img src="{% static 'img/icons/vres_icon.svg' %}" class="card-img-top mx-auto mt-3" style="height: 55px; width:55px;" alt="...">
+                <div class="card-body text-center">
+                    <h4 class="card-title">{% trans "VREs" %}</h4>
+                    <h4 class="card-subtitle mb-2 text-muted">84</h4>
+                    <p class="card-text">{% trans "Innovative Virtual Research Environments developed to serve modern Heritage Science needs." %}</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100">
+                <img src="{% static 'img/icons/datasets_icon.svg' %}" class="card-img-top mx-auto mt-3" style="height: 55px; width:55px;" alt="...">
+                <div class="card-body text-center">
+                    <h4 class="card-title">{% trans "Datasets" %}</h4>
+                    <h4 class="card-subtitle mb-2 text-muted">213</h4>
+                    <p class="card-text">{% trans "Main point of access for searching and browsing datasets." %}</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100">
+                <img src="{% static 'img/icons/services_icon.svg' %}" class="card-img-top mx-auto mt-3" style="height: 55px; width:55px;" alt="...">
+                <div class="card-body text-center">
+                    <h4 class="card-title">{% trans "Services" %}</h4>
+                    <h4 class="card-subtitle mb-2 text-muted">36</h4>
+                    <p class="card-text">{% trans "Main point of access for innovative services in Heritage Science discipline." %}</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100">
+                <img src="{% static 'img/icons/workflows_icon.svg' %}" class="card-img-top mx-auto mt-3" style="height: 55px; width:55px;" alt="...">
+                <div class="card-body text-center">
+                    <h4 class="card-title">{% trans "Workflows" %}</h4>
+                    <h4 class="card-subtitle mb-2 text-muted">112</h4>
+                    <p class="card-text">{% trans "Practical solutions for the formalization and description of research workflows." %}</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Carousel Visible only on larger screens -->
+    <!-- <div class="row px-lg-5 mt-4 mx-lg-5 d-none"> -->
+    <div class="row px-lg-5 mt-4 mx-lg-5 d-none d-md-block">
+        <div class="main-carousel">
+
+            <div class="carousel-cell">
+                <div class="card mx-2" style="min-height: 250px;">
+                    <img src="{% static 'img/icons/research_icon.svg' %}" class="card-img-top mx-auto mt-3" style="height: 55px; width:55px;" alt="...">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">{% trans "Research Areas" %}</h4>
+                        <h4 class="card-subtitle mb-2 text-muted">21</h4>
+                        <p class="card-text">{% trans "A global overview of the. Etiam vitae elementum orci." %}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-cell">
+                <div class="card mx-2" style="min-height: 250px;">
+                    <img src="{% static 'img/icons/training_icon.svg' %}" class="card-img-top mx-auto mt-3" style="height: 55px; width:55px;" alt="...">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">{% trans "Training Resources" %}</h4>
+                        <h4 class="card-subtitle mb-2 text-muted">48</h4>
+                        <p class="card-text">{% trans "Educational resources in the broad field of the Heritage Science domain." %}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-cell">
+                <div class="card mx-2" style="min-height: 250px;">
+                    <img src="{% static 'img/icons/vres_icon.svg' %}" class="card-img-top mx-auto mt-3" style="height: 55px; width:55px;" alt="...">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">{% trans "VREs" %}</h4>
+                        <h4 class="card-subtitle mb-2 text-muted">84</h4>
+                        <p class="card-text">{% trans "Innovative Virtual Research Environments developed to serve modern Heritage Science needs." %}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-cell">
+                <div class="card mx-2" style="min-height: 250px;">
+                    <img src="{% static 'img/icons/datasets_icon.svg' %}" class="card-img-top mx-auto mt-3" style="height: 55px; width:55px;" alt="...">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">{% trans "Datasets" %}</h4>
+                        <h4 class="card-subtitle mb-2 text-muted">213</h4>
+                        <p class="card-text">{% trans "Main point of access for searching and browsing datasets." %}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-cell">
+                <div class="card mx-2" style="min-height: 250px;">
+                    <img src="{% static 'img/icons/services_icon.svg' %}" class="card-img-top mx-auto mt-3" style="height: 55px; width:55px;" alt="...">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">{% trans "Services" %}</h4>
+                        <h4 class="card-subtitle mb-2 text-muted">36</h4>
+                        <p class="card-text">{% trans "Main point of access for innovative services in Heritage Science discipline." %}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-cell">
+                <div class="card mx-2" style="min-height: 250px;">
+                    <img src="{% static 'img/icons/workflows_icon.svg' %}" class="card-img-top mx-auto mt-3" style="height: 55px; width:55px;" alt="...">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">{% trans "Workflows" %}</h4>
+                        <h4 class="card-subtitle mb-2 text-muted">112</h4>
+                        <p class="card-text">{% trans "Practical solutions for the formalization and description of research workflows." %}</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<!-- End Resources & Services -->
+
+
+<!-- Latest Published -->
+<div id="popular-published" class="container pt-5 px-5">
+    <h1 class="display-6 lead mb-4 text-center">{% trans "Popular Published Resources" %}</h1>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3">
+        
+        <div class="col my-2">
+            <div class="card text-center h-100">
+                <a href="{% url 'marmora' %}" class="text-reset text-decoration-none">
+                    <div class="card-header">
+                        {% trans "DataSpace ISPC | CNR" %}
+                    </div>
+                    <div class="card-body">
+                        <img class="models-image mb-3" src="{% static 'img/marmora/phrygiae_landing1.png' %}">
+                        <!-- <p class="card-text">{% trans "Marmora Phrygiae Project" %}</p> -->
+                    </div>
+                    <div class="card-footer text-muted">
+                        <!-- {% trans "2 days ago" %} -->
+                        {% trans "Marmora Phrygiae Project" %}
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="col my-2">
+            <div class="card text-center h-100">
+                <a href="{% url 'molab001' %}" class="text-reset text-decoration-none">
+                    <div class="card-header">
+                        {% trans "E-RIHS MOLAB.it | CNR" %}
+                    </div>
+                    <div class="card-body ">
+                        <img class="models-image mb-3" src="{% static 'img/landing/MOLAB_Campagna.jpeg' %}">
+                        <!-- <p class="card-text">{% trans "MOLAB.it Projects" %}</p> -->
+                    </div>
+                    <div class="card-footer text-muted">
+                        <!-- {% trans "2 days ago" %} -->
+                        {% trans "MOLAB.it Projects" %}
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <div class="col my-2">
+            <div class="card text-center h-100">
+                <a href="https://aton.ispc.cnr.it/s/vhlab/sid-ac9lddw5w" target="_blank" class="text-reset text-decoration-none">
+                    <div class="card-header">
+                        {% trans "Aton ISPC | CNR" %}
+                    </div>
+                    <div class="card-body">
+                        <img class="models-image mb-3" src="https://aton.ispc.cnr.it/scenes/vhlab/sid-ac9lddw5w/cover.png">
+                        <!-- <p class="card-text">{% trans "Tomb of the Reliefs, Cerveteri" %}</p> -->
+                    </div>
+                    <div class="card-footer text-muted">
+                        <!-- {% trans "3 days ago" %} -->
+                        {% trans "Tomb of the Reliefs, Cerveteri" %}
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <div class="col my-2">
+            <div class="card text-center h-100">
+                <a href="#" target="_blank" class="text-reset text-decoration-none">
+                    <div class="card-header">
+                        {% trans "DataSpace ISPC | CNR" %}
+                    </div>
+                    <div class="card-body">
+                        <img class="models-image mb-3" src="{% static 'img/landing/IDEHA_favignana.png' %}">
+                        <!-- <p class="card-text">{% trans "Florio Ex-Factory of the Tonnare" %}</p> -->
+                    </div>
+                    <div class="card-footer text-muted">
+                        <!-- {% trans "2 days ago" %} -->
+                        {% trans "Florio Ex-Factory of the Tonnare" %}
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="col my-2">
+            <div class="card text-center h-100">
+                <a href="#" target="_blank" class="text-reset text-decoration-none">
+                    <div class="card-header">
+                        {% trans "DataSpace ISPC | CNR" %}
+                    </div>
+                    <div class="card-body">
+                        <img class="models-image mb-3" src="{% static 'img/landing/MOLAB_Total_reflection_mid.jpeg' %}">
+                        <!-- <p class="card-text">{% trans "MOLAB, Oslo, Total reflection mid FTIR" %}</p> -->
+                    </div>
+                    <div class="card-footer text-muted">
+                        <!-- {% trans "2 days ago" %} -->
+                        {% trans "MOLAB, Oslo, Total reflection mid FTIR" %}
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="col my-2">
+            <div class="card text-center h-100">
+                <a href="https://aton.ispc.cnr.it/s/vhlab/20220605-jsdyyi50z" target="_blank" class="text-reset text-decoration-none">
+                    <div class="card-header">
+                        {% trans "Aton ISPC | CNR" %}
+                    </div>
+                    <div class="card-body">
+                        <img class="models-image mb-3" src="https://aton.ispc.cnr.it/scenes/vhlab/20220605-jsdyyi50z/cover.png">
+                        <!-- <p class="card-text">{% trans "Bust of Chrysippus" %}</p> -->
+                    </div>
+                    <div class="card-footer text-muted">
+                        <!-- {% trans "2 days ago" %} -->
+                        {% trans "Bust of Chrysippus" %}
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<!-- End Latest Published -->
+{% endblock %}
+
+{% block copyright %}{{copyright_year}} {{copyright_text}}{% endblock %}
+{% block version %} (v{{version}}){% endblock %}
+
+
+{% block scripts %}
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+
+<script type="text/javascript">
+
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+    const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+
+    let elem = document.querySelector('.main-carousel');
+    let flkty = new Flickity( elem, {
+      // options
+      cellAlign: 'center',
+      contain: true,
+      autoPlay: true,
+      wrapAround: true,
+      groupCells: 2
+    });
+
+</script>
+{% endblock %}

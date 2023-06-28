@@ -1,0 +1,35 @@
+try:
+    from .arches_project_v6.settings import *
+except ImportError:
+    pass
+
+###########################################
+### ADDING VARIABLES HERE INSTEAD OF    ###
+### MODIFYING SETTINGS.PY SEEMS CLEANER ###
+###########################################
+
+ALLOWED_HOSTS = ["150.145.56.88"]
+APP_NAME = "DataSpace"
+
+APP_TITLE = 'DataSpace | Heritage Data Management'
+COPYRIGHT_TEXT = 'All Rights Reserved.'
+COPYRIGHT_YEAR = '2023'
+DEBUG = True
+
+# Hide nodes and cards in a report that have no data
+HIDE_EMPTY_NODES_IN_REPORT = False
+
+LANGUAGES = [
+    # ("de", _("German")),
+    ("en", "English"),
+    # ("en-gb", _("British English")),
+    # ("es", _("Spanish")),
+    # ("ar", _("Arabic")),
+]
+
+# If True, users can make edits to graphs that are locked
+# (generally because they have resource intances saved against them)
+# Changing this setting to True and making graph modifications may result in
+# disagreement between your Resource Models and Resource Instances potentially
+# causing your application to break.
+OVERRIDE_RESOURCE_MODEL_LOCK = False
