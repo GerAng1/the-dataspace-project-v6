@@ -1,0 +1,219 @@
+<!-- Colors:
+Data Space Blue: #213B55
+Data Space Blue Lighter: #2F4867
+Data Space Blue Darker: #1E2D40 -->
+
+{% extends "main-base.htm" %}
+{% load static %}
+{% load template_tags %}
+{% load i18n %}
+
+{% block meta %}
+<meta name="description" content="MOLAB 001 Landing Page">
+<meta name="author" content="Gerry Anglada">
+<meta name="keywords" content="DataSpace, dataspace, MOLAB, molab">
+{% endblock %}
+
+{% block title %}{{project_name}}{% endblock %}
+
+
+{% block styles %} {% endblock %}
+
+{% block title-navbar %}{{project_name}}{% endblock %}
+
+{% block left-navbar %}
+<ul class="navbar-nav text-center">
+    {{ block.super }}
+    <li class="nav-item">
+      <a class="nav-link py-lg-3" href="{% url 'home' %}" role="button">
+          {% trans "Home" %}
+      </a>
+    </li>
+    <li class="nav-item dropdown d-none d-md-block">
+        <a class="nav-link dropdown-toggle py-lg-3" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            {% trans "Search:" %}
+        </a>
+        <ul class="dropdown-menu">
+            <!-- <li><hr class="dropdown-divider"></li> -->
+            <li>
+              <a class="dropdown-item" href='{% url "search_home" %}{{all_molab_filter}}'>{% trans "All MOLAB.it" %}</a>
+            </li>
+        </ul>
+    </li>
+</ul>
+{% endblock %}
+
+
+{% block content %}
+<div class="container mt-4" style="min-height: calc(100vh - 297px);">
+  <div class="row align-items-center mb-5 gy-3">
+    <div class="order-2 order-md-1 col-12 col-md-5">
+      <h1>{{project_name}}</h1>
+      <!-- <p>
+          {% trans "The Marmora Phrygiae geodatabase represents the result of interdisciplinary research carried out on the marble quarries and monuments of the Hellenistic-Roman city of Hierapolis of Phrygia (today Pamukkake, Denizli), one of the great urban centers of the ancient province of Asia." %}
+      </p>
+      <p>
+          {% trans "The geodatabase constitutes a synthesis of the contextual approach to the study of ancient marbles. The cards relating to the individual stone samples subject to archaeometric analysis are related to descriptive cards of the architectural blocks, monuments and ancient quarries from which they were taken, in order to make the architectural, historical-artistic and topographical value of the results easily appreciable." %}
+      </p>
+      <p>
+        {% trans "The data sheets relating to the samples are accompanied by all the results of the archaeometric analyzes carried out for the characterization of the origins and for the study of conservation of the materials." %}
+      </p> -->
+
+
+      <p>
+          {% trans "Il MOLAB.it è una delle piattaforme nazionali dell’infrastruttura di ricerca E-RIHS (European Research Infrastructure for Heritage Science). Consente l’accesso alle tecniche e agli strumenti portatili dei laboratori mobili MOLAB-CNR e CHNet-INFN e offre ai ricercatori nel settore dei Beni Culturali (storici dell’arte, archeologi, restauratori, chimici, fisici, biologi, ecc.) la possibilità di realizzare progetti di diagnostica non-invasiva avanzata, con indagini in situ, funzionali a ricerche multidisciplinari nei settori della conoscenza, conservazione e fruizione del patrimonio culturale italiano." %}
+      </p>
+      <p>
+          {% trans "Offre le più innovative metodologie sviluppate e distribuite su tutto il territorio nazionale, per una migliore interpretazione, conoscenza, conservazione e restauro del patrimonio culturale." %}
+      </p>
+
+      <p class="lead"><i class="bi bi-search"></i> {% trans "Things you can search for:" %}</p>
+
+      <div class="accordion" id="accordionExample">
+
+        <div class="accordion-item">
+          <a class="accordion-header" id="headingNull" href='{% url "search_home" %}{{all_molab_filter}}'>
+            <button class="btn fw-semibold" type="button">
+              {% trans "All MOLAB" %}
+            </button>
+          </a>
+          <!-- <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>
+                <strong>Will this be called "Context" in english?</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a pharetra tortor, ut volutpat massa.
+              </p>
+
+              <p class="lead">Popular searches:</p>
+
+              <div class="list-group mt-2">
+                <a class="list-group-item d-flex justify-content-between align-items-start" href='{% url "search_home" %}'>
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold">{% trans "Caves" %}</div>
+                    {% trans "Small description" %}
+                  </div>
+                  <span class="badge bg-primary rounded-pill">102</span>
+                </a>
+                <a class="list-group-item d-flex justify-content-between align-items-start" href='{% url "search_home" %}'>
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold">{% trans "Other" %}</div>
+                    {% trans "Small description" %}
+                  </div>
+                  <span class="badge bg-primary rounded-pill">31</span>
+                </a>
+                <a class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold">{% trans "One last" %}</div>
+                    {% trans "Small description" %}
+                  </div>
+                  <span class="badge bg-primary rounded-pill">+130</span>
+                </a>
+              </div>
+
+            </div>
+          </div> -->
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              {% trans "Projects" %}
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>
+                <strong>MOLAB.it is compromised by several projects.</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a pharetra tortor, ut volutpat massa.
+              </p>
+
+              <p class="lead">Popular searches:</p>
+
+              <div class="list-group mt-2">
+                <a class="list-group-item d-flex justify-content-between align-items-start" href='{% url "search_home" %}{{projects_filter}}'>
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold">{% trans "Projects" %}</div>
+                    {% trans "Small description" %}
+                  </div>
+                  <span class="badge bg-primary rounded-pill">1</span>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              {% trans "Objects" %}
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>
+                <strong>Filter by the different objects we have in our database.</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a pharetra tortor, ut volutpat massa.
+              </p>
+
+              <p class="lead">{% trans "Examples you can search for:" %}</p>
+
+              <div class="list-group mt-2">
+                <a class="list-group-item d-flex justify-content-between align-items-start" href='{% url "search_home" %}{{manuscripts_filter}}'>
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold">{% trans "Manuscripts" %}</div>
+                    {% trans "Small description" %}
+                  </div>
+                  <span class="badge bg-primary rounded-pill">5</span>
+                </a>
+                <a class="list-group-item d-flex justify-content-between align-items-start" href='{% url "search_home" %}{{sculptures_filter}}'>
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold">{% trans "Sculptures" %}</div>
+                    {% trans "Small description" %}
+                  </div>
+                  <span class="badge bg-primary rounded-pill">0</span>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              {% trans "Person" %}
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>
+                <strong>Find a specific compiler and his/her related projects.</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a pharetra tortor, ut volutpat massa.
+              </p>
+
+              <p class="lead">{% trans "Search by item:" %}</p>
+
+              <div class="list-group mt-2">
+                <a class="list-group-item d-flex justify-content-between align-items-start" href='{% url "search_home" %}{{buti_filter}}'>
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold">{% trans "Name == 'Buti'" %}</div>
+                    {% trans "Small description" %}
+                  </div>
+                  <span class="badge bg-primary rounded-pill">1</span>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="order-1 order-md-2 col-12 col-md-7 text-center">
+      <img src="{% static 'img/molab001/pollock01.jpg' %}" class="img-fluid" alt="MOLAB image">
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}{% endblock %}
+
+{% block copyright %}{{copyright_year}} {{copyright_text}}{% endblock %}
+{% block version %} (v{{version}}){% endblock %}

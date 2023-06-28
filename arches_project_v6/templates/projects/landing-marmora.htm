@@ -1,0 +1,262 @@
+<!-- Colors:
+Data Space Blue: #213B55
+Data Space Blue Lighter: #2F4867
+Data Space Blue Darker: #1E2D40 -->
+
+{% extends "main-base.htm" %}
+{% load static %}
+{% load template_tags %}
+{% load i18n %}
+
+{% block meta %}
+<meta name="description" content="Marmora Phrygiae Landing Page">
+<meta name="author" content="Gerry Anglada">
+<meta name="keywords" content="DataSpace, dataspace, Marmora, Phrygiae">
+{% endblock %}
+
+{% block title %}{{project_name}}{% endblock %}
+
+
+{% block styles %} {% endblock %}
+
+{% block title-navbar %}{{project_name}}{% endblock %}
+
+{% block left-navbar %}
+<ul class="navbar-nav text-center">
+    {{ block.super }}
+    <li class="nav-item">
+      <a class="nav-link py-lg-3" href="{% url 'home' %}" role="button">
+          {% trans "Home" %}
+      </a>
+    </li>
+    <li class="nav-item dropdown d-none d-md-block">
+        <a class="nav-link dropdown-toggle py-lg-3" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            {% trans "Search by:" %}
+        </a>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href='{% url "search_home" %}{{all_context_filter}}'>
+                {% trans "Context" %}
+            </a></li>
+            <li><a class="dropdown-item" href='{% url "search_home" %}{{all_object_filter}}'>
+                {% trans "Object" %}
+            </a></li>
+            <li><a class="dropdown-item" href='{% url "search_home" %}{{all_sample_filter}}'>
+                {% trans "Sample" %}
+            </a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href='{% url "search_home" %}{{all_marmora_filter}}'>
+                {% trans "All Marmora" %}
+            </a></li>
+        </ul>
+    </li>
+</ul>
+{% endblock %}
+
+
+{% block content %}
+<div class="container mt-4" style="min-height: calc(100vh - 297px);">
+  <div class="row align-items-center mb-5 gy-3">
+    <div class="order-2 order-md-1 col-12 col-md-5">
+      <h1>{{project_name}}</h1>
+      <!-- <p>
+          {% trans "The Marmora Phrygiae geodatabase represents the result of interdisciplinary research carried out on the marble quarries and monuments of the Hellenistic-Roman city of Hierapolis of Phrygia (today Pamukkake, Denizli), one of the great urban centers of the ancient province of Asia." %}
+      </p>
+      <p>
+          {% trans "The geodatabase constitutes a synthesis of the contextual approach to the study of ancient marbles. The cards relating to the individual stone samples subject to archaeometric analysis are related to descriptive cards of the architectural blocks, monuments and ancient quarries from which they were taken, in order to make the architectural, historical-artistic and topographical value of the results easily appreciable." %}
+      </p>
+      <p>
+        {% trans "The data sheets relating to the samples are accompanied by all the results of the archaeometric analyzes carried out for the characterization of the origins and for the study of conservation of the materials." %}
+      </p> -->
+
+
+      <p>
+          {% trans "Il geodatabase Marmora Phrygiae rappresenta il risultato delle ricerche interdisciplinari condotte sulle cave di marmo e i monumenti della città ellenistico-romana di Hierapolis di Frigia (oggi Pamukkake, Denizli), uno dei grandi centri urbani della antica provincia d'Asia." %}
+      </p>
+      <p>
+          {% trans "Il geodatabase constituisce una sintesi dell'approccio contestuale allo sstudio dei marmi antichi. Le schede relative ai singoli campioni lapidei oggetto di analisi archeometriche sono correlate a schede descrittive dei blocchi architettonici, dei monumenti e delle cave antiche dal cui sono stati prelevati, al fine di rendere facilmente apprezzabile il valore architettonico, storico-artistico e topografico dei risultati." %}
+      </p>
+      <p>
+        {% trans "Le schede relative ai campioni sono corredate di tutti i risultati delle anilisi archeometriche effetuate per la caratterizzazione delle provenienze e por lo studio di conservazione dei materiali." %}
+      </p>
+
+      <p class="lead"><i class="bi bi-search"></i> {% trans "Things you can search for:" %}</p>
+
+      <div class="accordion" id="accordionExample">
+
+        <div class="accordion-item">
+          <a class="accordion-header" id="headingNull" href='{% url "search_home" %}{{all_marmora_filter}}'>
+            <button class="btn fw-semibold" type="button">
+              {% trans "All Marmora Phrygiae" %}
+            </button>
+          </a>
+          <!-- <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>
+                <strong>Will this be called "Context" in english?</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a pharetra tortor, ut volutpat massa.
+              </p>
+
+              <p class="lead">Popular searches:</p>
+
+              <div class="list-group mt-2">
+                <a class="list-group-item d-flex justify-content-between align-items-start" href='{% url "search_home" %}'>
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold">{% trans "Caves" %}</div>
+                    {% trans "Small description" %}
+                  </div>
+                  <span class="badge bg-primary rounded-pill">102</span>
+                </a>
+                <a class="list-group-item d-flex justify-content-between align-items-start" href='{% url "search_home" %}'>
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold">{% trans "Other" %}</div>
+                    {% trans "Small description" %}
+                  </div>
+                  <span class="badge bg-primary rounded-pill">31</span>
+                </a>
+                <a class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold">{% trans "One last" %}</div>
+                    {% trans "Small description" %}
+                  </div>
+                  <span class="badge bg-primary rounded-pill">+130</span>
+                </a>
+              </div>
+
+            </div>
+          </div> -->
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              {% trans "Cultural Context" %}
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <!-- <p>
+                <strong>Will this be called "Context" in english?</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a pharetra tortor, ut volutpat massa.
+              </p> -->
+
+              <p class="lead">Search by type of Cultural Context:</p>
+
+              <div class="list-group mt-2">
+                <a class="list-group-item d-flex justify-content-between align-items-start" href='{% url "search_home" %}{{caves_filter}}'>
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold">{% trans "Caves" %}</div>
+                    {% trans "Small description" %}
+                  </div>
+                  <span class="badge bg-primary rounded-pill">97</span>
+                </a>
+                <a class="list-group-item d-flex justify-content-between align-items-start" href='{% url "search_home" %}{{monuments_filter}}'>
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold">{% trans "Monuments" %}</div>
+                    {% trans "Small description" %}
+                  </div>
+                  <span class="badge bg-primary rounded-pill">34</span>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              {% trans "Objects" %}
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <!-- <p>
+                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </p> -->
+
+              <p class="lead">{% trans "You can filter Objects by:" %}</p>
+
+              <div class="list-group mt-2">
+                <a class="list-group-item d-flex justify-content-between align-items-start" href='{% url "search_home" %}{{era_filter}}'>
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold">{% trans "Era" %}</div>
+                    {% trans "(e.g. 'Ellenistica', 'Proto-bizantina')" %}
+                  </div>
+                  <!-- <span class="badge bg-primary rounded-pill">23</span> -->
+                </a>
+                <a class="list-group-item d-flex justify-content-between align-items-start" href='{% url "search_home" %}{{chronology_filter}}'>
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold">{% trans "Chronology" %}</div>
+                    {% trans "(e.g. 'I sec. a.C.', 'prima metà del II sec d.C.')" %}
+                  </div>
+                  <!-- <span class="badge bg-primary rounded-pill">87</span> -->
+                </a>
+                <a class="list-group-item d-flex justify-content-between align-items-start" href='{% url "search_home" %}{{context_filter}}'>
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold">{% trans "Cultural Context" %}</div>
+                    {% trans "(e.g. Display all objects found in the Theatre.)" %}
+                  </div>
+                  <!-- <span class="badge bg-primary rounded-pill">60</span> -->
+                </a>
+                <a class="list-group-item d-flex justify-content-between align-items-start" href='{% url "search_home" %}{{material_filter}}'>
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold">{% trans "Material" %}</div>
+                    {% trans "(e.g. 'Marmo bianco venato', 'breccia')" %}
+                  </div>
+                  <!-- <span class="badge bg-primary rounded-pill">44</span> -->
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              {% trans "Analysis" %}
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <!-- <p>
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </p> -->
+
+              <p class="lead">{% trans "Search by Analysis type:" %}</p>
+
+              <div class="list-group mt-2">
+                <a class="list-group-item d-flex justify-content-between align-items-start" href='{% url "search_home" %}{{cns_analysis_filter}}'>
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold">{% trans "Conservation" %}</div>
+                    {% trans "Small description" %}
+                  </div>
+                  <span class="badge bg-primary rounded-pill">56</span>
+                </a>
+              </div>
+
+              <div class="list-group mt-2">
+                <a class="list-group-item d-flex justify-content-between align-items-start" href='{% url "search_home" %}{{crt_analysis_filter}}'>
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold">{% trans "Characterization" %}</div>
+                    {% trans "Small description" %}
+                  </div>
+                  <span class="badge bg-primary rounded-pill">513</span>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="order-1 order-md-2 col-12 col-md-7 text-center">
+      <img src="{% static 'img/marmora/phrygiae_landing2.png' %}" class="h-75" alt="Marmora Phrygiae image">
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}{% endblock %}
+
+{% block copyright %}{{copyright_year}} {{copyright_text}}{% endblock %}
+{% block version %} (v{{version}}){% endblock %}

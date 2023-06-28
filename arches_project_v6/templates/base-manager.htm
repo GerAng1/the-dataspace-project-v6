@@ -36,7 +36,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
                 <div id="navbar-container" class="boxed" style="background-color: inherit; padding-right: 0px">
                     <div class="navbar-header">
                         <a href="#" class="navbar-brand" data-bind="click: function () { navExpanded(!navExpanded()) }">
-                            <img src="{{ STATIC_URL }}img/arches_logo_light.png" alt="Nifty Logo" class="brand-icon">
+                            <img src="{{ STATIC_URL }}img/logos/favicon_dataspace.png" alt="Nifty Logo" class="brand-icon">
                             <div class="brand-title">
                                 <span class="brand-text">{{ app_name }}</span>
                             </div>
@@ -360,14 +360,14 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
                                             </ul>
                                         </li>
 
-                                        <li{% if "views/mobile-survey-manager" in main_script %} class="active-sub"{% endif %}>
+                                        <!-- <li{% if "views/mobile-survey-manager" in main_script %} class="active-sub"{% endif %}>
                                             <a href="{% url 'collector_manager' %}" data-bind="click: navigate.bind(this, '{% url 'collector_manager' %}') ">
                                                 <i class="fa fa-globe"></i>
                                                 <span class="menu-title">
                                                     <strong>{% trans "Arches Collector Manager" %}</strong>
                                                 </span>
                                             </a>
-                                        </li>
+                                        </li> -->
                                         {% endif %}
 
 
