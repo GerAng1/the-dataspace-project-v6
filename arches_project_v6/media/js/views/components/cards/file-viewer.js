@@ -146,13 +146,15 @@ define([
                 var defaultRenderers = [];
                 this.fileFormatRenderers.forEach(function(renderer){
                     var excludeExtensions = renderer.exclude ? renderer.exclude.split(",") : [];
+                    var includeExtensions = renderer.ext ? renderer.ext.split(",") : [];                    // ADDED by me
                     var rawFileType = type;
                     try {
                         rawExtension = ko.unwrap(file).split('.').pop();
                     } catch (error) {
                         var rawExtension = file.name ? ko.unwrap(file.name).split('.').pop() : undefined;
                     }
-                    if (renderer.type === rawFileType && renderer.ext === rawExtension)  {
+                    // if (renderer.type === rawFileType && renderer.ext === rawExtension)  {               // REMOVED by me
+                    if (includeExtensions.includes(rawExtension)) {                                         // ADDED by me
                         defaultRenderers.push(renderer);
                     }
                     var splitFileType = ko.unwrap(type).split('/');
