@@ -17,7 +17,7 @@ COPYRIGHT_YEAR = '2023'
 DEBUG = True
 
 # Hide nodes and cards in a report that have no data
-HIDE_EMPTY_NODES_IN_REPORT = False
+HIDE_EMPTY_NODES_IN_REPORT = True
 
 LANGUAGES = [
     # ("de", _("German")),
@@ -33,3 +33,61 @@ LANGUAGES = [
 # disagreement between your Resource Models and Resource Instances potentially
 # causing your application to break.
 OVERRIDE_RESOURCE_MODEL_LOCK = False
+
+RENDERERS = [
+    {
+        "name": "imagereader",
+        "title": "Image Reader",
+        "description": "Displays most image file types",
+        "id": "5e05aa2e-5db0-4922-8938-b4d2b7919733",
+        "iconclass": "fa fa-camera",
+        "component": "views/components/cards/file-renderers/imagereader",
+        "ext": "",
+        "type": "image/*",
+        "exclude": "tif,tiff,psd",
+    },
+    {
+        "name": "pdfreader",
+        "title": "PDF Reader",
+        "description": "Displays pdf files",
+        "id": "09dec059-1ee8-4fbd-85dd-c0ab0428aa94",
+        "iconclass": "fa fa-file",
+        "component": "views/components/cards/file-renderers/pdfreader",
+        "ext": "pdf",
+        "type": "application/pdf",
+        "exclude": "tif,tiff,psd",
+    },	
+	{
+        "name": "xrfreader",
+        "title": "XRF Reader",
+        "description": "Use for exports from all the HP XRD outputs",
+        "id": "e96e84f2-bcb2-4ca4-8793-7568b09d7375",
+        "iconclass": "fa fa-area-chart",
+        "component": "views/components/cards/file-renderers/xrfreader",
+        "ext": "mca,txt",
+        "type": "",
+        "exclude": ""
+    },
+	{
+        "name": "xrdreader",
+        "title": "XRD Reader",
+        "description": "Use for exports from all the HP XRD outputs",
+        "id": "e96e84f2-bcb2-4ca4-8793-7568b09d7376",
+        "iconclass": "fa fa-line-chart",
+        "component": "views/components/cards/file-renderers/xrdreader",
+        "ext": "xy,txt",
+        "type": "",
+        "exclude": ""
+    },
+	{
+        "name": "mirreader",
+        "title": "FT-MIR Reader",
+        "description": "Use for exports from all the FT-MIR outputs",
+        "id": "e96e84f2-bcb2-4ca4-8793-7568b09d7377",
+        "iconclass": "fa fa-bolt",
+        "component": "views/components/cards/file-renderers/mirreader",
+        "ext": "dpt,txt",
+        "type": "",
+        "exclude": ""
+    }
+]

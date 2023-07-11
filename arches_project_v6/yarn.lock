@@ -2728,6 +2728,11 @@ pbf@^3.2.1:
     ieee754 "^1.1.12"
     resolve-protobuf-schema "^2.1.0"
 
+plotly.js-dist@^2.24.2:
+  version "2.24.2"
+  resolved "https://registry.yarnpkg.com/plotly.js-dist/-/plotly.js-dist-2.24.2.tgz#31d067343cdd944f20ce78e7d16fef7f0ec90efd"
+  integrity sha512-J5Jg6mAkMwzjHsfLlZaZiS11ntKvdkyP5C1Re2SFL5dXL7Nb66BGGpu3UopbIUaopLVJBiYu9kvOfUTjy0rHFQ==
+
 polygonize@1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/polygonize/-/polygonize-1.0.1.tgz#51fb7040914be0fbc43b0bd54d421d75fc2ae7a6"
