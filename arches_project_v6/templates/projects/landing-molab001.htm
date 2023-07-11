@@ -49,22 +49,11 @@ Data Space Blue Darker: #1E2D40 -->
   <div class="row align-items-center mb-5 gy-3">
     <div class="order-2 order-md-1 col-12 col-md-5">
       <h1>{{project_name}}</h1>
-      <!-- <p>
-          {% trans "The Marmora Phrygiae geodatabase represents the result of interdisciplinary research carried out on the marble quarries and monuments of the Hellenistic-Roman city of Hierapolis of Phrygia (today Pamukkake, Denizli), one of the great urban centers of the ancient province of Asia." %}
+      <p>
+          {% trans "MOLAB.it is the Italian platform of the E-RIHS research infrastructure (European Research Infrastructure for Heritage Science), https://www.e-rihs.it/laboratori-mobili/. The platform allows access to the techniques and portable tools of the MOLAB-CNR and CHNet-INFN mobile laboratories and offers researchers in the cultural heritage sector (art historians, archaeologists, restorers, chemists, physicists, biologists, etc.) the possibility of carrying out advanced non-invasive diagnostic projects, with in situ investigations, functional to multidisciplinary research in the sectors of knowledge, conservation and fruition of the Italian cultural heritage." %}
       </p>
       <p>
-          {% trans "The geodatabase constitutes a synthesis of the contextual approach to the study of ancient marbles. The cards relating to the individual stone samples subject to archaeometric analysis are related to descriptive cards of the architectural blocks, monuments and ancient quarries from which they were taken, in order to make the architectural, historical-artistic and topographical value of the results easily appreciable." %}
-      </p>
-      <p>
-        {% trans "The data sheets relating to the samples are accompanied by all the results of the archaeometric analyzes carried out for the characterization of the origins and for the study of conservation of the materials." %}
-      </p> -->
-
-
-      <p>
-          {% trans "Il MOLAB.it è una delle piattaforme nazionali dell’infrastruttura di ricerca E-RIHS (European Research Infrastructure for Heritage Science). Consente l’accesso alle tecniche e agli strumenti portatili dei laboratori mobili MOLAB-CNR e CHNet-INFN e offre ai ricercatori nel settore dei Beni Culturali (storici dell’arte, archeologi, restauratori, chimici, fisici, biologi, ecc.) la possibilità di realizzare progetti di diagnostica non-invasiva avanzata, con indagini in situ, funzionali a ricerche multidisciplinari nei settori della conoscenza, conservazione e fruizione del patrimonio culturale italiano." %}
-      </p>
-      <p>
-          {% trans "Offre le più innovative metodologie sviluppate e distribuite su tutto il territorio nazionale, per una migliore interpretazione, conoscenza, conservazione e restauro del patrimonio culturale." %}
+          {% trans "It offers the most innovative methodologies developed and distributed throughout the national territory, for a better interpretation, knowledge, conservation and restoration of cultural heritage." %}
       </p>
 
       <p class="lead"><i class="bi bi-search"></i> {% trans "Things you can search for:" %}</p>
@@ -122,7 +111,7 @@ Data Space Blue Darker: #1E2D40 -->
           <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
             <div class="accordion-body">
               <p>
-                <strong>MOLAB.it is compromised by several projects.</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a pharetra tortor, ut volutpat massa.
+                MOLAB.it is compromised by several projects.
               </p>
 
               <p class="lead">Popular searches:</p>
@@ -131,7 +120,7 @@ Data Space Blue Darker: #1E2D40 -->
                 <a class="list-group-item d-flex justify-content-between align-items-start" href='{% url "search_home" %}{{projects_filter}}'>
                   <div class="ms-2 me-auto">
                     <div class="fw-bold">{% trans "Projects" %}</div>
-                    {% trans "Small description" %}
+                    {% comment %} {% trans "Small description" %} {% endcomment %}
                   </div>
                   <span class="badge bg-primary rounded-pill">1</span>
                 </a>
@@ -150,7 +139,7 @@ Data Space Blue Darker: #1E2D40 -->
           <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
             <div class="accordion-body">
               <p>
-                <strong>Filter by the different objects we have in our database.</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a pharetra tortor, ut volutpat massa.
+                Filter by the different objects we have in our database.
               </p>
 
               <p class="lead">{% trans "Examples you can search for:" %}</p>
@@ -159,14 +148,14 @@ Data Space Blue Darker: #1E2D40 -->
                 <a class="list-group-item d-flex justify-content-between align-items-start" href='{% url "search_home" %}{{manuscripts_filter}}'>
                   <div class="ms-2 me-auto">
                     <div class="fw-bold">{% trans "Manuscripts" %}</div>
-                    {% trans "Small description" %}
+                    {% comment %} {% trans "Small description" %} {% endcomment %}
                   </div>
-                  <span class="badge bg-primary rounded-pill">5</span>
+                  <span class="badge bg-primary rounded-pill">6</span>
                 </a>
-                <a class="list-group-item d-flex justify-content-between align-items-start" href='{% url "search_home" %}{{sculptures_filter}}'>
+                <a class="list-group-item d-flex justify-content-between align-items-start" href='{% url "search_home" %}{{empty_filter}}'>
                   <div class="ms-2 me-auto">
                     <div class="fw-bold">{% trans "Sculptures" %}</div>
-                    {% trans "Small description" %}
+                    {% comment %} {% trans "Small description" %} {% endcomment %}
                   </div>
                   <span class="badge bg-primary rounded-pill">0</span>
                 </a>
@@ -179,24 +168,34 @@ Data Space Blue Darker: #1E2D40 -->
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingThree">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              {% trans "Person" %}
+              {% trans "Analytical Techniques" %}
             </button>
           </h2>
           <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
             <div class="accordion-body">
               <p>
-                <strong>Find a specific compiler and his/her related projects.</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a pharetra tortor, ut volutpat massa.
+                Filter by non-destructive Observations or destructive Sampling Activities.
               </p>
 
               <p class="lead">{% trans "Search by item:" %}</p>
 
               <div class="list-group mt-2">
-                <a class="list-group-item d-flex justify-content-between align-items-start" href='{% url "search_home" %}{{buti_filter}}'>
+                <a class="list-group-item d-flex justify-content-between align-items-start" href='{% url "search_home" %}{{observations_filter}}'>
                   <div class="ms-2 me-auto">
-                    <div class="fw-bold">{% trans "Name == 'Buti'" %}</div>
-                    {% trans "Small description" %}
+                    <div class="fw-bold">{% trans "Observations" %}</div>
+                    {% comment %} {% trans "Small description" %} {% endcomment %}
                   </div>
-                  <span class="badge bg-primary rounded-pill">1</span>
+                  <span class="badge bg-primary rounded-pill">13</span>
+                </a>
+              </div>
+
+              <div class="list-group mt-2">
+                <a class="list-group-item d-flex justify-content-between align-items-start" href='{% url "search_home" %}{{empty_filter}}'>
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold">{% trans "Sampling Activities" %}</div>
+                    {% comment %} {% trans "Small description" %} {% endcomment %}
+                  </div>
+                  <span class="badge bg-primary rounded-pill">0</span>
                 </a>
               </div>
 
