@@ -58,7 +58,7 @@ def molab001(request):
         request,
         "projects/landing-molab001.htm",
         {
-            "project_name": "Progetti di Ricerca dei laboratori mobili italiani (MOLAB.it) di E-RIHS",
+            "project_name": "Research projects of the Italian Mobile Laboratories (MOLAB.it) of E-RIHS",
             "app_title": settings.APP_TITLE,
             "copyright_text": settings.COPYRIGHT_TEXT,
             "copyright_year": settings.COPYRIGHT_YEAR,
@@ -66,8 +66,10 @@ def molab001(request):
             "show_language_swtich": settings.SHOW_LANGUAGE_SWITCH,
             "all_molab_filter": '?sort-results=desc&term-filter=%5B%7B"inverted"%3Afalse%2C"type"%3A"string"%2C"context"%3A""%2C"context_label"%3A""%2C"id"%3A"MOLAB"%2C"text"%3A"MOLAB"%2C"value"%3A"MOLAB"%7D%5D',
             "projects_filter": '?term-filter=%5B%7B"inverted"%3Afalse%2C"type"%3A"string"%2C"context"%3A""%2C"context_label"%3A""%2C"id"%3A"MOLAB"%2C"text"%3A"MOLAB"%2C"value"%3A"MOLAB"%7D%5D&resource-type-filter=%5B%7B"graphid"%3A"0b9235d9-ca85-11e9-9fa2-a4d18cec433a"%2C"name"%3A"Project"%2C"inverted"%3Afalse%7D%5D',
-            "manuscripts_filter": '?advanced-search=%5B%7B"op"%3A"and"%2C"63e49254-c444-11e9-afbe-a4d18cec433a"%3A%7B"op"%3A""%2C"val"%3A%5B"0e33b65d-b1dd-4bfe-be26-1efe239b7ea5"%5D%7D%7D%5D',
-            "sculptures_filter": '?term-filter=%5B%7B"inverted"%3Afalse%2C"type"%3A"string"%2C"context"%3A""%2C"context_label"%3A""%2C"id"%3A"EMPTY"%2C"text"%3A"EMPTY"%2C"value"%3A"EMPTY"%7D%5D',
-            "buti_filter": '?term-filter=%5B%7B"inverted"%3Afalse%2C"type"%3A"string"%2C"context"%3A""%2C"context_label"%3A""%2C"id"%3A"Buti"%2C"text"%3A"Buti"%2C"value"%3A"Buti"%7D%5D',
+            "manuscripts_filter": '?advanced-search=%5B%7B"op"%3A"and"%2C"63e49254-c444-11e9-afbe-a4d18cec433a"%3A%7B"op"%3A""%2C"val"%3A%5B"adf1df7a-3119-42ac-a8b8-e035b16af5ee"%5D%7D%7D%5D',
+            "sculptures_filter": '',
+            "observations_filter": '?term-filter=%5B%7B"inverted"%3Afalse%2C"type"%3A"string"%2C"context"%3A""%2C"context_label"%3A""%2C"id"%3A"MOLAB"%2C"text"%3A"MOLAB"%2C"value"%3A"MOLAB"%7D%5D&resource-type-filter=%5B%7B"graphid"%3A"615b11ee-c457-11e9-910c-a4d18cec433a"%2C"name"%3A"Observation"%2C"inverted"%3Afalse%7D%5D',
+            "samplings_filter": '',
+            "empty_filter": '?term-filter=%5B%7B"inverted"%3Afalse%2C"type"%3A"string"%2C"context"%3A""%2C"context_label"%3A""%2C"id"%3A"EMPTY"%2C"text"%3A"EMPTY"%2C"value"%3A"EMPTY"%7D%5D',
         },
     )
