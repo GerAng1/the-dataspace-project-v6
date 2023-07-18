@@ -7,19 +7,14 @@ define(['jquery',
     return ko.components.register('xrdreader', {
         viewModel: function(params) {
             AfsInstrumentViewModel.apply(this, [params]);
-            this.parse = function(data, series){
-                let vals;
-                try {
-                    vals = data.split('Energy Counts')[1].trim().split('\n').slice(2, -1);
-                } catch(e) {
-                    vals = data.split('\n').slice(2, -1);
-                }
+            this.parse = function(data, series) {
+                // XRD txt files from MOLAB MOVIDA have 7 lines of metadata
+                const vals = data.split('\n').slice(8, -1);
+                
                 vals.forEach(function(val){
                     var rec = val.trim().split(/[\s,]+/);
-                    // if (Number(rec[1]) > 30 && rec[0] > 0.5) {
-                        series.count.push(Number(rec[1]));
-                        series.value.push(Number(rec[0]));
-                    // }
+                    series.count.push(Number(rec[1]));
+                    series.value.push(Number(rec[0]));
                 });
             };
             this.chartTitle("XRD Diffractometer");

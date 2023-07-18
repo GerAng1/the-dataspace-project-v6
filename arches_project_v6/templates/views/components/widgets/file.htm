@@ -189,9 +189,9 @@
 
 <!-- ko if: reportGraphs().length > 0 -->
 <dd>
-    <div style="width: 750px;">
+    <div>
         <!-- ko foreach: reportGraphs() -->
-        <div data-bind="attr: {id: file_id}"></div>
+        <div data-bind="attr: {id: 'plot-' + ko.unwrap(file_id)}"></div>
         <div id="color-buttons" style="text-align: center;">
             <button data-bind="attr: {id: 'raw-' + ko.unwrap(file_id) }">View file in Raw Text</button>
             <button style="margin-left: 10px;" data-bind="attr: {id: 'btn-' + ko.unwrap(file_id) }">Change Color</button>
