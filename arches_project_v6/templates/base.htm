@@ -52,6 +52,9 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 
     {% endblock css%}
 
+    <script src="https://cdn.jsdelivr.net/npm/tify@0.28.1/dist/tify.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tify@0.28.1/dist/tify.css">
+
 </head>
 
 <body {% block body_attributes %}class="scroll-y-auto"{% endblock %}>
@@ -95,6 +98,63 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
         </script>
 
     {% endif %}
+
+    <!-- This is the brutal code you need -->
+    <script type="module">
+
+        function createTify(element, urlManifest) {
+            // Create a wrapper div element
+            const wrapper = document.createElement('div');
+            wrapper.classList.add('tify-wrapper'); // Add CSS class for styling
+
+            // Insert the Tify code within the wrapper
+            const tify = new Tify({
+                container: wrapper,
+                manifestUrl: urlManifest,
+                fullScreen: true
+            });
+        
+            // Insert the wrapper before the target element
+            element.parentNode.insertBefore(wrapper, element);
+        }
+        
+        
+        // Define a function to process the elements
+        function processElements(elements) {
+            for (const element of elements) {
+                console.log(element.textContent);
+                if (element.textContent === 'Manifest URL') {
+                    const ddElement = element.nextElementSibling;
+            
+                    // Retrieve the URL from the <dd> element
+                    const urlManifest = ddElement.textContent.trim();
+            
+                    createTify(element, urlManifest);
+                    // Optionally, if you need to stop iterating after the first match, you can add a return statement here.
+                }
+            
+            }
+        }
+
+        // Check if the page is on the 'report' location
+        if (location.href.includes('report')) {
+            const observer = new MutationObserver((mutationsList) => {
+                // Check if the desired elements are now available in the DOM
+                const listOfElements = document.querySelectorAll('dt[data-bind="text: label"]');
+                if (listOfElements.length > 0) {
+                    // Disconnect the observer as the elements are found
+                    observer.disconnect();
+
+                    // Process the elements
+                    processElements(listOfElements);
+                }
+            });
+
+            // Start observing changes in the DOM
+            observer.observe(document.body, { childList: true, subtree: true });
+        }
+
+    </script>
 
 {% endblock javascript %}
 
