@@ -37,4 +37,13 @@
 div.report-related-resources .rp-tile-title {
     margin-left: 120px;
 }
-  
+
+.tify-wrapper {
+    width: 75%;
+    height: 750px;
+    margin-bottom: 15px;
+}
+
+.rp-report-tile {
+    width: 100%;
+}
