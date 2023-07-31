@@ -66,7 +66,7 @@
     {% block related_resources %}
     <div class="rp-report-section relative report-related-resources">
         <div class="rp-report-section-title">
-            <h4 class="rp-section-title">{% trans 'Related Resources' %}</h4>
+            <h3 class="rp-section-title">{% trans 'Related Resources' %}</h3>
         </div>
         
         <!-- ko foreach: { data: Object.values(report.relatedResourcesLookup()), as: 'resourceData' } -->
@@ -80,11 +80,14 @@
             <div class="rp-report-container-tile">
                 <div class="row rp-report-tile">
                     <dl class="dl-horizontal">
-                        <dt><a data-bind="text: relatedResource.displayName, attr: {href: relatedResource.link}"></a></dt>
-                        <!-- ko if: relatedResource.relationship -->
-                        <dd data-bind="text: '( ' + relatedResource.relationship + ' )'"></dd>
-                        <!-- /ko -->
-                    </dl>
+                        <dt>
+                          <!-- ko if: relatedResource.relationship -->
+                          <a data-bind="text: ' << ' + ko.unwrap(relatedResource.relationship) + ' >> ', attr: {href: relatedResource.relationshipLink}"></a>
+                          <!-- /ko -->
+                          <a data-bind="text: relatedResource.displayName, attr: {href: relatedResource.link}"></a>
+                        </dt>
+                      </dl>
+                      
                 </div>
             </div>
             <!-- /ko -->

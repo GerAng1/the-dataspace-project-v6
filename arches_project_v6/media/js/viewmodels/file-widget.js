@@ -6,8 +6,9 @@ define([
     'dropzone',
     'uuid',
     'viewmodels/widget',
+    'Plotly',
     'bindings/dropzone'
-], function($, arches, ko, _, Dropzone, uuid, WidgetViewModel) {
+], function($, arches, ko, _, Dropzone, uuid, WidgetViewModel, Plotly) {
     /**
      * A viewmodel used for domain widgets
      *
@@ -26,6 +27,11 @@ define([
         this.filesForUpload = ko.observableArray();
         this.uploadedFiles = ko.observableArray();
         this.unsupportedImageTypes = ['tif', 'tiff', 'vnd.adobe.photoshop'];
+        this.validFormats = {
+            'XRF': ["mca", "mcb"],
+            'XRD': ["xy", "xyz"],
+            'MIR': ["dpt", "dpu"]
+        };
 
 
         if (this.form) {
@@ -247,14 +253,31 @@ define([
             return self.uploadedFiles().length === 1 ? ko.unwrap(self.uploadedFiles()[0].name) : self.uploadedFiles().length; 
         });
 
+        this.findKey = function(str,dict) {
+            for (const key in dict) {
+                if (dict[key].includes(str)) {
+                    return key;
+                }
+            }
+            return null;
+        };
+
         this.reportFiles = ko.computed(function() {
             return self.uploadedFiles().filter(function(file) {
                 var fileType = ko.unwrap(file.type);
                 if (fileType) {
                     var ext = fileType.split('/').pop();
+                    
+                    console.log("file:" + ko.unwrap(file.name));
+                    console.log(fileType.indexOf('image') < 0 || self.unsupportedImageTypes.indexOf(ext) > -1);
+                    
                     return fileType.indexOf('image') < 0 || self.unsupportedImageTypes.indexOf(ext) > -1;
                 }
-                return true;
+                const fileName = ko.unwrap(file.name);
+                const lastPeriodIndex = fileName.lastIndexOf(".");
+                const fileExt = fileName.substring(lastPeriodIndex + 1);
+                const fileIsPlottable = self.findKey(fileExt, self.validFormats);
+                return !fileIsPlottable;
             });
         });
 
@@ -263,11 +286,188 @@ define([
                 var fileType = ko.unwrap(file.type);
                 if (fileType) {
                     var ext = fileType.split('/').pop();
+                    
+                    console.log("image:" + ko.unwrap(file.name));
+                    console.log(fileType.indexOf('image') >= 0 && self.unsupportedImageTypes.indexOf(ext) <= 0);
+
+                    
                     return fileType.indexOf('image') >= 0 && self.unsupportedImageTypes.indexOf(ext) <= 0;
                 }
                 return false;
             });
         });
+
+        this.reportGraphs = ko.computed(function() {          
+            // Define the color change function for button
+            function changeColor(divID, data, layout, config) {
+                const letters = '0123456789ABCDEF';
+                let color = '#';
+                for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+                }
+
+                const updatedData = {...data, line: {color}};
+                Plotly.react(divID, [updatedData], layout, config);
+            }
+
+            // Opens plot data in new tab as raw text instead of downloading
+            function openFileInNewTab(fileUrl) {
+                fetch(fileUrl)
+                  .then(response => response.text())
+                  .then(text => {
+                    const newTab = window.open();
+                    newTab.document.write(`<pre>${text}</pre>`);
+                    newTab.document.close();
+                  })
+                  .catch(error => console.error(error));
+            }
+
+            // Generates plot
+            function generateSpectra(fileData, graphData, fileIsPlottable) {
+                const x = [];
+                const y = [];
+                const sep = graphData.includes('\r') ? '\r': '\n';
+                let axes = graphData.split(sep);
+                
+                if (fileIsPlottable === 'XRF') {
+                    xAxisTitle = 'Energy (keV)';
+                    yAxisTitle = 'Intensity (Counts)';
+
+                    axes = axes.slice(19,-1);
+
+                    axes.forEach((val, index) => {
+                        x.push(index);
+                        y.push(val);
+                    });
+
+                } else if (fileIsPlottable === 'XRD') {
+                    xAxisTitle = '2Theta (°)';
+                    yAxisTitle = 'Intensity (Counts)';
+
+                    for (let i = 0; i < axes.length; i++) {
+                        const values = axes[i].split(" ");
+                        x.push(parseFloat(values[0]));
+                        y.push(parseFloat(values[1]));
+                    }
+
+                } else if (fileIsPlottable === 'MIR') { 
+                    xAxisTitle = 'x axis';
+                    yAxisTitle = 'y axis';
+
+                    for (let i = 0; i < axes.length; i++) {
+                        const values = axes[i].split(" ");
+                        x.push(parseFloat(values[0]));
+                        y.push(parseFloat(values[1]));
+                    }
+
+                } else {
+                    console.log(`'${fileData.ext}' not found in dictionary`);
+                    return false;
+                }
+
+                const data = {
+                    x: x,
+                    y: y,
+                    type: 'scatter',
+                };
+
+                const layout = {
+                    hovermode: 'closest',
+                    title: `${fileIsPlottable} Spectrum`,
+                    xaxis: {
+                        title: xAxisTitle
+                    },
+                    yaxis: {
+                        title: yAxisTitle
+                    }
+                };
+
+                const config = {
+                    responsive: true // Enable responsiveness to adjust chart on window resize
+                }; 
+
+                Plotly.newPlot('plot-' + fileData.file_id, [data], layout, config);
+                
+                // Attach click event listeners to color buttons
+                document.getElementById('btn-' + fileData.file_id).addEventListener('click', () => {
+                    changeColor('plot-' + fileData.file_id, data, layout, config);
+                });
+                // Attach click event listeners to open file in new tab
+                document.getElementById('raw-' + fileData.file_id).addEventListener('click', () => {
+                    openFileInNewTab(fileData.url);
+                });
+            }
+              
+            return self.uploadedFiles().filter(function(file) {
+                // File Attributes:
+                const fileData = {
+                    accepted: ko.unwrap(file.accepted),
+                    content: ko.unwrap(file.content),
+                    file_id: ko.unwrap(file.file_id),
+                    index: ko.unwrap(file.index),
+                    lastModified: ko.unwrap(file.lastModified),
+                    name: ko.unwrap(file.name),
+                    ext: '',
+                    renderer: ko.unwrap(file.renderer),
+                    size: ko.unwrap(file.size),
+                    status: ko.unwrap(file.status),
+                    type: ko.unwrap(file.type), 
+                    url: self.getFileUrl(file.url)
+                  };
+                
+                const lastPeriodIndex = fileData.name.lastIndexOf(".");
+                fileData.ext = fileData.name.substring(lastPeriodIndex + 1);
+
+                let fileIsPlottable;
+                // In case a txt file is added, we need to manually check the file
+                if (fileData.ext === "txt") {
+                    fetch(fileData.url)
+                        .then(response => response.text())
+                        .then(rawData => {
+                            const fileIsPlottableMap = {
+                                '<': 'XRF',
+                                '#': 'XRD'
+                              };
+                              
+                            const firstChar = rawData[0];
+                            const isXRF = rawData.startsWith('<');
+                            const isXRD = rawData.startsWith('#');
+                            const isMIR = !isNaN(firstChar);
+                            
+                            fileIsPlottable = fileIsPlottableMap[firstChar] || (isXRF && 'XRF') || (isMIR && 'MIR') || (isXRD && 'XRD');
+                            
+                            if (!fileIsPlottable) {
+                                console.log(`'${fileData.ext}' file not compatible.`);
+                                return false;
+                            } else {
+                                generateSpectra(fileData, rawData, fileIsPlottable);
+                            }
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                    });
+
+                } else {
+                    fileIsPlottable = self.findKey(fileData.ext, self.validFormats);
+
+                    if (!fileIsPlottable) {
+                        console.log(`'${fileData.ext}' not found in dictionary.`);
+                        return false;
+                    } else {
+                        fetch(fileData.url)
+                        .then(response => response.text())
+                        .then(rawData => {
+                            generateSpectra(fileData, rawData, fileIsPlottable);
+                        })
+                        .catch(error => {
+                            console.error('Error:', error);
+                        });
+                    }
+                }
+
+                return true;
+            });
+        });    
     };
 
     return FileWidgetViewModel;

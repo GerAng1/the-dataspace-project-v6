@@ -208,9 +208,25 @@ define(['jquery',
                 }
                 else if (value['resources'].length > 0) {
                     for (let relatedResource of value['resources']) {
+                        let formattedRelationship = '';
+
+                        if (relatedResource.relationships[0]) {
+                            // Extract the relationship name
+                            const relationship = relatedResource.relationships[0].split("/").pop().replace(/_/g, " ");
+    
+                            // Capitalize the first letter of each word
+                            const words = relationship.split(" ");
+    
+                            const entity = words.shift(); // Extract the first word (entity)
+                            const restOfSentence = words.join(" "); // Reconstruct the rest of the sentence
+    
+                            formattedRelationship = `${entity} (${restOfSentence})`;
+                        }
+
                         relatedResources.push({
                             'displayName': relatedResource.displayname,
-                            'relationship': relatedResource.relationships[0],
+                            'relationship': formattedRelationship,
+                            'relationshipLink': relatedResource.relationships[0],
                             'link': arches.urls.resource_report + relatedResource.resourceinstanceid,
                         });
                     }
