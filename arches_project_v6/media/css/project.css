@@ -1,3 +1,14 @@
 .iiif-widget-report {
     margin: 0;
 }
+
+.workflow-step-header {
+    margin-top: 50px;
+    margin-left: 70px;
+    margin-bottom: 30px;
+}
+
+.workflow-step-box {
+    margin-top: 20px;
+    margin-left: 70px;
+}

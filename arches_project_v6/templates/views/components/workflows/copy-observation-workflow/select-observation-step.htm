@@ -1,0 +1,29 @@
+{% load i18n %}
+{% load template_tags %}
+
+<div>
+    <div class="workflow-step-header">
+        <h4>Existing Observations</h4>
+        <p>If not on the list, verify the Resource Model your looking for is an Observation, or make sure the instance exists.</p>
+    </div>
+
+    <div class="workflow-step-box">
+        <div class="widget-input-label">Observation*</div>
+        <div data-bind="component: {
+            name: 'resource-instance-select-widget',
+            params: {
+                graphids: [
+                    'ce9f1790-9d40-42aa-b41a-6647fabab2cc',
+                ],
+                renderContext: 'workflow', 
+                value: resourceinstance_id,
+                disabled: false
+            }
+        }"></div>
+    </div>
+
+    <div class="workflow-step-box">
+        <button class="btn btn-rr btn-lg" data-bind="click: copyResourceInstance">Copy Resource Instance</button>
+    </div>
+
+</div>

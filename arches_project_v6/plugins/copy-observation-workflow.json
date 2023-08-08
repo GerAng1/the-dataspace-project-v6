@@ -1,0 +1,10 @@
+{
+    "pluginid": "59b9a9cb-1654-43a6-abb7-7e4ca4c5bfea",
+    "name": "Copy Observation",
+    "icon": "fa fa-copy",
+    "component": "views/components/plugins/copy-observation-workflow",
+    "componentname": "copy-observation-workflow",
+    "config": {"show":false},
+    "slug": "copy-observation-workflow",
+    "sortorder": 1
+}

@@ -1,0 +1,24 @@
+{
+    "pluginid": "49507fb0-89c6-47b7-b506-9b2b29a3b8d8",
+    "name": "Workflows",
+    "icon": "fa fa-play-circle",
+    "component": "views/components/plugins/init-workflow",
+    "componentname": "init-workflow",
+    "config": {
+        "workflows": [
+            {
+                "workflowid": "59b9a9cb-1654-43a6-abb7-7e4ca4c5bfea",
+                "slug": "copy-observation-workflow",
+                "name": "Copy Observation",
+                "icon": "fa fa-files-o",
+                "bgColor": "#3e89cd",
+                "circleColor": "#6ea7d9",
+                "desc": "Create a copy of an Observation"
+            }
+            
+        ],
+        "show":true
+    },
+    "slug": "init-workflow",
+    "sortorder": 0
+}
