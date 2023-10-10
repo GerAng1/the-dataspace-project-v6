@@ -1,8 +1,19 @@
-# 3: Missing imports  
+# Restore Data from Backup
+Eventually you might want to import existing data from a backup. With DataSpace you can import a "package" which includes Resource Models, instances of these Models, attached files, ontologies, and thesauri.
 
-## To anyone recreating/reimporting Dataspace:
+# Import Package
+- Download package
+  - `cd /opt/DIGILAB/the-dataspace-project-v6/`
+  - `wget [https://www.link-to-package.zip]`
+  - `wget -P ./packages/ -i ./packages/link-package.txt`
+  - `source ENV/bin/activate`
+  -  
 
-## (At the time this was written) `load_package` does **not** import the following:
+
+
+# Missing imports  
+## If importing DataSpace Package:
+(At the time this was written) `load_package` does **not** import the following:
 
 - From /admin site
     - Map markers
@@ -15,9 +26,9 @@ These must be setup after each time you setup the database.
 
 ---
 
-## /admin site
+### /admin site
 
-### Map markers  
+#### Map markers  
 
 These add an icon to the map. The next example adds a 'pin' icon.  
 
@@ -26,7 +37,7 @@ These add an icon to the map. The next example adds a 'pin' icon.
     - Under *name*, type: `marker-vase`
     - Under *Url*, type: `media/img/icons/marker-vase.png`
 
-### Map layers  
+#### Map layers  
 
 The add an overlay to the map on the Search page. The next example add an overlay that only higlights the objects on the search results panel.  
 \*This layer uses the previously created *marker-vase* marker. If not created, the layer will still work properly, but the pin icon won't be displayed.  
@@ -51,9 +62,9 @@ The add an overlay to the map on the Search page. The next example add an overla
 
 ---
 
-## Arches' UI "Map Layer Manager"  
+### Arches' UI "Map Layer Manager"  
 
-### Basemaps  
+#### Basemaps  
 
 Within the Basemaps Tab you can make the "satellite" basemap the Default basemap:  
 
@@ -64,34 +75,24 @@ Within the Basemaps Tab you can make the "satellite" basemap the Default basemap
 
 ---
 
-# Links to other sections  
-
-- [0: Best Practices](0_best_practices.md)  
-- [1: Install Dependencies](0_install_dependencies.md)  
-- [2: Install Clean](1_install_core.md)  
-- [2: Install from Clone](1_install_from_clone.md)  
-- [Arches' Thesauri](arches_thesauri.md)
-
----
-
 # Advanced Styling Backups  
 
 These Advanced Styling codes are from the Resource Layers. *The should be already loaded with the load_package, becaise they are svaed withing the Resource Model json.* I'm leaving them here just in case (require formatting for better reading):  
 
 **Note:** It'd be important to update these codes in case updated from Arches' UI
 
-### Geographical Context M.P.  
+## Geographical Context M.P.  
 
 	[{"id":"geocontext-polygon-fill","type":"fill","source":"resources-0a0eb0c0-9083-11ed-8aba-8c85907a3f93","source-layer":"0a0eb0c0-9083-11ed-8aba-8c85907a3f93","layout":{"visibility":"visible"},"filter":["all",["==","$type","Polygon"],["==","total",1]],"paint":{"fill-color":["case",["boolean",["feature-state","hover"],false],"rgba(18,138,120,0.7)","rgba(140,25,25,0.7)"]}},{"id":"geocontext-polygon-outline","type":"line","source":"resources-0a0eb0c0-9083-11ed-8aba-8c85907a3f93","source-layer":"0a0eb0c0-9083-11ed-8aba-8c85907a3f93","layout":{"visibility":"visible"},"filter":["all",["==","$type","Polygon"],["==","total",1]],"paint":{"line-width":2,"line-color":["case",["boolean",["feature-state","hover"],false],"rgba(17,217,187,0.5)","rgba(214,50,50,0.5)"]}},{"id":"geocontext-line-halo","type":"line","source":"resources-0a0eb0c0-9083-11ed-8aba-8c85907a3f93","source-layer":"0a0eb0c0-9083-11ed-8aba-8c85907a3f93","layout":{"visibility":"visible"},"filter":["all",["==","$type","LineString"],["==","total",1]],"paint":{"line-width":4,"line-color":["case",["boolean",["feature-state","hover"],false],"rgba(17,217,187,0.5)","rgba(214,50,50,0.5)"]}},{"id":"geocontext-line-fill","type":"line","source":"resources-0a0eb0c0-9083-11ed-8aba-8c85907a3f93","source-layer":"0a0eb0c0-9083-11ed-8aba-8c85907a3f93","layout":{"visibility":"visible"},"filter":["all",["==","$type","LineString"],["==","total",1]],"paint":{"line-width":2,"line-color":["case",["boolean",["feature-state","hover"],false],"rgba(18,138,120,0.7)","rgba(140,25,25,0.7)"]}},{"id":"geocontext-point-halo","type":"circle","source":"resources-0a0eb0c0-9083-11ed-8aba-8c85907a3f93","source-layer":"0a0eb0c0-9083-11ed-8aba-8c85907a3f93","layout":{"visibility":"visible"},"filter":["all",["==","$type","Point"],["==","total",1]],"paint":{"circle-radius":["case",["boolean",["feature-state","hover"],false],7,4],"circle-color":["case",["boolean",["feature-state","hover"],false],"rgba(17,217,187,0.5)","rgba(214,50,50,0.5)"]}},{"id":"geocontext-point-fill","type":"circle","source":"resources-0a0eb0c0-9083-11ed-8aba-8c85907a3f93","source-layer":"0a0eb0c0-9083-11ed-8aba-8c85907a3f93","layout":{"visibility":"visible"},"filter":["all",["==","$type","Point"],["==","total",1]],"paint":{"circle-radius":["case",["boolean",["feature-state","hover"],false],5,2],"circle-color":["case",["boolean",["feature-state","hover"],false],"rgba(18,138,120,0.7)","rgba(140,25,25,0.7)"]}},{"id":"geocontext-cluster-halo","type":"circle","source":"resources-0a0eb0c0-9083-11ed-8aba-8c85907a3f93","source-layer":"0a0eb0c0-9083-11ed-8aba-8c85907a3f93","layout":{"visibility":"visible"},"filter":["all",["==","$type","Point"],[">","total",1]],"paint":{"circle-radius":{"property":"total","stops":[[0,22],[50,24],[100,26],[200,28],[400,30],[800,32],[1200,34],[1600,36],[2000,38],[2500,40],[3000,42],[4000,44],[5000,46]]},"circle-color":"rgba(214,50,50,0.5)"}},{"id":"geocontext-cluster-fill","type":"circle","source":"resources-0a0eb0c0-9083-11ed-8aba-8c85907a3f93","source-layer":"0a0eb0c0-9083-11ed-8aba-8c85907a3f93","layout":{"visibility":"visible"},"filter":["all",["==","$type","Point"],[">","total",1]],"paint":{"circle-radius":{"property":"total","type":"exponential","stops":[[0,12],[50,14],[100,16],[200,18],[400,20],[800,22],[1200,24],[1600,26],[2000,28],[2500,30],[3000,32],[4000,34],[5000,36]]},"circle-color":"rgba(140,25,25,0.7)"}},{"id":"geocontext-cluster-text","type":"symbol","source":"resources-0a0eb0c0-9083-11ed-8aba-8c85907a3f93","source-layer":"0a0eb0c0-9083-11ed-8aba-8c85907a3f93","layout":{"text-field":"{total}","text-size":10},"paint":{"text-color":"#fff"},"filter":["all",[">","total",1]]}]  
 
-### Object M.P.  
+## Object M.P.  
 
 	[{"id":"object-polygon-fill","type":"fill","source":"resources-3826a11e-9517-11ed-b0aa-8c85907a3f93","source-layer":"3826a11e-9517-11ed-b0aa-8c85907a3f93","layout":{"visibility":"visible"},"filter":["all",["==","$type","Polygon"],["==","total",1]],"paint":{"fill-color":["case",["boolean",["feature-state","hover"],false],"rgba(93,53,140,0.7)","rgba(114,216,60,0.7)"]}},{"id":"object-polygon-outline","type":"line","source":"resources-3826a11e-9517-11ed-b0aa-8c85907a3f93","source-layer":"3826a11e-9517-11ed-b0aa-8c85907a3f93","layout":{"visibility":"visible"},"filter":["all",["==","$type","Polygon"],["==","total",1]],"paint":{"line-width":2,"line-color":["case",["boolean",["feature-state","hover"],false],"rgba(137,72,217,1)","rgba(221,231,51,1)"]}},{"id":"object-line-halo","type":"line","source":"resources-3826a11e-9517-11ed-b0aa-8c85907a3f93","source-layer":"3826a11e-9517-11ed-b0aa-8c85907a3f93","layout":{"visibility":"visible"},"filter":["all",["==","$type","LineString"],["==","total",1]],"paint":{"line-width":4,"line-color":["case",["boolean",["feature-state","hover"],false],"rgba(137,72,217,1)","rgba(221,231,51,1)"]}},{"id":"object-line-fill","type":"line","source":"resources-3826a11e-9517-11ed-b0aa-8c85907a3f93","source-layer":"3826a11e-9517-11ed-b0aa-8c85907a3f93","layout":{"visibility":"visible"},"filter":["all",["==","$type","LineString"],["==","total",1]],"paint":{"line-width":2,"line-color":["case",["boolean",["feature-state","hover"],false],"rgba(93,53,140,0.7)","rgba(114,216,60,0.7)"]}},{"id":"object-point-halo","type":"circle","source":"resources-3826a11e-9517-11ed-b0aa-8c85907a3f93","source-layer":"3826a11e-9517-11ed-b0aa-8c85907a3f93","layout":{"visibility":"visible"},"filter":["all",["==","$type","Point"],["==","total",1]],"paint":{"circle-radius":["case",["boolean",["feature-state","hover"],false],7,4],"circle-color":["case",["boolean",["feature-state","hover"],false],"rgba(137,72,217,1)","rgba(221,231,51,1)"]}},{"id":"object-point-fill","type":"circle","source":"resources-3826a11e-9517-11ed-b0aa-8c85907a3f93","source-layer":"3826a11e-9517-11ed-b0aa-8c85907a3f93","layout":{"visibility":"visible"},"filter":["all",["==","$type","Point"],["==","total",1]],"paint":{"circle-radius":["case",["boolean",["feature-state","hover"],false],5,2],"circle-color":["case",["boolean",["feature-state","hover"],false],"rgba(93,53,140,0.7)","rgba(114,216,60,0.7)"]}},{"id":"object-cluster-halo","type":"circle","source":"resources-3826a11e-9517-11ed-b0aa-8c85907a3f93","source-layer":"3826a11e-9517-11ed-b0aa-8c85907a3f93","layout":{"visibility":"visible"},"filter":["all",["==","$type","Point"],[">","total",1]],"paint":{"circle-radius":{"property":"total","stops":[[0,22],[50,24],[100,26],[200,28],[400,30],[800,32],[1200,34],[1600,36],[2000,38],[2500,40],[3000,42],[4000,44],[5000,46]]},"circle-color":"rgba(221,231,51,1)"}},{"id":"object-cluster-fill","type":"circle","source":"resources-3826a11e-9517-11ed-b0aa-8c85907a3f93","source-layer":"3826a11e-9517-11ed-b0aa-8c85907a3f93","layout":{"visibility":"visible"},"filter":["all",["==","$type","Point"],[">","total",1]],"paint":{"circle-radius":{"property":"total","type":"exponential","stops":[[0,12],[50,14],[100,16],[200,18],[400,20],[800,22],[1200,24],[1600,26],[2000,28],[2500,30],[3000,32],[4000,34],[5000,36]]},"circle-color":"rgba(114,216,60,0.7)"}},{"id":"object-cluster-number","type":"symbol","source":"resources-3826a11e-9517-11ed-b0aa-8c85907a3f93","source-layer":"3826a11e-9517-11ed-b0aa-8c85907a3f93","layout":{"text-field":"{total}","text-size":10},"paint":{"text-color":"#fff"},"filter":["all",[">","total",1]]}]
 
-### Physical Thing  
+## Physical Thing  
 
 	[{"id":"physical-thing-polygon-fill","type":"fill","source":"resources-d80e5eaa-32ea-11ec-a2aa-024e0d439fdb","source-layer":"d80e5eaa-32ea-11ec-a2aa-024e0d439fdb","layout":{"visibility":"visible"},"filter":["all",["==","$type","Polygon"],["==","total",1]],"paint":{"fill-color":["case",["boolean",["feature-state","hover"],false],"rgba(171,162,29,0.65)","rgba(48,126,217,0.65)"]}},{"id":"physical-thing-polygon-outline","type":"line","source":"resources-d80e5eaa-32ea-11ec-a2aa-024e0d439fdb","source-layer":"d80e5eaa-32ea-11ec-a2aa-024e0d439fdb","layout":{"visibility":"visible"},"filter":["all",["==","$type","Polygon"],["==","total",1]],"paint":{"line-width":3,"line-color":["case",["boolean",["feature-state","hover"],false],"rgba(188,217,26,0.7)","rgba(55,195,248,0.7)"]}},{"id":"physical-thing-line-halo","type":"line","source":"resources-d80e5eaa-32ea-11ec-a2aa-024e0d439fdb","source-layer":"d80e5eaa-32ea-11ec-a2aa-024e0d439fdb","layout":{"visibility":"visible"},"filter":["all",["==","$type","LineString"],["==","total",1]],"paint":{"line-width":4,"line-color":["case",["boolean",["feature-state","hover"],false],"rgba(188,217,26,0.7)","rgba(55,195,248,0.7)"]}},{"id":"physical-thing-line-fill","type":"line","source":"resources-d80e5eaa-32ea-11ec-a2aa-024e0d439fdb","source-layer":"d80e5eaa-32ea-11ec-a2aa-024e0d439fdb","layout":{"visibility":"visible"},"filter":["all",["==","$type","LineString"],["==","total",1]],"paint":{"line-width":2,"line-color":["case",["boolean",["feature-state","hover"],false],"rgba(171,162,29,0.65)","rgba(48,126,217,0.65)"]}},{"id":"physical-thing-point-halo","type":"circle","source":"resources-d80e5eaa-32ea-11ec-a2aa-024e0d439fdb","source-layer":"d80e5eaa-32ea-11ec-a2aa-024e0d439fdb","layout":{"visibility":"visible"},"filter":["all",["==","$type","Point"],["==","total",1]],"paint":{"circle-radius":10,"circle-color":["case",["boolean",["feature-state","hover"],false],"rgba(188,217,26,0.7)","rgba(55,195,248,0.7)"]}},{"id":"physical-thing-point-fill","type":"circle","source":"resources-d80e5eaa-32ea-11ec-a2aa-024e0d439fdb","source-layer":"d80e5eaa-32ea-11ec-a2aa-024e0d439fdb","layout":{"visibility":"visible"},"filter":["all",["==","$type","Point"],["==","total",1]],"paint":{"circle-radius":6,"circle-color":["case",["boolean",["feature-state","hover"],false],"rgba(171,162,29,0.65)","rgba(48,126,217,0.65)"]}},{"id":"physical-thing-cluster-halo","type":"circle","source":"resources-d80e5eaa-32ea-11ec-a2aa-024e0d439fdb","source-layer":"d80e5eaa-32ea-11ec-a2aa-024e0d439fdb","layout":{"visibility":"visible"},"filter":["all",["==","$type","Point"],[">","total",1]],"paint":{"circle-radius":{"property":"total","stops":[[0,22],[50,24],[100,26],[200,28],[400,30],[800,32],[1200,34],[1600,36],[2000,38],[2500,40],[3000,42],[4000,44],[5000,46]]},"circle-color":"rgba(55,195,248,0.7)"}},{"id":"physical-thing-cluster-fill","type":"circle","source":"resources-d80e5eaa-32ea-11ec-a2aa-024e0d439fdb","source-layer":"d80e5eaa-32ea-11ec-a2aa-024e0d439fdb","layout":{"visibility":"visible"},"filter":["all",["==","$type","Point"],[">","total",1]],"paint":{"circle-radius":{"property":"total","type":"exponential","stops":[[0,12],[50,14],[100,16],[200,18],[400,20],[800,22],[1200,24],[1600,26],[2000,28],[2500,30],[3000,32],[4000,34],[5000,36]]},"circle-color":"rgba(48,126,217,0.65)"}},{"id":"physical-thing-cluster-text","type":"symbol","source":"resources-d80e5eaa-32ea-11ec-a2aa-024e0d439fdb","source-layer":"d80e5eaa-32ea-11ec-a2aa-024e0d439fdb","layout":{"text-field":"{total}","text-size":10},"paint":{"text-color":"#fff"},"filter":["all",[">","total",1]]}]
 
-### Place  
+## Place  
 
 	[{"id":"place-polygon-fill","type":"fill","source":"resources-6c874bcf-c071-11e9-9605-a4d18cec433a","source-layer":"6c874bcf-c071-11e9-9605-a4d18cec433a","layout":{"visibility":"visible"},"filter":["all",["==","$type","Polygon"],["==","total",1]],"paint":{"fill-color":["case",["boolean",["feature-state","hover"],false],"rgba(63,171,81,0.65)","rgba(171,81,55,0.65)"]}},{"id":"place-polygon-outline","type":"line","source":"resources-6c874bcf-c071-11e9-9605-a4d18cec433a","source-layer":"6c874bcf-c071-11e9-9605-a4d18cec433a","layout":{"visibility":"visible"},"filter":["all",["==","$type","Polygon"],["==","total",1]],"paint":{"line-width":2,"line-color":["case",["boolean",["feature-state","hover"],false],"rgba(104,247,124,0.7)","rgba(247,108,67,0.7)"]}},{"id":"place-line-halo","type":"line","source":"resources-6c874bcf-c071-11e9-9605-a4d18cec433a","source-layer":"6c874bcf-c071-11e9-9605-a4d18cec433a","layout":{"visibility":"visible"},"filter":["all",["==","$type","LineString"],["==","total",1]],"paint":{"line-width":4,"line-color":["case",["boolean",["feature-state","hover"],false],"rgba(104,247,124,0.7)","rgba(247,108,67,0.7)"]}},{"id":"place-line-fill","type":"line","source":"resources-6c874bcf-c071-11e9-9605-a4d18cec433a","source-layer":"6c874bcf-c071-11e9-9605-a4d18cec433a","layout":{"visibility":"visible"},"filter":["all",["==","$type","LineString"],["==","total",1]],"paint":{"line-width":2,"line-color":["case",["boolean",["feature-state","hover"],false],"rgba(63,171,81,0.65)","rgba(171,81,55,0.65)"]}},{"id":"place-point-halo","type":"circle","source":"resources-6c874bcf-c071-11e9-9605-a4d18cec433a","source-layer":"6c874bcf-c071-11e9-9605-a4d18cec433a","layout":{"visibility":"visible"},"filter":["all",["==","$type","Point"],["==","total",1]],"paint":{"circle-radius":["case",["boolean",["feature-state","hover"],false],10,8],"circle-color":["case",["boolean",["feature-state","hover"],false],"rgba(104,247,124,0.7)","rgba(247,108,67,0.7)"]}},{"id":"place-point-fill","type":"circle","source":"resources-6c874bcf-c071-11e9-9605-a4d18cec433a","source-layer":"6c874bcf-c071-11e9-9605-a4d18cec433a","layout":{"visibility":"visible"},"filter":["all",["==","$type","Point"],["==","total",1]],"paint":{"circle-radius":["case",["boolean",["feature-state","hover"],false],8,6],"circle-color":["case",["boolean",["feature-state","hover"],false],"rgba(63,171,81,0.65)","rgba(171,81,55,0.65)"]}},{"id":"place-cluster-halo","type":"circle","source":"resources-6c874bcf-c071-11e9-9605-a4d18cec433a","source-layer":"6c874bcf-c071-11e9-9605-a4d18cec433a","layout":{"visibility":"visible"},"filter":["all",["==","$type","Point"],[">","total",1]],"paint":{"circle-radius":{"property":"total","stops":[[0,22],[50,24],[100,26],[200,28],[400,30],[800,32],[1200,34],[1600,36],[2000,38],[2500,40],[3000,42],[4000,44],[5000,46]]},"circle-color":["case",["boolean",["feature-state","hover"],false],"rgba(104,247,124,0.7)","rgba(247,108,67,0.7)"]}},{"id":"place-cluster-fill","type":"circle","source":"resources-6c874bcf-c071-11e9-9605-a4d18cec433a","source-layer":"6c874bcf-c071-11e9-9605-a4d18cec433a","layout":{"visibility":"visible"},"filter":["all",["==","$type","Point"],[">","total",1]],"paint":{"circle-radius":{"property":"total","type":"exponential","stops":[[0,12],[50,14],[100,16],[200,18],[400,20],[800,22],[1200,24],[1600,26],[2000,28],[2500,30],[3000,32],[4000,34],[5000,36]]},"circle-color":["case",["boolean",["feature-state","hover"],false],"rgba(63,171,81,0.65)","rgba(171,81,55,0.65)"]}},{"id":"place-cluster-text","type":"symbol","source":"resources-6c874bcf-c071-11e9-9605-a4d18cec433a","source-layer":"6c874bcf-c071-11e9-9605-a4d18cec433a","layout":{"text-field":"{total}","text-size":10},"paint":{"text-color":"#fff"},"filter":["all",[">","total",1]]}]

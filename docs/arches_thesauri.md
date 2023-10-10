@@ -35,13 +35,3 @@
     - Path: "Dataset" > "FT-MIR Dataset"    
 
 ---  
-
-# Links to other sections  
-
-- [0: Best Practices](0_best_practices.md)  
-- [1: Install Dependencies](0_install_dependencies.md)  
-- [2: Install Clean](1_install_core.md)  
-- [2: Install from Clone](1_install_from_clone.md)  
-- [3: Missing Imports](3_missing_imports.md)  
-
----
