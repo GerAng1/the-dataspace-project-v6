@@ -4,21 +4,29 @@ except ImportError:
     pass
 
 ###########################################
-### ADDING VARIABLES HERE INSTEAD OF    ###
-### MODIFYING SETTINGS.PY SEEMS CLEANER ###
+### MODIFY VARIABLES HERE INSTEAD OF    ###
+### IN SETTINGS.PY                      ###
 ###########################################
 
-ALLOWED_HOSTS = ["150.145.56.88"]
-APP_NAME = "DataSpace"
+# Add here the IP Address of the server where its running
+ALLOWED_HOSTS = ["127.0.0.1",]
 
+APP_NAME = "DataSpace"
 APP_TITLE = 'DataSpace | Heritage Data Management'
 COPYRIGHT_TEXT = 'All Rights Reserved.'
 COPYRIGHT_YEAR = '2023'
+
+# SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 # Hide nodes and cards in a report that have no data
 HIDE_EMPTY_NODES_IN_REPORT = True
 
+# list of languages to display in the language switcher,
+# if left empty or with a single entry then the switch won't be displayed
+# language codes need to be all lower case with the form:
+# {langcode}-{regioncode} eg: en, en-gb ....
+# a list of language codes can be found here http://www.i18nguy.com/unicode/language-identifiers.html
 LANGUAGES = [
     # ("de", _("German")),
     ("en", "English"),
