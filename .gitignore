@@ -11,5 +11,8 @@ CACHE
 
 ENV/
 elasticsearch/
+elasticsearch-master/
+elasticsearch-secondary/
 cantaloupe/
 cidoc/
+packages/*
