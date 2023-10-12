@@ -30,9 +30,7 @@ This manual is divided in the following sections:
 - `java -Dcantaloupe.config=./cantaloupe/cantaloupe.properties -Xmx2g -jar cantaloupe-4.1.11.war`
 - In command line run the following SQL query to show Image Service Manager in the left-hand navbar:
   - `sudo -i -u postgres`  
-  - `psql`  
-  - `\c arches_project_v6`
-  - `UPDATE plugins SET config = '{"show":true}' WHERE name = 'Image Service Manager';`
+  - `psql -d arches-project-v6 -c "update plugins set config = '{"show":true}' where name = 'Image Service Manager';"`
 
 
 # Adding New Components

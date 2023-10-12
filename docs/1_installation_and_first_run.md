@@ -28,6 +28,8 @@ This manual is divided in the following sections:
 - [4. Running DataSpace for the first time](#4-running-dataspace-for-the-first-time)
   - [Add node\_modules to project](#add-node_modules-to-project)
   - [Create the database](#create-the-database)
+  - [Set IP address of server](#set-ip-address-of-server)
+  - [Run the server](#run-the-server)
 - [5. Future DataSpace runs](#5-future-dataspace-runs)
 
 
@@ -43,7 +45,9 @@ Whether you're installing the Desktop or Server version of Ubuntu. We suggest th
 # 2. Installing DataSpace Requirements on Ubuntu Server/Desktop  
 Assuming we're on a clean Ubuntu install:
 
-- `sudo apt install build-essential lbssl-dev libffi-dev zip -y`
+- `sudo apt update`
+- `sudo apt upgrade`
+- `sudo apt install build-essential libssl-dev libffi-dev default-jre zip -y`
 - `sudo apt install python3-dev python3-pip python3-venv -y`
 
 ## Postgres & PostGIS
@@ -55,11 +59,11 @@ Assuming we're on a clean Ubuntu install:
 ## Node 16.20.2 & Yarn 1
 Arches recommends this version for best compatibility
 1. Install nvm (Node Version Manager)  
-On https://www.nvm.sh we found the latest version 0.39.5. You can enert to confirm or modify with the latest version.
+On https://www.nvm.sh we found the latest version 0.39.5. You can enter to confirm or modify with the latest version.
    - `wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash`
    - Confirm with:
      - `command -v nvm`
-       - If it doesn't work, close and reopen the terminal.
+       - If nothing appears, close and reopen the terminal.
    - `nvm install 16.20.2`
    - Confirm with:
    - `nvm -v`
@@ -79,7 +83,7 @@ We like to call this directory "/opt/DIGILAB/"
 - `cd /opt`
 - `sudo mkdir DIGILAB`
 
-Because we're in a root folder, all of our commands will require `sudo`. This will eventually bring problems, particularly when creating our Python Virtual Environment and try to install packages within the venv. So we will change the owner of the DIGILAB/ directory:
+Because we're in a root folder, all of our commands will require `sudo`. This will eventually bring problems, particularly when creating our Python Virtual Environment and try to install packages within the venv. So we will change the owner of the DIGILAB/ directory to our username:
 
 - `sudo chown -R dhilab-lecce:dhilab-lecce /opt/DIGILAB`
 
@@ -88,18 +92,15 @@ Keep in this directory everything related with DIGILAB. Inside this directory we
 ## Cloning from Github repository  
 We will be cloning the repository using SSH. It will take additional steps in the initial configuration, but will avoid extra work in the future.
 
-- `ssh-keygen -t rsa -b 4096`
-  - leave next fields on their default
-  - **You will need to insert public key in the allowed SSH Keys in Github.**
-    - `cat ~/.ssh/id_rsa.pub`
-    - Log in to your GitHub account.
-    - Navigate to “Settings”.
-    - Click on “SSH and GPG keys” in the left menu
-    - Click on the “New SSH key” button.
-    - Or directly follow this link https://github.com/settings/ssh/new.
-    - Add a short descriptive title in the Title field.
-    - Paste the public key in the Key field
-    - Click on the "Add SSH key" button to finalize the process.
+- Generate SSH key to use for connection with Github: 
+  - `ssh-keygen -t rsa -b 4096`
+- Leave next fields on their default
+- **You will need to insert public key in the allowed SSH Keys in Github.**
+  - `cat ~/.ssh/id_rsa.pub`
+  - Follow this link https://github.com/settings/ssh/new and log in to your GitHub account.
+  - Add a short descriptive title in the Title field.
+  - Paste the public key in the Key field
+  - Click on the "Add SSH key" button to finalize the process.
 - `cd /opt/DIGILAB`
 - `git clone git@github.com:GerAng1/the-dataspace-project-v6.git`
 
@@ -109,7 +110,7 @@ We will be cloning the repository using SSH. It will take additional steps in th
   - `psql`  
   - `ALTER USER postgres WITH PASSWORD 'postgis';`  
   
-- Create postgis database:  
+- Create postgis database & add GIS extension :  
   - `CREATE DATABASE template_postgis;`  
   - `\c template_postgis;`  
   - `CREATE EXTENSION postgis;`  
@@ -126,43 +127,60 @@ Note that the manual specifies version 7.4, but this is because that was the cur
 - `mv elasticsearch-7.17.13 elasticsearch`
 - `rm elasticsearch-7.17.13-linux-x86_64.tar.gz`
 - `./elasticsearch/bin/elasticsearch`
-  - This will take a moment, some files are being created, wait until a mesage saying setup has been done appears.
-- `CTRL + C`
+- **This will keep running. Leave this program open and continue in a new terminal window.**
 
 ## Create & setup Python Virtual Environment  
+In a new terminal we'll setup a Virtual Environment that allows us to manage the package installations for DataSpace in an isolated way.
 - `cd /opt/DIGILAB/the-dataspace-project-v6`  
 - `python3 -m venv ENV`  
 - `source ENV/bin/activate`  
 - `pip install -U pip setuptools wheel`  
 - `pip install arches==6.2.5`  
 
-
 # 4. Running DataSpace for the first time  
-The main steps to run DataSpace the first time are:  
-- Add node_modules to project  
-- Create the database  
-
-**From now own, make sure everything is run from the (ENV) virtual environment with:**  
-- **`source /opt/DIGILAB/the-dataspace-project-v6/ENV/bin/activate`**
-
-**From now own, make sure you are running elasticsearch at all times in a second terminal with:**  
+From now own, make sure you are running elasticsearch at all times in a **second terminal** with:  
 - **`cd /opt/DIGILAB/the-dataspace-project-v6/elasticsearch`**  
 - **`./bin/elasticsearch`**  
 
+From now own, make sure everything is run from the (ENV) virtual environment with:  
+- **`source /opt/DIGILAB/the-dataspace-project-v6/ENV/bin/activate`**
+
+The main steps to run DataSpace the first time are:  
+1. Add node_modules to project  
+2. Create the database 
+3. Set the IP address of the server where its running 
+4. Run the server
+
 ## Add node_modules to project
-- `cd /opt/DIGILAB/the-dataspace-project-v6/arches_project`
+- `cd /opt/DIGILAB/the-dataspace-project-v6/arches_project-v6`
 - `yarn install`
   - This might take a minute or two
 
 ## Create the database
 - `cd /opt/DIGILAB/the-dataspace-project-v6`  
 - `python manage.py setup_db`
-  - Confirm with `y`
+  - Confirm "destroy & rebuild database" with '`y`' 
 
-Once the command has finished executing with no errors, run the server:
-- `python manage.py runserver`  
+## Set IP address of server
+Once the `setup_db` command has finished executing with no errors, we have to add the IP address a variable in the settings file to be able to access it.
 
-**DataSpace should be now running and be accesible from a browser at: `127.0.0.1:8000`**
+- Create a copy of settings_local.py.template & rename it to settings_local.py: 
+  - `cd /opt/DIGILAB/the-dataspace-project-v6/arches-project-v6`
+  - `cp settings_local.py.template settings_local.py`  
+- Find your computers IP address:
+  - `hostname -I`
+- Replace "XXX.XXX.XXX.XXX" with your IP address and run the command:
+  - `cd ../docs/config-scripts` 
+  - `python add_local_ip.py ALLOWED_HOSTS.json new_ip XXX.XXX.XXX.XXX`  
+    - Be sure to replace XXX.XXX.XXX.XXX with your computer's IP address!
+
+## Run the server
+DataSpace provides a local server service to run and test the platform while on a development phase. You can activate and run the server with:
+- `cd /opt/DIGILAB/the-dataspace-project-v6`
+- `python manage.py runserver XXX.XXX.XXX.XXX:8000`
+  - Replace "XXX.XXX.XXX.XXX" with your IP address!
+
+**DataSpace should be now running and be accesible from a browser with any computer on the same network on: `XXX.XXX.XXX.XXX:8000`**
 
 
 # 5. Future DataSpace runs
@@ -177,4 +195,3 @@ After the initial setup, a reboot, or stopping all processes, running DataSpace 
 
 2. Run server
    - `python manage.py runserver`
-
