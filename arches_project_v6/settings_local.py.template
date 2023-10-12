@@ -8,8 +8,22 @@ except ImportError:
 ### IN SETTINGS.PY                      ###
 ###########################################
 
+import json
+
+def load_config(config_file):
+    with open(config_file, 'r') as file:
+        return json.load(file)
+
+# Load the configuration file
+config_file = '../docs/config-scripts/ALLOWED_HOSTS.json'  # Provide the path to your config file
+config_data = load_config(config_file)
+
+# Use the configuration data in your script
 # Add here the IP Address of the server where its running
-ALLOWED_HOSTS = ["127.0.0.1",]
+ALLOWED_HOSTS = config_data.get('new_ip', '["127.0.0.1",]')
+
+# Or comment the line above and uncomment and add here the IP Address of the server where its running
+# ALLOWED_HOSTS = ["127.0.0.1",]
 
 APP_NAME = "DataSpace"
 APP_TITLE = 'DataSpace | Heritage Data Management'
