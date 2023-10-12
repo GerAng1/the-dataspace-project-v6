@@ -1,0 +1,91 @@
+{% extends "views/report-templates/default_dataspace.htm" %}
+{% load i18n %}
+
+{% block body %}
+    <!--ko if: hasProvisionalData() && (editorContext === false) -->
+    <div class="report-provisional-flag">{% trans 'This resource has provisional edits (not displayed in this report) that are pending review' %}</div>
+    <!--/ko-->
+    <!--ko if: hasProvisionalData() && (editorContext === true && report.userisreviewer === true) -->
+    <div class="report-provisional-flag">{% trans 'This resource has provisional edits (not displayed in this report) that are pending review' %}</div>
+    <!--/ko-->
+    <!--ko if: hasProvisionalData() && (editorContext === true && report.userisreviewer === false) -->
+    <div class="report-provisional-flag">{% trans 'This resource has provisional edits that are pending review' %}</div>
+    <!--/ko-->
+
+    <div class="rp-report-section relative rp-report-section-root dataspace-oggetto">
+        <div class="rp-report-section-title row">
+            <!-- ko foreach: { data: report.cards, as: 'card' } -->
+                <!-- ko if: $parent.hideEmptyNodes() === false || card.tiles().length > 0 -->
+
+                  <!-- ko if: card.nodegroupid.startsWith('dc8db46e') -->
+                    <div class="rp-card-section col-12 no-label">
+                        <!-- ko component: {
+                            name: card.model.cardComponentLookup[card.model.component_id()].componentname,
+                            params: {
+                                state: 'report',
+                                preview: $parent.report.preview,
+                                card: card,
+                                pageVm: {...$root, report: $parent.report},
+                                hideEmptyNodes: true
+                            }
+                        } --> <!-- /ko -->
+                    </div>
+                  <!-- /ko -->
+                  <!-- ko if: card.nodegroupid.startsWith('3826a11e') -->
+                    <div class="rp-card-section col-lg-6 col-sm-12">
+                        <!-- ko component: {
+                            name: card.model.cardComponentLookup[card.model.component_id()].componentname,
+                            params: {
+                                state: 'report',
+                                preview: $parent.report.preview,
+                                card: card,
+                                pageVm: {...$root, report: $parent.report},
+                                hideEmptyNodes: true
+                            }
+                        } --> <!-- /ko -->
+                    </div>
+                    <div data-bind="component: {
+                          name: 'report-header-map',
+                          params: $data
+                        }" class="rp-card-section report-map col-lg-6 col-sm-12">
+                    </div>
+                  <!-- /ko -->
+                  <!-- ko if: card.nodegroupid.startsWith('4b1b0a3c') || card.nodegroupid.startsWith('592097e6') -->
+                    <div class="rp-card-section col-12">
+                        <!-- ko component: {
+                            name: card.model.cardComponentLookup[card.model.component_id()].componentname,
+                            params: {
+                                state: 'report',
+                                preview: $parent.report.preview,
+                                card: card,
+                                pageVm: {...$root, report: $parent.report},
+                                hideEmptyNodes: true
+                            }
+                        } --> <!-- /ko -->
+                    </div>
+                  <!-- /ko -->
+                  <!-- TODO Refactor to regexp? -->
+                  <!-- ko ifnot: card.nodegroupid.startsWith('dc8db46e') ||
+                                 card.nodegroupid.startsWith('592097e6') ||
+                                 card.nodegroupid.startsWith('4b1b0a3c') ||
+                                 card.nodegroupid.startsWith('3826a11e')
+                  -->
+                  <div class="rp-card-section col-lg-6 col-sm-12">
+                      <!-- ko component: {
+                          name: card.model.cardComponentLookup[card.model.component_id()].componentname,
+                          params: {
+                              state: 'report',
+                              preview: $parent.report.preview,
+                              card: card,
+                              pageVm: {...$root, report: $parent.report},
+                              hideEmptyNodes: true
+                          }
+                      } --> <!-- /ko -->
+                  </div>
+                  <!-- /ko -->
+
+                <!-- /ko -->
+            <!-- /ko -->
+        </div>
+    </div>
+    {% endblock body %}
