@@ -35,23 +35,26 @@ This manual is divided in the following sections:
 
 # Adding New Components
 ## Reports
-To add "Aton" Report:
+Please check the official arches documentation [Resource Reports section](https://arches.readthedocs.io/en/6.2/extensions/resource-reports/#resource-reports) on how to register a new Report Template.
 
-aton.json
+To add "Aton" Report verify you have these files:
 
+reports/aton.json
 templates/views/report-templates/aton.htm
 templates/views/components/sketchfab/sketchfab-canvas.htm
 media/css/sketchfab.css
 media/js/reports/aton.js
-*(IMPORTANT TO NOTE THAT HERE THERE ARE SOME ID REFERENCES THAT MAY BE BROKEN IF YOU DON'T IMPORT DE EXACT RESOURCE MODEL USED)
-
 media/js/views/components/reports/sketchfab-setup.js
 media/js/utils/get-query-string-parameter.js
+
+*(IMPORTANT TO NOTE THAT HERE THERE ARE SOME ID REFERENCES THAT MAY BE BROKEN IF YOU DON'T IMPORT DE EXACT RESOURCE MODEL USED)
 
 - `python manage.py report register -s /path/to/aton.json`
 
 ## Workflows
+Please check the official arches documentation [Workflows section](https://arches.readthedocs.io/en/6.2/extensions/workflows/) on how to register new Workflows.
 
+(STILL UNDER DEVELOPMENT)
 
 
 # Advanced Elasticsearch settings
@@ -99,7 +102,7 @@ You’ll need to start/stop each of these instances individually, but you should
 Nothing about your project’s settings.py should change
 
 **Yet to be tested.** You can furthermore allocate more memory to each of the nodes' heap.  
-**Yet to be confirmed.** We **suspect** allocating between 4GB amd 8GB to the master node for cluster coordination and management tasks, while alocating 16GB to 32GB to the secondary (Data) node to manage Elasticsearch indices and indexing & search. 
+**Yet to be confirmed.** We **suspect** allocating between 4GB and 8GB to the master node for cluster coordination and management tasks, while alocating 16GB to 32GB to the secondary (Data) node to manage Elasticsearch indices and indexing & search. 
 
 To set a different heap size for each node, you will not be able to do it by setting the environment variable called `ES_HEAP_SIZE`. Pass in the heap size via JVM flags when starting the process:
 

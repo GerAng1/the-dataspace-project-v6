@@ -1,3 +1,7 @@
+"""Modifies a given variable in a given JSON file.
+ex. add_local_ip.py ALLOWED_HOSTS.json new_ip 192.168.362.12
+Would modify the variable 'new_ip' with the value '192.168.362.12' within the file 'ALLOWED_HOSTS.json'.
+"""
 import argparse
 import json
 

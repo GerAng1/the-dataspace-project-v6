@@ -17,11 +17,11 @@ This manual is divided in the following sections:
 - [DataSpace Installation](#dataspace-installation)
   - [1. Ubuntu Setup](#1-ubuntu-setup)
   - [2. Installing DataSpace Requirements on Ubuntu Server/Desktop](#2-installing-dataspace-requirements-on-ubuntu-serverdesktop)
-    - [Povstgres \& PostGIS](#postgres--postgis)
+    - [Postgres \& PostGIS](#postgres--postgis)
     - [Node 16.20.2 \& Yarn 1](#node-16202--yarn-1)
   - [3. Installing the Arches Project](#3-installing-the-arches-project)
     - [Cloning from Github repository](#cloning-from-github-repository)
-      - [Step 1: Create SSH keys](#step-1-create-ssh-keys)
+      - [Step 1: Generate SSH keys](#step-1-generate-ssh-keys)
       - [Step 2: Paste text output in GitHub Settings](#step-2-paste-text-output-in-github-settings)
       - [Step 3: Clone reposiotry onto server:](#step-3-clone-reposiotry-onto-server)
     - [Setup PostgreSQL](#setup-postgresql)
@@ -38,15 +38,20 @@ This manual is divided in the following sections:
 ## 1. Ubuntu Setup  
 Whether you're installing the Desktop or Server version of Ubuntu. We suggest the following names when setting the initial configuration Login Details. This manual will proceed using these names:
 
-- Your name: dhilab-lecce
-- Your server's/computer's name: dataspace
-- Pick a username: dhilab-lecce
-- Choose a password: [CREATE A PASSWORD]
+- Your name: `dhilab-lecce`
+- Your server's/computer's name: `dataspace`
+- Pick a username: `dhilab-lecce`
+- Choose a password: `[CREATE A PASSWORD]`
 
 *Remember to substitute accordingly with your username.
 
 If using a server, you will need to install `openssh-server` to be able to access the server from a remote computer:
-- `sudo apt install openssh-server -y`
+- Select the option to "Install OpenSSH server"
+- You can leave the rest of the fields empty.
+
+Finish Setup  
+The final screen of the installer shows the progress of the installer and allows viewing of the full log file. Once the install has completed and security updates installed, the installer waits for confirmation before restarting.
+- Reboot
 
 **Continue on a remote session using SSH**  
 - `ssh dhilab-lecce@xxx.xxx.xxx.xxx`
@@ -112,7 +117,7 @@ We will be cloning the repository using SSH. It will take additional steps in th
 - Log in to your GitHub account.
 - Follow this link https://github.com/settings/ssh/new and log into your GitHub account.
 - Add a short descriptive title in the `Title` field.
-  - "My DataSpace SSH Public Key" is fine.
+  - "[USER] DataSpace SSH Public Key" is fine.
 - Paste the public key in the `Key` field
 - Click on the "Add SSH key" button to finalize the process.
 
@@ -124,7 +129,8 @@ We will be cloning the repository using SSH. It will take additional steps in th
 - Set `postgres` user password:  
   - `sudo -i -u postgres`  
   - `psql`  
-  - `ALTER USER postgres WITH PASSWORD 'postgis';`  
+  - `ALTER USER postgres WITH PASSWORD 'postgis';`
+    - You should eventually change this to make it more secure. See 'moving_to_production.md'.  
   
 - Create postgis database & add GIS extension:  
   - `CREATE DATABASE template_postgis;`  
