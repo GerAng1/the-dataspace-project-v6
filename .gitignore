@@ -16,3 +16,5 @@ elasticsearch-secondary/
 cantaloupe/
 cidoc/
 packages/*
+
+docs/config-scripts/ALLOWED_HOSTS.json

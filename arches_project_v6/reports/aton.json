@@ -1,0 +1,9 @@
+{
+    "name": "Aton Template",
+    "component": "reports/aton",
+    "defaultconfig": {},
+    "description": "Custom Report for the Aton Resource Model",
+    "componentname": "aton-report",
+    "templateid": "60000000-0000-0000-0000-000000000008"
+    
+}

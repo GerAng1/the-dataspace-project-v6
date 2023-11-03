@@ -1,0 +1,8 @@
+{
+    "name": "Marmora Report",
+    "component": "reports/marmora",
+    "defaultconfig": {},
+    "description": "Custom report for the Marmora Phrygiae Models.",
+    "componentname": "marmora",
+    "templateid": "e4e8d54f-c666-193c-1404-ab4ee0204b13"
+}
