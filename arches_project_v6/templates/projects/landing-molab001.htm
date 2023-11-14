@@ -50,11 +50,14 @@ Data Space Blue Darker: #1E2D40 -->
     <div class="order-2 order-md-1 col-12 col-md-5">
       <h1>{{project_name}}</h1>
       <p>
+          {% trans "This section is dedicated to the illuminated manuscripts investigated by MOLAB and aims to offer data, tools and digital services to the wide scientific community interested in their study, from an interdisciplinary perspective." %}
+      </p>
+      <p>
           {% trans "MOLAB.it is the Italian platform of the E-RIHS research infrastructure (European Research Infrastructure for Heritage Science), https://www.e-rihs.it/laboratori-mobili/. The platform allows access to the techniques and portable tools of the MOLAB-CNR and CHNet-INFN mobile laboratories and offers researchers in the cultural heritage sector (art historians, archaeologists, restorers, chemists, physicists, biologists, etc.) the possibility of carrying out advanced non-invasive diagnostic projects, with in situ investigations, functional to multidisciplinary research in the sectors of knowledge, conservation and fruition of the Italian cultural heritage." %}
       </p>
       <p>
-          {% trans "It offers the most innovative methodologies developed and distributed throughout the national territory, for a better interpretation, knowledge, conservation and restoration of cultural heritage." %}
-      </p>
+        {% trans "It offers the most innovative methodologies developed and distributed throughout the national territory, for a better interpretation, knowledge, conservation and restoration of cultural heritage." %}
+    </p>
 
       <p class="lead"><i class="bi bi-search"></i> {% trans "Things you can search for:" %}</p>
 
@@ -111,6 +114,7 @@ Data Space Blue Darker: #1E2D40 -->
           <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
             <div class="accordion-body">
               <p>
+                {% comment %} <strong>MOLAB.it is compromised by several projects.</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a pharetra tortor, ut volutpat massa. {% endcomment %}
                 MOLAB.it is compromised by several projects.
               </p>
 
@@ -133,13 +137,13 @@ Data Space Blue Darker: #1E2D40 -->
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingTwo">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              {% trans "Objects" %}
+              {% trans "Places" %}
             </button>
           </h2>
           <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
             <div class="accordion-body">
               <p>
-                Filter by the different objects we have in our database.
+                Filter by the different places we have in our database.
               </p>
 
               <p class="lead">{% trans "Examples you can search for:" %}</p>
@@ -147,14 +151,21 @@ Data Space Blue Darker: #1E2D40 -->
               <div class="list-group mt-2">
                 <a class="list-group-item d-flex justify-content-between align-items-start" href='{% url "search_home" %}{{manuscripts_filter}}'>
                   <div class="ms-2 me-auto">
-                    <div class="fw-bold">{% trans "Manuscripts" %}</div>
+                    <div class="fw-bold">{% trans "Perugia, Biblioteca Augusta" %}</div>
                     {% comment %} {% trans "Small description" %} {% endcomment %}
                   </div>
                   <span class="badge bg-primary rounded-pill">6</span>
                 </a>
                 <a class="list-group-item d-flex justify-content-between align-items-start" href='{% url "search_home" %}{{empty_filter}}'>
                   <div class="ms-2 me-auto">
-                    <div class="fw-bold">{% trans "Sculptures" %}</div>
+                    <div class="fw-bold">{% trans "Città del Vaticano, Biblioteca Apostolica Vaticana" %}</div>
+                    {% comment %} {% trans "Small description" %} {% endcomment %}
+                  </div>
+                  <span class="badge bg-primary rounded-pill">0</span>
+                </a>
+                <a class="list-group-item d-flex justify-content-between align-items-start" href='{% url "search_home" %}{{empty_filter}}'>
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold">{% trans "Rossano, Museo Diocesano e del Codex" %}</div>
                     {% comment %} {% trans "Small description" %} {% endcomment %}
                   </div>
                   <span class="badge bg-primary rounded-pill">0</span>
@@ -206,7 +217,7 @@ Data Space Blue Darker: #1E2D40 -->
       </div>
     </div>
     <div class="order-1 order-md-2 col-12 col-md-7 text-center">
-      <img src="{% static 'img/molab001/pollock01.jpg' %}" class="img-fluid" alt="MOLAB image">
+      <img src="{% static 'img/molab001/molab003.jpg' %}" class="img-fluid" alt="MOLAB image">
     </div>
   </div>
 </div>

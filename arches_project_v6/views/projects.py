@@ -58,7 +58,7 @@ def molab001(request):
         request,
         "projects/landing-molab001.htm",
         {
-            "project_name": "Research projects of the Italian Mobile Laboratories (MOLAB.it) of E-RIHS",
+            "project_name": "E-RIHS MOLAB Projects: illuminated manuscripts",
             "app_title": settings.APP_TITLE,
             "copyright_text": settings.COPYRIGHT_TEXT,
             "copyright_year": settings.COPYRIGHT_YEAR,
