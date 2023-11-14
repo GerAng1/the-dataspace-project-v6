@@ -1,0 +1,114 @@
+{
+    "resource_model_id": "f8caf14f-500a-439d-9d81-c89399fe3a83",
+    "resource_model_name": "Conservation Analysis MP",
+    "nodes": [
+        {
+            "arches_nodeid": "c767fc44-d840-11ed-9d63-5b700740407e",
+            "arches_node_name": "Analysis Compiler",
+            "file_field_name": "Analysis Compiler",
+            "data_type": "resource-instance",
+            "export": true
+        },
+        {
+            "arches_nodeid": "98fc158a-9555-11ed-b0aa-8c85907a3f93",
+            "arches_node_name": "Analysis Conservation status",
+            "file_field_name": "Analysis Conservation status",
+            "data_type": "string",
+            "export": true
+        },
+        {
+            "arches_nodeid": "8ea45e58-9555-11ed-b0aa-8c85907a3f93",
+            "arches_node_name": "Analysis Description",
+            "file_field_name": "Analysis Description",
+            "data_type": "domain-value",
+            "concept_export_value": "label",
+            "export": true
+        },
+        {
+            "arches_nodeid": "be749320-d842-11ed-9d63-5b700740407e",
+            "arches_node_name": "Analysis Name",
+            "file_field_name": "Analysis Name",
+            "data_type": "string",
+            "export": true
+        },
+        {
+            "arches_nodeid": "e46b120a-9555-11ed-b0aa-8c85907a3f93",
+            "arches_node_name": "Analysis Photos Macroscopic",
+            "file_field_name": "Analysis Photos Macroscopic",
+            "data_type": "file-list",
+            "export": true
+        },
+        {
+            "arches_nodeid": "d61e3858-9555-11ed-b0aa-8c85907a3f93",
+            "arches_node_name": "Analysis Photos Microscopy",
+            "file_field_name": "Analysis Photos Microscopy",
+            "data_type": "file-list",
+            "export": true
+        },
+        {
+            "arches_nodeid": "16c76b0e-9556-11ed-b0aa-8c85907a3f93",
+            "arches_node_name": "Analysis Photos SEM EDS",
+            "file_field_name": "Analysis Photos SEM EDS",
+            "data_type": "file-list",
+            "export": true
+        },
+        {
+            "arches_nodeid": "1c459680-7ef0-11ee-b694-1fd4ebed8be7",
+            "arches_node_name": "Analysis Sampling Date",
+            "file_field_name": "Analysis Sampling Date",
+            "data_type": "date",
+            "export": true
+        },
+        {
+            "arches_nodeid": "7b92b0b4-7cac-11ee-b694-1fd4ebed8be7",
+            "arches_node_name": "Identifier Content",
+            "file_field_name": "Identifier Content",
+            "data_type": "string",
+            "export": true
+        },
+        {
+            "arches_nodeid": "6a645202-7cac-11ee-b694-1fd4ebed8be7",
+            "arches_node_name": "Identifier Type",
+            "file_field_name": "Identifier Type",
+            "data_type": "concept-list",
+            "concept_export_value": "label",
+            "export": true
+        },
+        {
+            "arches_nodeid": "6ff505b8-7eeb-11ee-b694-1fd4ebed8be7",
+            "arches_node_name": "Related Object",
+            "file_field_name": "Related Object",
+            "data_type": "resource-instance",
+            "export": true
+        },
+        {
+            "arches_nodeid": "01298104-7ef0-11ee-b694-1fd4ebed8be7",
+            "arches_node_name": "Related Object Withdrawal Point",
+            "file_field_name": "Related Object Withdrawal Point",
+            "data_type": "string",
+            "export": true
+        },
+        {
+            "arches_nodeid": "e33844dc-d1f2-11ed-ba86-7d811dc7e87d",
+            "arches_node_name": "Spectrum Interpreted Data",
+            "file_field_name": "Spectrum Interpreted Data",
+            "data_type": "file-list",
+            "export": true
+        },
+        {
+            "arches_nodeid": "c6a84060-d1f2-11ed-ba86-7d811dc7e87d",
+            "arches_node_name": "Spectrum Raw Data",
+            "file_field_name": "Spectrum Raw Data",
+            "data_type": "file-list",
+            "export": true
+        },
+        {
+            "arches_nodeid": "98d1af5a-d1f2-11ed-ba86-7d811dc7e87d",
+            "arches_node_name": "Spectrum Technique",
+            "file_field_name": "Spectrum Technique",
+            "data_type": "domain-value",
+            "concept_export_value": "label",
+            "export": true
+        }
+    ]
+}

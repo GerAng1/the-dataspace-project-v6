@@ -1,0 +1,13 @@
+{
+    "Identifier Types - Generic": {
+        "4bb3de41-d7bc-440c-b0bb-de5dfdb9358f": "Arches Universally Unique Identifier (UUID)",
+        "768b2f11-26e4-4ada-a699-7a8d3fe9fe5a": "Internal Identifier",
+        "ce6179ef-f9d7-4ba9-b242-0e466912a6b0": "legacy identifier",
+        "ae7f2811-3fee-4624-bc74-9451bd05be2d": "primary (general designation)",
+        "86bbbbcb-f23e-48e8-9893-8d791a859077": "temporary number",
+        "84d3a8fe-444e-4789-874a-1d5fb5adff73": "universally unique identifier (UUID)"
+    },
+    "Resource to Resource Relationship Types": {
+        "ac41d9be-79db-4256-b368-2f4559cfbe55": "is related to"
+    }
+}
