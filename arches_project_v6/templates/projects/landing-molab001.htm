@@ -45,65 +45,31 @@ Data Space Blue Darker: #1E2D40 -->
 
 
 {% block content %}
-<div class="container mt-4" style="min-height: calc(100vh - 297px);">
-  <div class="row align-items-center mb-5 gy-3">
-    <div class="order-2 order-md-1 col-12 col-md-5">
+<div class="container pt-4" style="min-height: calc(100vh - 297px);">
+  
+  <div class="row">
+    <div class="col-12 col-lg-7">
       <h1>{{project_name}}</h1>
+    </div>
+  </div>
+
+
+  <div class="row mt-2 gy-3 gx-5">
+    <div class="order-2 order-md-1 col-12 col-lg-7">
       <p>
           {% trans "This section is dedicated to the illuminated manuscripts investigated by MOLAB and aims to offer data, tools and digital services to the wide scientific community interested in their study, from an interdisciplinary perspective." %}
       </p>
       <p>
-          {% trans "MOLAB.it is the Italian platform of the E-RIHS research infrastructure (European Research Infrastructure for Heritage Science), https://www.e-rihs.it/laboratori-mobili/. The platform allows access to the techniques and portable tools of the MOLAB-CNR and CHNet-INFN mobile laboratories and offers researchers in the cultural heritage sector (art historians, archaeologists, restorers, chemists, physicists, biologists, etc.) the possibility of carrying out advanced non-invasive diagnostic projects, with in situ investigations, functional to multidisciplinary research in the sectors of knowledge, conservation and fruition of the Italian cultural heritage." %}
+          <a href="https://www.e-rihs.it/laboratori-mobili" target="_blank"> {% trans "MOLAB.it" %}<a>
+          {% trans "is the Italian platform of the E-RIHS research infrastructure (European Research Infrastructure for Heritage Science). The platform allows access to the techniques and portable tools of the MOLAB-CNR and CHNet-INFN mobile laboratories and offers researchers in the cultural heritage sector (art historians, archaeologists, restorers, chemists, physicists, biologists, etc.) the possibility of carrying out advanced non-invasive diagnostic projects, with in situ investigations, functional to multidisciplinary research in the sectors of knowledge, conservation and fruition of the Italian cultural heritage." %}
       </p>
       <p>
         {% trans "It offers the most innovative methodologies developed and distributed throughout the national territory, for a better interpretation, knowledge, conservation and restoration of cultural heritage." %}
     </p>
 
-      <p class="lead"><i class="bi bi-search"></i> {% trans "Things you can search for:" %}</p>
+      <p class="lead"><i class="bi bi-search"></i> {% trans "You can search for:" %}</p>
 
       <div class="accordion" id="accordionExample">
-
-        <div class="accordion-item">
-          <a class="accordion-header" id="headingNull" href='{% url "search_home" %}{{all_molab_filter}}'>
-            <button class="btn fw-semibold" type="button">
-              {% trans "All MOLAB" %}
-            </button>
-          </a>
-          <!-- <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <p>
-                <strong>Will this be called "Context" in english?</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a pharetra tortor, ut volutpat massa.
-              </p>
-
-              <p class="lead">Popular searches:</p>
-
-              <div class="list-group mt-2">
-                <a class="list-group-item d-flex justify-content-between align-items-start" href='{% url "search_home" %}'>
-                  <div class="ms-2 me-auto">
-                    <div class="fw-bold">{% trans "Caves" %}</div>
-                    {% trans "Small description" %}
-                  </div>
-                  <span class="badge bg-primary rounded-pill">102</span>
-                </a>
-                <a class="list-group-item d-flex justify-content-between align-items-start" href='{% url "search_home" %}'>
-                  <div class="ms-2 me-auto">
-                    <div class="fw-bold">{% trans "Other" %}</div>
-                    {% trans "Small description" %}
-                  </div>
-                  <span class="badge bg-primary rounded-pill">31</span>
-                </a>
-                <a class="list-group-item d-flex justify-content-between align-items-start">
-                  <div class="ms-2 me-auto">
-                    <div class="fw-bold">{% trans "One last" %}</div>
-                    {% trans "Small description" %}
-                  </div>
-                  <span class="badge bg-primary rounded-pill">+130</span>
-                </a>
-              </div>
-
-            </div>
-          </div> -->
-        </div>
 
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
@@ -113,20 +79,20 @@ Data Space Blue Darker: #1E2D40 -->
           </h2>
           <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <p>
-                {% comment %} <strong>MOLAB.it is compromised by several projects.</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a pharetra tortor, ut volutpat massa. {% endcomment %}
+              {% comment %} <p>
+                <strong>MOLAB.it is compromised by several projects.</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a pharetra tortor, ut volutpat massa.
                 MOLAB.it is compromised by several projects.
               </p>
 
-              <p class="lead">Popular searches:</p>
+              <p class="lead">Popular searches:</p>  {% endcomment %}
 
               <div class="list-group mt-2">
                 <a class="list-group-item d-flex justify-content-between align-items-start" href='{% url "search_home" %}{{projects_filter}}'>
                   <div class="ms-2 me-auto">
-                    <div class="fw-bold">{% trans "Projects" %}</div>
+                    <div class="fw-bold">{% trans "MOLAB.it, Studio spettroscopico di sei manoscritti della Biblioteca Augusta di Perugia" %}</div>
                     {% comment %} {% trans "Small description" %} {% endcomment %}
                   </div>
-                  <span class="badge bg-primary rounded-pill">1</span>
+                  {% comment %} <span class="badge bg-primary rounded-pill">1</span> {% endcomment %}
                 </a>
               </div>
 
@@ -142,33 +108,40 @@ Data Space Blue Darker: #1E2D40 -->
           </h2>
           <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <p>
+              {% comment %} <p>
                 Filter by the different places we have in our database.
               </p>
 
-              <p class="lead">{% trans "Examples you can search for:" %}</p>
+              <p class="lead">{% trans "Examples you can search for:" %}</p> {% endcomment %}
 
               <div class="list-group mt-2">
+                <a class="list-group-item d-flex justify-content-between align-items-start" >
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold">{% trans "Città del Vaticano, Biblioteca Apostolica Vaticana" %}</div>
+                    {% comment %} {% trans "Small description" %} {% endcomment %}
+                  </div>
+                  {% comment %} <span class="badge bg-primary rounded-pill">0</span> {% endcomment %}
+                </a>
                 <a class="list-group-item d-flex justify-content-between align-items-start" href='{% url "search_home" %}{{manuscripts_filter}}'>
                   <div class="ms-2 me-auto">
                     <div class="fw-bold">{% trans "Perugia, Biblioteca Augusta" %}</div>
                     {% comment %} {% trans "Small description" %} {% endcomment %}
                   </div>
-                  <span class="badge bg-primary rounded-pill">6</span>
+                  {% comment %} <span class="badge bg-primary rounded-pill">6</span> {% endcomment %}
                 </a>
-                <a class="list-group-item d-flex justify-content-between align-items-start" href='{% url "search_home" %}{{empty_filter}}'>
+                <a class="list-group-item d-flex justify-content-between align-items-start" >
                   <div class="ms-2 me-auto">
-                    <div class="fw-bold">{% trans "Città del Vaticano, Biblioteca Apostolica Vaticana" %}</div>
+                    <div class="fw-bold">{% trans "Roma, Biblioteca Angelica" %}</div>
                     {% comment %} {% trans "Small description" %} {% endcomment %}
                   </div>
-                  <span class="badge bg-primary rounded-pill">0</span>
+                  {% comment %} <span class="badge bg-primary rounded-pill">0</span> {% endcomment %}
                 </a>
-                <a class="list-group-item d-flex justify-content-between align-items-start" href='{% url "search_home" %}{{empty_filter}}'>
+                <a class="list-group-item d-flex justify-content-between align-items-start" >
                   <div class="ms-2 me-auto">
                     <div class="fw-bold">{% trans "Rossano, Museo Diocesano e del Codex" %}</div>
                     {% comment %} {% trans "Small description" %} {% endcomment %}
                   </div>
-                  <span class="badge bg-primary rounded-pill">0</span>
+                  {% comment %} <span class="badge bg-primary rounded-pill">0</span> {% endcomment %}
                 </a>
               </div>
 
@@ -184,11 +157,11 @@ Data Space Blue Darker: #1E2D40 -->
           </h2>
           <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <p>
+              {% comment %} <p>
                 Filter by non-destructive Observations or destructive Sampling Activities.
               </p>
 
-              <p class="lead">{% trans "Search by item:" %}</p>
+              <p class="lead">{% trans "Search by item:" %}</p> {% endcomment %}
 
               <div class="list-group mt-2">
                 <a class="list-group-item d-flex justify-content-between align-items-start" href='{% url "search_home" %}{{observations_filter}}'>
@@ -196,7 +169,7 @@ Data Space Blue Darker: #1E2D40 -->
                     <div class="fw-bold">{% trans "Observations" %}</div>
                     {% comment %} {% trans "Small description" %} {% endcomment %}
                   </div>
-                  <span class="badge bg-primary rounded-pill">13</span>
+                  {% comment %} <span class="badge bg-primary rounded-pill">13</span> {% endcomment %}
                 </a>
               </div>
 
@@ -206,7 +179,7 @@ Data Space Blue Darker: #1E2D40 -->
                     <div class="fw-bold">{% trans "Sampling Activities" %}</div>
                     {% comment %} {% trans "Small description" %} {% endcomment %}
                   </div>
-                  <span class="badge bg-primary rounded-pill">0</span>
+                  {% comment %} <span class="badge bg-primary rounded-pill">0</span> {% endcomment %}
                 </a>
               </div>
 
@@ -214,10 +187,18 @@ Data Space Blue Darker: #1E2D40 -->
           </div>
         </div>
 
+        <div class="accordion-item">
+          <a class="accordion-header" id="headingNull" href='{% url "search_home" %}{{all_molab_filter}}'>
+            <button class="btn fw-semibold" type="button">
+              {% trans "All Resources" %}
+            </button>
+          </a>
+        </div>
+
       </div>
     </div>
-    <div class="order-1 order-md-2 col-12 col-md-7 text-center">
-      <img src="{% static 'img/molab001/molab003.jpg' %}" class="img-fluid" alt="MOLAB image">
+    <div class="order-1 order-md-2 col-12 col-lg-5 text-center">
+      <img src="{% static 'img/molab001/molab003.jpg' %}" class="img-fluid rounded" alt="MOLAB image">
     </div>
   </div>
 </div>
