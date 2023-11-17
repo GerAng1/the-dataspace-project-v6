@@ -14,7 +14,7 @@
 
         <!-- Tools -->
         <div class="ep-form-toolbar-tools mar-no flex" style="position: relative; height: inherit">
-            <p class="report-print-date">{% trans "Report Date:" %} <span data-bind="text: reportDate"></span></p>
+                      <p class="report-print-date">{% trans "Report Date:" %} <span data-bind="text: reportDate"></span></p>
             <div class="report-print-date" style="position: absolute; margin-top: 30px; margin-left: -11px; " data-bind="component: { name: 'views/components/simple-switch', params: {value: hideEmptyNodes, config:{ label: '{% trans "Hide Null Values" %}', subtitle: ''}}}"></div>
         </div>
     </div>
@@ -71,23 +71,23 @@
         
         <!-- ko foreach: { data: Object.values(report.relatedResourcesLookup()), as: 'resourceData' } -->
         <!-- ko if: resourceData.totalRelatedResources > 0 || !$parent.hideEmptyNodes() -->
-        <h5 class="rp-tile-title">
+        <h5 class="rp-tile-title" style="margin-left: 85px;">
             <span class="rp-tile-title-float" data-bind="text: resourceData.name"></span>
         </h5>
 
         <div class="rp-card-section">
             <!-- ko foreach: { data: resourceData.loadedRelatedResources(), as: 'relatedResource' } -->
             <div class="rp-report-container-tile">
-                <div class="row rp-report-tile">
+                <div class="row rp-report-tile related-resources-instance">
                     <dl class="dl-horizontal">
                         <dt>
-                          <!-- ko if: relatedResource.relationship -->
-                          <a data-bind="text: ' << ' + ko.unwrap(relatedResource.relationship) + ' >> ', attr: {href: relatedResource.relationshipLink}"></a>
-                          <!-- /ko -->
-                          <a data-bind="text: relatedResource.displayName, attr: {href: relatedResource.link}"></a>
+                        <!-- ko if: relatedResource.relationship -->
+                        <a data-bind="text: ' << ' + ko.unwrap(relatedResource.relationship) + ' >> ', attr: {href: relatedResource.relationshipLink}"></a>
+                        <!-- /ko -->
+<a data-bind="text: relatedResource.displayName, attr: {href: relatedResource.link}"></a>
                         </dt>
-                      </dl>
-                      
+                    </dl>
+
                 </div>
             </div>
             <!-- /ko -->
