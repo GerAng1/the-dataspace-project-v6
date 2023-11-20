@@ -8,14 +8,7 @@
                     "cardid": "0b923be6-ca85-11e9-880a-a4d18cec433a",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "0b923be6-ca85-11e9-880a-a4d18cec433a",
-                            "constraintid": "1d21819b-80ce-4cca-a602-66265395508d",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
+                    "constraints": [],
                     "cssclass": null,
                     "description": "# Specific:\n\n\n# General:\n\n\n# Arches Note:\n\n\n* BranchId: \n* FieldId: \n",
                     "graph_id": "0b9235d9-ca85-11e9-9fa2-a4d18cec433a",
@@ -53,14 +46,7 @@
                     "cardid": "0b924654-ca85-11e9-be41-a4d18cec433a",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "0b924654-ca85-11e9-be41-a4d18cec433a",
-                            "constraintid": "de713552-015e-4604-9aca-3428223234c1",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
+                    "constraints": [],
                     "cssclass": null,
                     "description": "# Specific:\n\n\n# General:\nIn order to make data both consistent and able to be customized to specific scenarios, nodes can be classified with terms from controlled vocabularies. This field gives a way to be more specific about the sort of entity, while maintaining the core information using the ontology class. See: https://linked.art/model/base/#types-and-classifications\n\n# Arches Note:\n\n\n* BranchId: la-classification\n* FieldId: \n",
                     "graph_id": "0b9235d9-ca85-11e9-9fa2-a4d18cec433a",
@@ -68,7 +54,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": "Select the scale of the project (i.e. initiative, project, research task)",
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Scale of Project",
                     "nodegroup_id": "0b924423-ca85-11e9-865a-a4d18cec433a",
                     "sortorder": 1,
@@ -79,14 +65,7 @@
                     "cardid": "0b924c6b-ca85-11e9-adb1-a4d18cec433a",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "0b924c6b-ca85-11e9-adb1-a4d18cec433a",
-                            "constraintid": "1726d9e9-ad38-417d-941c-26b80f34d2bd",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
+                    "constraints": [],
                     "cssclass": null,
                     "description": "# Specific:\n\n\n# General:\nEvery node should have a _label that provides a human-readable summary label for the node. This is intended not for end users, but for developers looking at the data. See:  https://linked.art/model/base/#core-properties\n\n# Arches Note:\n\n\n* BranchId: la-label\n* FieldId: \n",
                     "graph_id": "0b9235d9-ca85-11e9-9fa2-a4d18cec433a",
@@ -105,14 +84,7 @@
                     "cardid": "0b925251-ca85-11e9-985e-a4d18cec433a",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "0b925251-ca85-11e9-985e-a4d18cec433a",
-                            "constraintid": "9097583b-05c3-4d94-b8a7-1b5079bfa76e",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
+                    "constraints": [],
                     "cssclass": null,
                     "description": "# Specific:\n\n\n# General:\n\n\n# Arches Note:\n\n\n* BranchId: \n* FieldId: \n",
                     "graph_id": "0b9235d9-ca85-11e9-9fa2-a4d18cec433a",
@@ -150,14 +122,7 @@
                     "cardid": "0b92615c-ca85-11e9-96a2-a4d18cec433a",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "0b92615c-ca85-11e9-96a2-a4d18cec433a",
-                            "constraintid": "744d3091-9c75-40dd-8591-282d0ae89e98",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
+                    "constraints": [],
                     "cssclass": "afs-project-workflow",
                     "description": "# Specific:\n\n\n# General:\nTimeSpan is used to record a span of time between two, possibly fuzzy, points. It can also have a known duration between those points.  For example, a 1 week activity might occur sometime between the first and third quarters of the year. See: https://linked.art/model/base/#time-span-details\n\n# Arches Note:\n\n\n* BranchId: la-timespan\n* FieldId: \n",
                     "graph_id": "0b9235d9-ca85-11e9-9fa2-a4d18cec433a",
@@ -176,14 +141,7 @@
                     "cardid": "0b9266b5-ca85-11e9-9405-a4d18cec433a",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "0b9266b5-ca85-11e9-9405-a4d18cec433a",
-                            "constraintid": "594511cc-1e56-4fcc-bc16-9ccd4ede829b",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
+                    "constraints": [],
                     "cssclass": "afs-project-workflow",
                     "description": "# Specific:\n\n\n# General:\nIt is strongly recommended that every resource that should be rendered to an end user have at least one name. Different types of name can be distinguished using classifications. See: https://linked.art/model/base/#names\n\n# Arches Note:\nThis node's content should be the value for the title descriptor function, when used for a resource model.\n\n* BranchId: la-name\n* FieldId: \n",
                     "graph_id": "0b9235d9-ca85-11e9-9fa2-a4d18cec433a",
@@ -191,7 +149,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": "Enter the name of research project or task.",
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Name of Project",
                     "nodegroup_id": "0b926359-ca85-11e9-ac9c-a4d18cec433a",
                     "sortorder": 0,
@@ -231,14 +189,7 @@
                             "0b9237fd-ca85-11e9-9e80-a4d18cec433a"
                         ]
                     },
-                    "constraints": [
-                        {
-                            "card_id": "0b92748a-ca85-11e9-98a4-a4d18cec433a",
-                            "constraintid": "33658888-9de5-40da-bb54-bb78409f2ef1",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
+                    "constraints": [],
                     "cssclass": null,
                     "description": "# Specific:\n\n\n# General:\n\n\n# Arches Note:\n\n\n* BranchId: \n* FieldId: \n",
                     "graph_id": "0b9235d9-ca85-11e9-9fa2-a4d18cec433a",
@@ -276,14 +227,7 @@
                     "cardid": "0b927ffa-ca85-11e9-908e-a4d18cec433a",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "0b927ffa-ca85-11e9-908e-a4d18cec433a",
-                            "constraintid": "d178bf03-8d8a-4ff7-868f-3ffe42a55677",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
+                    "constraints": [],
                     "cssclass": null,
                     "description": "# Specific:\n\n\n# General:\n\n\n# Arches Note:\n\n\n* BranchId: \n* FieldId: \n",
                     "graph_id": "0b9235d9-ca85-11e9-9fa2-a4d18cec433a",
@@ -302,14 +246,7 @@
                     "cardid": "0b92888a-ca85-11e9-8e1d-a4d18cec433a",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "0b92888a-ca85-11e9-8e1d-a4d18cec433a",
-                            "constraintid": "157a16cc-b190-4739-a35e-078403ab90f8",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
+                    "constraints": [],
                     "cssclass": null,
                     "description": "# Specific:\n\n\n# General:\n\n\n# Arches Note:\n\n\n* BranchId: \n* FieldId: \n",
                     "graph_id": "0b9235d9-ca85-11e9-9fa2-a4d18cec433a",
@@ -366,14 +303,7 @@
                     "cardid": "0b929cd9-ca85-11e9-b51b-a4d18cec433a",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "0b929cd9-ca85-11e9-b51b-a4d18cec433a",
-                            "constraintid": "d372c550-e676-4811-8f2a-18198748b1d0",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
+                    "constraints": [],
                     "cssclass": null,
                     "description": "# Specific:\n\n\n# General:\n\n\n# Arches Note:\n\n\n* BranchId: \n* FieldId: \n",
                     "graph_id": "0b9235d9-ca85-11e9-9fa2-a4d18cec433a",
@@ -392,14 +322,7 @@
                     "cardid": "0b92a2de-ca85-11e9-aa53-a4d18cec433a",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "0b92a2de-ca85-11e9-aa53-a4d18cec433a",
-                            "constraintid": "d1781853-a9c4-48e8-913b-b149154791cf",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
+                    "constraints": [],
                     "cssclass": null,
                     "description": "# Specific:\n\n\n# General:\nMany resources have identifier values associated with them of different types, such as accession numbers, database numbers, lot numbers for auctions and so forth.  Identifiers are similar to Names, but instead use the Identifier class and do not have a language associated with them. See: https://linked.art/model/base/#identifiers\n\n# Arches Note:\n\n\n* BranchId: la-identifier\n* FieldId: \n",
                     "graph_id": "0b9235d9-ca85-11e9-9fa2-a4d18cec433a",
@@ -407,7 +330,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": "Enter any identifiers (ex. accession numbers, bar codes) that refer to the entire project.",
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Identifier for Project",
                     "nodegroup_id": "0b929f00-ca85-11e9-bfe2-a4d18cec433a",
                     "sortorder": 3,
@@ -418,14 +341,7 @@
                     "cardid": "0b92a657-ca85-11e9-8964-a4d18cec433a",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "0b92a657-ca85-11e9-8964-a4d18cec433a",
-                            "constraintid": "eb02b669-d7b2-491f-88e8-15dd44994450",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
+                    "constraints": [],
                     "cssclass": "afs-project-workflow",
                     "description": "# Specific:\n\n\n# General:\nIn many cases, current data does not support the level of specificity that the full ontology allows, or the information is simply best expressed in human-readable form. For example, instead of a completely modeled set of parts with materials, many museum collection management systems allow only a single human-readable string for the \"medium\" or \"materials statement\".  Any time that there is a description of the resource, with or without qualification as to the type of description, then this branch can be used to record the descriptive text. See: https://linked.art/model/base/#statements-about-a-resource\n\n# Arches Note:\n\n\n* BranchId: la-statement\n* FieldId: \n",
                     "graph_id": "0b9235d9-ca85-11e9-9fa2-a4d18cec433a",
@@ -444,14 +360,7 @@
                     "cardid": "0b92b5a6-ca85-11e9-857f-a4d18cec433a",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "0b92b5a6-ca85-11e9-857f-a4d18cec433a",
-                            "constraintid": "d900eafc-42c5-441a-8370-660f754e71cc",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
+                    "constraints": [],
                     "cssclass": null,
                     "description": "# Specific:\n\n\n# General:\n\n\n# Arches Note:\n\n\n* BranchId: \n* FieldId: \n",
                     "graph_id": "0b9235d9-ca85-11e9-9fa2-a4d18cec433a",
@@ -470,14 +379,7 @@
                     "cardid": "0b92bb70-ca85-11e9-9619-a4d18cec433a",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "0b92bb70-ca85-11e9-9619-a4d18cec433a",
-                            "constraintid": "e4dd4521-846a-4f35-ad9a-db3817e0b50d",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
+                    "constraints": [],
                     "cssclass": null,
                     "description": "# Specific:\n\n\n# General:\n\n\n# Arches Note:\n\n\n* BranchId: \n* FieldId: \n",
                     "graph_id": "0b9235d9-ca85-11e9-9fa2-a4d18cec433a",
@@ -485,7 +387,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Activity Type of Project ",
                     "nodegroup_id": "0b92b8c0-ca85-11e9-adef-a4d18cec433a",
                     "sortorder": 15,
@@ -496,14 +398,7 @@
                     "cardid": "49394321-911a-11ec-a428-ad03e9261309",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "49394321-911a-11ec-a428-ad03e9261309",
-                            "constraintid": "9f1412ca-f71b-41b6-b5d2-cd52e39bed21",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
+                    "constraints": [],
                     "cssclass": null,
                     "description": "",
                     "graph_id": "0b9235d9-ca85-11e9-9fa2-a4d18cec433a",
@@ -511,7 +406,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Textual Reference to Project",
                     "nodegroup_id": "4939431f-911a-11ec-a428-ad03e9261309",
                     "sortorder": 8,
@@ -541,14 +436,7 @@
                     "cardid": "ac67f4ed-a1d7-11eb-a29f-024e0d439fdb",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "ac67f4ed-a1d7-11eb-a29f-024e0d439fdb",
-                            "constraintid": "122c886d-b2cd-4f3a-b20e-594ab824c49b",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
+                    "constraints": [],
                     "cssclass": null,
                     "description": "",
                     "graph_id": "0b9235d9-ca85-11e9-9fa2-a4d18cec433a",
@@ -567,20 +455,7 @@
                     "cardid": "c04afd1c-e1d2-43b7-8630-1846fc647824",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "c04afd1c-e1d2-43b7-8630-1846fc647824",
-                            "constraintid": "2c9c190a-24a6-4c15-b957-23754ea7620f",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        },
-                        {
-                            "card_id": "c04afd1c-e1d2-43b7-8630-1846fc647824",
-                            "constraintid": "be2822d5-b4e5-4bb6-a7c5-f3b566aff7df",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
+                    "constraints": [],
                     "cssclass": null,
                     "description": null,
                     "graph_id": "0b9235d9-ca85-11e9-9fa2-a4d18cec433a",
@@ -599,14 +474,7 @@
                     "cardid": "cc5e7a4f-d477-11e9-8653-a4d18cec433a",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "cc5e7a4f-d477-11e9-8653-a4d18cec433a",
-                            "constraintid": "0f52e26c-102b-4a2c-8ca3-4d2dffc4b437",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
+                    "constraints": [],
                     "cssclass": null,
                     "description": "# Specific:\n\n\n# General:\n\n\n# Arches Note:\n\n\n* BranchId: \n* FieldId: \n",
                     "graph_id": "0b9235d9-ca85-11e9-9fa2-a4d18cec433a",
@@ -625,20 +493,7 @@
                     "cardid": "dbaa57ae-9ae7-11ea-ab62-dca90488358a",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "dbaa57ae-9ae7-11ea-ab62-dca90488358a",
-                            "constraintid": "2697a08c-9a49-4d2b-b77d-c8a01f143139",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        },
-                        {
-                            "card_id": "dbaa57ae-9ae7-11ea-ab62-dca90488358a",
-                            "constraintid": "d2bc9af6-1134-40b7-a447-477d20f3658c",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
+                    "constraints": [],
                     "cssclass": "afs-project-workflow",
                     "description": "# Specific:\n\n\n# General:\n\n\n# Arches Note:\n\n\n* BranchId: \n* FieldId: \n",
                     "graph_id": "0b9235d9-ca85-11e9-9fa2-a4d18cec433a",
@@ -646,7 +501,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": "Person(s) or group(s) that participated in the project",
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Project Team",
                     "nodegroup_id": "dbaa2022-9ae7-11ea-ab62-dca90488358a",
                     "sortorder": 5,
@@ -2817,12 +2672,12 @@
                     },
                     "function_id": "60000000-0000-0000-0000-000000000001",
                     "graph_id": "0b9235d9-ca85-11e9-9fa2-a4d18cec433a",
-                    "id": "a8f9a75f-a4f1-493c-9202-21fb480674c2"
+                    "id": "15891277-de66-46a9-a346-19500542be7b"
                 }
             ],
             "graphid": "0b9235d9-ca85-11e9-9fa2-a4d18cec433a",
             "iconclass": "fa fa-youtube-play",
-            "is_editable": true,
+            "is_editable": false,
             "isactive": true,
             "isresource": true,
             "jsonldcontext": "https://linked.art/ns/v1/linked-art.json",
@@ -5106,9 +4961,7 @@
                 }
             ],
             "ontology_id": "0b1f5462-faa7-11e9-8f09-3af9d3b32b71",
-            "relatable_resource_model_ids": [
-                "ade8eaef-0ff1-401e-8e2f-ff232da09e43"
-            ],
+            "relatable_resource_model_ids": [],
             "resource_2_resource_constraints": [],
             "root": {
                 "alias": "project",
@@ -5136,9 +4989,9 @@
         }
     ],
     "metadata": {
-        "db": "PostgreSQL 12.16 (Ubuntu 12.16-1.pgdg20.04+1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0, 64-bit",
-        "git hash": "0a3346b 2023-10-24 16:04:03 +0200",
+        "db": "PostgreSQL 12.17 (Ubuntu 12.17-1.pgdg20.04+1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit",
+        "git hash": "373d3a0 2023-11-17 13:05:36 +0100",
         "os": "Linux",
-        "os version": "5.4.0-165-generic"
+        "os version": "5.4.0-166-generic"
     }
 }

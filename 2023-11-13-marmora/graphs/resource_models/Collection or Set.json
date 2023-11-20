@@ -27,14 +27,7 @@
                     "cardid": "11b58ecc-d354-11e9-a84f-a4d18cec433a",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "11b58ecc-d354-11e9-a84f-a4d18cec433a",
-                            "constraintid": "ed00b5c2-2723-40bc-ad2c-4fde7b6e98a9",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
+                    "constraints": [],
                     "cssclass": null,
                     "description": "# Specific:\n\n\n# General:\nIn many cases, current data does not support the level of specificity that the full ontology allows, or the information is simply best expressed in human-readable form. For example, instead of a completely modeled set of parts with materials, many museum collection management systems allow only a single human-readable string for the \"medium\" or \"materials statement\".  Any time that there is a description of the resource, with or without qualification as to the type of description, then this branch can be used to record the descriptive text. See: https://linked.art/model/base/#statements-about-a-resource\n\n# Arches Note:\n\n\n* BranchId: la-statement\n* FieldId: \n",
                     "graph_id": "1b210ef3-b25c-11e9-a037-a4d18cec433a",
@@ -53,14 +46,7 @@
                     "cardid": "31aaf2a4-8e2f-11eb-a9c4-faffc265b501",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "31aaf2a4-8e2f-11eb-a9c4-faffc265b501",
-                            "constraintid": "9fdd5aa9-7083-474e-9663-e5c4047ea9b0",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
+                    "constraints": [],
                     "cssclass": null,
                     "description": "",
                     "graph_id": "1b210ef3-b25c-11e9-a037-a4d18cec433a",
@@ -79,14 +65,7 @@
                     "cardid": "442ba5c2-c450-11e9-9014-a4d18cec433a",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "442ba5c2-c450-11e9-9014-a4d18cec433a",
-                            "constraintid": "01be5aa2-1768-4388-8fa4-7c7fafd478dc",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
+                    "constraints": [],
                     "cssclass": null,
                     "description": "# Specific:\n\n\n# General:\nIn order to make data both consistent and able to be customized to specific scenarios, nodes can be classified with terms from controlled vocabularies. This field gives a way to be more specific about the sort of entity, while maintaining the core information using the ontology class. See: https://linked.art/model/base/#types-and-classifications\n\n# Arches Note:\n\n\n* BranchId: la-classification\n* FieldId: \n",
                     "graph_id": "1b210ef3-b25c-11e9-a037-a4d18cec433a",
@@ -94,7 +73,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Type of Collection",
                     "nodegroup_id": "442a9c87-c450-11e9-b396-a4d18cec433a",
                     "sortorder": 2,
@@ -162,14 +141,7 @@
                     "cardid": "466f83f3-c451-11e9-92bb-a4d18cec433a",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "466f83f3-c451-11e9-92bb-a4d18cec433a",
-                            "constraintid": "1128533d-50ed-41d5-adc1-18fba1429897",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
+                    "constraints": [],
                     "cssclass": null,
                     "description": "# Specific:\nThis branch can be used for activities associated with other entities, such as the production of an object, or the professional activity of a group or person.\nThe class and relating property should be customized if possible.\n\n* BranchId: la-activity-base\n\n# General:\n\n\n# Arches Note:\n\n\n* BranchId: \n* FieldId: \n",
                     "graph_id": "1b210ef3-b25c-11e9-a037-a4d18cec433a",
@@ -264,14 +236,7 @@
                     "cardid": "52aa1963-c450-11e9-b89e-a4d18cec433a",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "52aa1963-c450-11e9-b89e-a4d18cec433a",
-                            "constraintid": "cd9bf547-34e3-4e17-a155-9d6ec1d1aeb1",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
+                    "constraints": [],
                     "cssclass": null,
                     "description": "# Specific:\n\n\n# General:\nIt is strongly recommended that every resource that should be rendered to an end user have at least one name. Different types of name can be distinguished using classifications. See: https://linked.art/model/base/#names\n\n# Arches Note:\nThis node's content should be the value for the title descriptor function, when used for a resource model.\n\n* BranchId: la-name\n* FieldId: \n",
                     "graph_id": "1b210ef3-b25c-11e9-a037-a4d18cec433a",
@@ -279,7 +244,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Name of Collection",
                     "nodegroup_id": "52aa1673-c450-11e9-8640-a4d18cec433a",
                     "sortorder": 0,
@@ -290,14 +255,7 @@
                     "cardid": "5620d3cc-c450-11e9-942f-a4d18cec433a",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "5620d3cc-c450-11e9-942f-a4d18cec433a",
-                            "constraintid": "4ae5b651-af57-4fe2-8955-131e7f652a13",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
+                    "constraints": [],
                     "cssclass": null,
                     "description": "# Specific:\n\n\n# General:\nMany resources have identifier values associated with them of different types, such as accession numbers, database numbers, lot numbers for auctions and so forth.  Identifiers are similar to Names, but instead use the Identifier class and do not have a language associated with them. See: https://linked.art/model/base/#identifiers\n\n# Arches Note:\n\n\n* BranchId: la-identifier\n* FieldId: \n",
                     "graph_id": "1b210ef3-b25c-11e9-a037-a4d18cec433a",
@@ -305,7 +263,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Identifier of Collection",
                     "nodegroup_id": "5620cb99-c450-11e9-ac35-a4d18cec433a",
                     "sortorder": 3,
@@ -335,14 +293,7 @@
                     "cardid": "56c7a80c-c450-11e9-9ec4-a4d18cec433a",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "56c7a80c-c450-11e9-9ec4-a4d18cec433a",
-                            "constraintid": "169461b8-3fb5-4d0e-9515-fc3e02584d46",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
+                    "constraints": [],
                     "cssclass": null,
                     "description": "# Specific:\n\n\n# General:\nIn many cases, current data does not support the level of specificity that the full ontology allows, or the information is simply best expressed in human-readable form. For example, instead of a completely modeled set of parts with materials, many museum collection management systems allow only a single human-readable string for the \"medium\" or \"materials statement\".  Any time that there is a description of the resource, with or without qualification as to the type of description, then this branch can be used to record the descriptive text. See: https://linked.art/model/base/#statements-about-a-resource\n\n# Arches Note:\n\n\n* BranchId: la-statement\n* FieldId: \n",
                     "graph_id": "1b210ef3-b25c-11e9-a037-a4d18cec433a",
@@ -350,7 +301,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Statement about Collection",
                     "nodegroup_id": "56c7a5dc-c450-11e9-ad38-a4d18cec433a",
                     "sortorder": 1,
@@ -456,14 +407,7 @@
                     "cardid": "59764b61-c450-11e9-8100-a4d18cec433a",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "59764b61-c450-11e9-8100-a4d18cec433a",
-                            "constraintid": "39664744-74d0-4f05-8fe9-3e52e5b6ff2c",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
+                    "constraints": [],
                     "cssclass": null,
                     "description": "# Specific:\n\n\n# General:\nThis branch can be used for activities associated with other entities, such as the production of an object, or the professional activity of a group or person. The class and relating property should be customized if possible.\n\n# Arches Note:\n\n\n* BranchId: la-activity-base\n* FieldId: \n",
                     "graph_id": "1b210ef3-b25c-11e9-a037-a4d18cec433a",
@@ -501,20 +445,7 @@
                     "cardid": "9e4fa16c-99f6-11ea-a9b7-3af9d3b32b71",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "9e4fa16c-99f6-11ea-a9b7-3af9d3b32b71",
-                            "constraintid": "195aede4-d555-437d-8809-0e44aa182bdf",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        },
-                        {
-                            "card_id": "9e4fa16c-99f6-11ea-a9b7-3af9d3b32b71",
-                            "constraintid": "b2d7f827-4cca-4ca7-acb0-429abc25af44",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
+                    "constraints": [],
                     "cssclass": null,
                     "description": "# Specific:\n\n\n# General:\n\n\n# Arches Note:\n\n\n* BranchId: \n* FieldId: \n",
                     "graph_id": "1b210ef3-b25c-11e9-a037-a4d18cec433a",
@@ -522,7 +453,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Related Project of Collection",
                     "nodegroup_id": "9e4f6be8-99f6-11ea-a9b7-3af9d3b32b71",
                     "sortorder": 7,
@@ -533,14 +464,7 @@
                     "cardid": "a5571c82-b2e2-11e9-932e-a4d18cec433a",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "a5571c82-b2e2-11e9-932e-a4d18cec433a",
-                            "constraintid": "f66a275f-672d-42ae-962d-0295374b8ad7",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
+                    "constraints": [],
                     "cssclass": null,
                     "description": "# Specific:\n\n\n# General:\nEvery node should have a _label that provides a human-readable summary label for the node. This is intended not for end users, but for developers looking at the data. See:  https://linked.art/model/base/#core-properties\n\n# Arches Note:\n\n\n* BranchId: la-label\n* FieldId: \n",
                     "graph_id": "1b210ef3-b25c-11e9-a037-a4d18cec433a",
@@ -578,14 +502,7 @@
                     "cardid": "d64f7cf5-d352-11e9-9b12-a4d18cec433a",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "d64f7cf5-d352-11e9-9b12-a4d18cec433a",
-                            "constraintid": "eeb56efd-8892-4c83-b167-9e5f1e6ccdba",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
+                    "constraints": [],
                     "cssclass": null,
                     "description": "# Specific:\n\n\n# General:\nIn many cases, current data does not support the level of specificity that the full ontology allows, or the information is simply best expressed in human-readable form. For example, instead of a completely modeled set of parts with materials, many museum collection management systems allow only a single human-readable string for the \"medium\" or \"materials statement\".  Any time that there is a description of the resource, with or without qualification as to the type of description, then this branch can be used to record the descriptive text. See: https://linked.art/model/base/#statements-about-a-resource\n\n# Arches Note:\n\n\n* BranchId: la-statement\n* FieldId: \n",
                     "graph_id": "1b210ef3-b25c-11e9-a037-a4d18cec433a",
@@ -604,14 +521,7 @@
                     "cardid": "d7f88135-9115-11ec-a428-ad03e9261309",
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
                     "config": null,
-                    "constraints": [
-                        {
-                            "card_id": "d7f88135-9115-11ec-a428-ad03e9261309",
-                            "constraintid": "a964a245-cd6e-4bb9-b345-d44960c0027a",
-                            "nodes": [],
-                            "uniquetoallinstances": false
-                        }
-                    ],
+                    "constraints": [],
                     "cssclass": null,
                     "description": "",
                     "graph_id": "1b210ef3-b25c-11e9-a037-a4d18cec433a",
@@ -4337,12 +4247,12 @@
                     },
                     "function_id": "60000000-0000-0000-0000-000000000001",
                     "graph_id": "1b210ef3-b25c-11e9-a037-a4d18cec433a",
-                    "id": "cbd206b8-3b92-473d-909c-6f6672eeeea9"
+                    "id": "a0e5dc6e-3c38-453f-a7ae-2ced41734904"
                 }
             ],
             "graphid": "1b210ef3-b25c-11e9-a037-a4d18cec433a",
             "iconclass": "fa fa-cubes",
-            "is_editable": true,
+            "is_editable": false,
             "isactive": true,
             "isresource": true,
             "jsonldcontext": "",
@@ -8244,9 +8154,9 @@
         }
     ],
     "metadata": {
-        "db": "PostgreSQL 12.16 (Ubuntu 12.16-1.pgdg20.04+1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0, 64-bit",
-        "git hash": "0a3346b 2023-10-24 16:04:03 +0200",
+        "db": "PostgreSQL 12.17 (Ubuntu 12.17-1.pgdg20.04+1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit",
+        "git hash": "373d3a0 2023-11-17 13:05:36 +0100",
         "os": "Linux",
-        "os version": "5.4.0-165-generic"
+        "os version": "5.4.0-166-generic"
     }
 }

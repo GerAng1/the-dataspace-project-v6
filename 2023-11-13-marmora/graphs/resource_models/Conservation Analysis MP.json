@@ -54,7 +54,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": "Images (.png, .jpg)",
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Interpreted Data",
                     "nodegroup_id": "e33844dc-d1f2-11ed-ba86-7d811dc7e87d",
                     "sortorder": 2,
@@ -76,7 +76,7 @@
                     "helptext": "<ol>\n\t<li>Specify Technique</li>\n\t<li>Add only 1&nbsp;raw data IN TXT format.</li>\n\t<li>Add Interpreted data IMAGES.</li>\n</ol>\n\n<p>In case you have another raw data/another technique used, you can add another &quot;NEW&quot; &amp; follow the previous steps again.</p>\n",
                     "helptitle": "How to add Spectrum",
                     "instructions": "",
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Spectra",
                     "nodegroup_id": "84bc22de-d1f2-11ed-ba86-7d811dc7e87d",
                     "sortorder": 7,
@@ -95,7 +95,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Compiler",
                     "nodegroup_id": "c767fc44-d840-11ed-9d63-5b700740407e",
                     "sortorder": 8,
@@ -133,7 +133,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Technique",
                     "nodegroup_id": "98d1af5a-d1f2-11ed-ba86-7d811dc7e87d",
                     "sortorder": 0,
@@ -152,7 +152,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Raw Data",
                     "nodegroup_id": "c6a84060-d1f2-11ed-ba86-7d811dc7e87d",
                     "sortorder": 1,
@@ -171,7 +171,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Conservation status",
                     "nodegroup_id": "98fc158a-9555-11ed-b0aa-8c85907a3f93",
                     "sortorder": 5,
@@ -190,7 +190,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Sampling Date",
                     "nodegroup_id": "1c459680-7ef0-11ee-b694-1fd4ebed8be7",
                     "sortorder": 4,
@@ -209,7 +209,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Photos",
                     "nodegroup_id": "a14ec8ea-9555-11ed-b0aa-8c85907a3f93",
                     "sortorder": 6,
@@ -228,7 +228,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Description",
                     "nodegroup_id": "8ea45e58-9555-11ed-b0aa-8c85907a3f93",
                     "sortorder": 2,
@@ -699,14 +699,14 @@
                             },
                             "name": {
                                 "nodegroup_id": "be749320-d842-11ed-9d63-5b700740407e",
-                                "string_template": "<Analysis Name>"
+                                "string_template": "<Analysis Name> (Conservation Analysis)"
                             }
                         },
                         "triggering_nodegroups": []
                     },
                     "function_id": "60000000-0000-0000-0000-000000000001",
                     "graph_id": "f8caf14f-500a-439d-9d81-c89399fe3a83",
-                    "id": "e4cfc717-4c85-44e2-83e1-c177b6d7ce83"
+                    "id": "231876d7-223e-433e-bd0a-7e366425cd94"
                 }
             ],
             "graphid": "f8caf14f-500a-439d-9d81-c89399fe3a83",
@@ -1300,8 +1300,8 @@
         }
     ],
     "metadata": {
-        "db": "PostgreSQL 12.16 (Ubuntu 12.16-1.pgdg20.04+1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0, 64-bit",
-        "git hash": "dbb00a7 2023-11-03 11:18:54 +0100",
+        "db": "PostgreSQL 12.17 (Ubuntu 12.17-1.pgdg20.04+1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit",
+        "git hash": "373d3a0 2023-11-17 13:05:36 +0100",
         "os": "Linux",
         "os version": "5.4.0-166-generic"
     }

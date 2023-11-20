@@ -16,7 +16,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Era",
                     "nodegroup_id": "6f7fee58-9202-11ed-8643-8c85907a3f93",
                     "sortorder": 6,
@@ -35,7 +35,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Conservation State",
                     "nodegroup_id": "592097e6-9515-11ed-b0aa-8c85907a3f93",
                     "sortorder": 14,
@@ -54,7 +54,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Coordinates",
                     "nodegroup_id": "3826a11e-9517-11ed-b0aa-8c85907a3f93",
                     "sortorder": 3,
@@ -73,7 +73,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Bibliography",
                     "nodegroup_id": "af7b2840-9515-11ed-b0aa-8c85907a3f93",
                     "sortorder": 12,
@@ -92,7 +92,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Dimensions",
                     "nodegroup_id": "6d499600-9515-11ed-b0aa-8c85907a3f93",
                     "sortorder": 9,
@@ -130,7 +130,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Reused Object?",
                     "nodegroup_id": "f7a6c010-9511-11ed-b0aa-8c85907a3f93",
                     "sortorder": 8,
@@ -149,7 +149,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Chronology",
                     "nodegroup_id": "c323539c-937e-11ed-8743-8c85907a3f93",
                     "sortorder": 5,
@@ -187,7 +187,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Excavation code",
                     "nodegroup_id": "6080abea-9202-11ed-8643-8c85907a3f93",
                     "sortorder": 4,
@@ -225,7 +225,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Photos",
                     "nodegroup_id": "dc8db46e-9516-11ed-b0aa-8c85907a3f93",
                     "sortorder": 13,
@@ -263,7 +263,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Material",
                     "nodegroup_id": "fa2bfbe4-9515-11ed-b0aa-8c85907a3f93",
                     "sortorder": 10,
@@ -1063,14 +1063,14 @@
                             },
                             "name": {
                                 "nodegroup_id": "4b63ed86-9201-11ed-8643-8c85907a3f93",
-                                "string_template": "<Object Name>"
+                                "string_template": "<Object Name> (Physical Thing)"
                             }
                         },
                         "triggering_nodegroups": []
                     },
                     "function_id": "60000000-0000-0000-0000-000000000001",
                     "graph_id": "2bffa167-0b5d-4511-8d4a-a3cb90221343",
-                    "id": "5b1c2d75-6075-44a7-b653-3886345034d4"
+                    "id": "cb3fbe03-bfcb-4d7c-a77b-2743c3ae6d5e"
                 }
             ],
             "graphid": "2bffa167-0b5d-4511-8d4a-a3cb90221343",
@@ -3104,8 +3104,8 @@
         }
     ],
     "metadata": {
-        "db": "PostgreSQL 12.16 (Ubuntu 12.16-1.pgdg20.04+1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0, 64-bit",
-        "git hash": "dbb00a7 2023-11-03 11:18:54 +0100",
+        "db": "PostgreSQL 12.17 (Ubuntu 12.17-1.pgdg20.04+1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit",
+        "git hash": "373d3a0 2023-11-17 13:05:36 +0100",
         "os": "Linux",
         "os version": "5.4.0-166-generic"
     }

@@ -400,14 +400,14 @@
                             },
                             "name": {
                                 "nodegroup_id": "861b4550-772f-11ee-a1b3-4db1f593b983",
-                                "string_template": "<Model Name>"
+                                "string_template": "<Model Name> (Aton 3D Model)"
                             }
                         },
                         "triggering_nodegroups": []
                     },
                     "function_id": "60000000-0000-0000-0000-000000000001",
                     "graph_id": "ade8eaef-0ff1-401e-8e2f-ff232da09e43",
-                    "id": "3db8d31d-2e4f-49bf-8040-ca209fac23f2"
+                    "id": "ee649278-e6c9-4840-ad6d-81bcfe2da852"
                 }
             ],
             "graphid": "ade8eaef-0ff1-401e-8e2f-ff232da09e43",
@@ -678,8 +678,8 @@
         }
     ],
     "metadata": {
-        "db": "PostgreSQL 12.16 (Ubuntu 12.16-1.pgdg20.04+1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0, 64-bit",
-        "git hash": "dbb00a7 2023-11-03 11:18:54 +0100",
+        "db": "PostgreSQL 12.17 (Ubuntu 12.17-1.pgdg20.04+1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit",
+        "git hash": "373d3a0 2023-11-17 13:05:36 +0100",
         "os": "Linux",
         "os version": "5.4.0-166-generic"
     }
