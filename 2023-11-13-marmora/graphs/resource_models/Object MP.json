@@ -780,6 +780,9 @@
                 "mapControlsHidden": false,
                 "maxZoom": 20,
                 "minZoom": 0,
+                "nodes": [
+                    "dc8db46e-9516-11ed-b0aa-8c85907a3f93"
+                ],
                 "overlayOpacity": 0,
                 "pitch": 0
             },
@@ -3099,13 +3102,13 @@
             },
             "slug": null,
             "subtitle": "Created for Marmora Phrygiae",
-            "template_id": "e4e8d54f-c666-193c-1404-ab4ee0204b13",
+            "template_id": "7ded2153-65db-43f8-859f-a41d1a4f2b10",
             "version": ""
         }
     ],
     "metadata": {
         "db": "PostgreSQL 12.17 (Ubuntu 12.17-1.pgdg20.04+1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit",
-        "git hash": "373d3a0 2023-11-17 13:05:36 +0100",
+        "git hash": "0488ff4 2023-11-23 13:18:18 +0100",
         "os": "Linux",
         "os version": "5.4.0-166-generic"
     }

@@ -463,7 +463,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": true,
+                    "is_editable": false,
                     "name": "Immagine",
                     "nodegroup_id": "6d72ffe4-d909-11ed-9d63-5b700740407e",
                     "sortorder": null,
@@ -1798,9 +1798,7 @@
             "color": "rgba(57,96,168,0.75)",
             "config": {
                 "activeTabIndex": 0,
-                "nodes": [
-                    "6d72ffe4-d909-11ed-9d63-5b700740407e"
-                ],
+                "nodes": [],
                 "tabs": [
                     {
                         "icon": "fa fa-info",
@@ -4984,13 +4982,13 @@
             },
             "slug": "activity",
             "subtitle": "Projects, Research Tasks and Experiments",
-            "template_id": "50000000-0000-0000-0000-000000000003",
+            "template_id": "7ded2153-65db-43f8-859f-a41d1a4f2b10",
             "version": ""
         }
     ],
     "metadata": {
         "db": "PostgreSQL 12.17 (Ubuntu 12.17-1.pgdg20.04+1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit",
-        "git hash": "373d3a0 2023-11-17 13:05:36 +0100",
+        "git hash": "0488ff4 2023-11-23 13:18:18 +0100",
         "os": "Linux",
         "os version": "5.4.0-166-generic"
     }

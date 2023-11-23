@@ -16,7 +16,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": "Related Object",
                     "nodegroup_id": "4e1f6140-7eeb-11ee-b694-1fd4ebed8be7",
                     "sortorder": 1,
@@ -35,29 +35,10 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": "Name",
                     "nodegroup_id": "be749320-d842-11ed-9d63-5b700740407e",
                     "sortorder": 0,
-                    "visible": true
-                },
-                {
-                    "active": true,
-                    "cardid": "1b17bc17-0a31-409e-9735-272f37ab8943",
-                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
-                    "config": null,
-                    "constraints": [],
-                    "cssclass": null,
-                    "description": null,
-                    "graph_id": "f8caf14f-500a-439d-9d81-c89399fe3a83",
-                    "helpenabled": false,
-                    "helptext": null,
-                    "helptitle": null,
-                    "instructions": "Images (.png, .jpg)",
-                    "is_editable": false,
-                    "name": "Interpreted Data",
-                    "nodegroup_id": "e33844dc-d1f2-11ed-ba86-7d811dc7e87d",
-                    "sortorder": 2,
                     "visible": true
                 },
                 {
@@ -73,10 +54,10 @@
                     "description": null,
                     "graph_id": "f8caf14f-500a-439d-9d81-c89399fe3a83",
                     "helpenabled": true,
-                    "helptext": "<ol>\n\t<li>Specify Technique</li>\n\t<li>Add only 1&nbsp;raw data IN TXT format.</li>\n\t<li>Add Interpreted data IMAGES.</li>\n</ol>\n\n<p>In case you have another raw data/another technique used, you can add another &quot;NEW&quot; &amp; follow the previous steps again.</p>\n",
+                    "helptext": "<ol>\n\t<li>Specify Technique</li>\n\t<li>Add only 1&nbsp;raw data file.</li>\n\t<li>Add Interpreted data IMAGES.</li>\n</ol>\n\n<p>In case you have another raw data/another technique used, you can add another &quot;NEW&quot; &amp; follow the previous steps again.</p>\n",
                     "helptitle": "How to add Spectrum",
                     "instructions": "",
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": "Spectra",
                     "nodegroup_id": "84bc22de-d1f2-11ed-ba86-7d811dc7e87d",
                     "sortorder": 7,
@@ -95,7 +76,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": "Compiler",
                     "nodegroup_id": "c767fc44-d840-11ed-9d63-5b700740407e",
                     "sortorder": 8,
@@ -114,48 +95,10 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": "Identifier",
                     "nodegroup_id": "22d3cdde-9556-11ed-b0aa-8c85907a3f93",
                     "sortorder": 3,
-                    "visible": true
-                },
-                {
-                    "active": true,
-                    "cardid": "a18baf5a-3767-458e-b8d5-5e85a3b69b3c",
-                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
-                    "config": null,
-                    "constraints": [],
-                    "cssclass": null,
-                    "description": null,
-                    "graph_id": "f8caf14f-500a-439d-9d81-c89399fe3a83",
-                    "helpenabled": false,
-                    "helptext": null,
-                    "helptitle": null,
-                    "instructions": null,
-                    "is_editable": false,
-                    "name": "Technique",
-                    "nodegroup_id": "98d1af5a-d1f2-11ed-ba86-7d811dc7e87d",
-                    "sortorder": 0,
-                    "visible": true
-                },
-                {
-                    "active": true,
-                    "cardid": "b0eb76c5-5f09-4c5e-8bcd-25a66b5de840",
-                    "component_id": "47e10bbb-cf09-4357-ace5-f824ac3bfd97",
-                    "config": null,
-                    "constraints": [],
-                    "cssclass": null,
-                    "description": null,
-                    "graph_id": "f8caf14f-500a-439d-9d81-c89399fe3a83",
-                    "helpenabled": false,
-                    "helptext": null,
-                    "helptitle": null,
-                    "instructions": null,
-                    "is_editable": false,
-                    "name": "Raw Data",
-                    "nodegroup_id": "c6a84060-d1f2-11ed-ba86-7d811dc7e87d",
-                    "sortorder": 1,
                     "visible": true
                 },
                 {
@@ -171,7 +114,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": "Conservation status",
                     "nodegroup_id": "98fc158a-9555-11ed-b0aa-8c85907a3f93",
                     "sortorder": 5,
@@ -190,7 +133,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": "Sampling Date",
                     "nodegroup_id": "1c459680-7ef0-11ee-b694-1fd4ebed8be7",
                     "sortorder": 4,
@@ -209,7 +152,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": "Photos",
                     "nodegroup_id": "a14ec8ea-9555-11ed-b0aa-8c85907a3f93",
                     "sortorder": 6,
@@ -228,7 +171,7 @@
                     "helptext": null,
                     "helptitle": null,
                     "instructions": null,
-                    "is_editable": false,
+                    "is_editable": true,
                     "name": "Description",
                     "nodegroup_id": "8ea45e58-9555-11ed-b0aa-8c85907a3f93",
                     "sortorder": 2,
@@ -237,16 +180,16 @@
             ],
             "cards_x_nodes_x_widgets": [
                 {
-                    "card_id": "a18baf5a-3767-458e-b8d5-5e85a3b69b3c",
+                    "card_id": "26c4d192-7c54-441a-8de4-ccd914df4939",
                     "config": {
                         "defaultValue": "",
-                        "label": "Technique",
+                        "label": "Spectrum Technique",
                         "placeholder": "Select an option"
                     },
-                    "id": "1664e930-bfc8-4022-ab22-eea786c7b2cd",
-                    "label": "Technique",
+                    "id": "1ef25434-690b-4f44-a0bd-f5229b9377b3",
+                    "label": "Spectrum Technique",
                     "node_id": "98d1af5a-d1f2-11ed-ba86-7d811dc7e87d",
-                    "sortorder": null,
+                    "sortorder": 0,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000017"
                 },
@@ -283,21 +226,6 @@
                     "widget_id": "10000000-0000-0000-0000-000000000015"
                 },
                 {
-                    "card_id": "1b17bc17-0a31-409e-9735-272f37ab8943",
-                    "config": {
-                        "acceptedFiles": ".jpg, .png",
-                        "label": "Interpreted Data",
-                        "maxFilesize": "200",
-                        "rerender": true
-                    },
-                    "id": "2ab96564-3538-4f4d-ad2d-958f887d15fa",
-                    "label": "Interpreted Data",
-                    "node_id": "e33844dc-d1f2-11ed-ba86-7d811dc7e87d",
-                    "sortorder": 0,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000019"
-                },
-                {
                     "card_id": "14063bd4-bfad-4559-bcec-126a19e02d17",
                     "config": {
                         "defaultValue": "",
@@ -327,21 +255,6 @@
                     "sortorder": 0,
                     "visible": true,
                     "widget_id": "31f3728c-7613-11e7-a139-784f435179ea"
-                },
-                {
-                    "card_id": "b0eb76c5-5f09-4c5e-8bcd-25a66b5de840",
-                    "config": {
-                        "acceptedFiles": ".txt",
-                        "label": "Raw Data",
-                        "maxFilesize": "200",
-                        "rerender": true
-                    },
-                    "id": "3fee1032-0861-4bf2-9743-9c41f195a25b",
-                    "label": "Raw Data",
-                    "node_id": "c6a84060-d1f2-11ed-ba86-7d811dc7e87d",
-                    "sortorder": 0,
-                    "visible": true,
-                    "widget_id": "10000000-0000-0000-0000-000000000019"
                 },
                 {
                     "card_id": "0a7bebb8-316d-4ca4-adbb-9f1a8c026d16",
@@ -484,6 +397,36 @@
                     "label": "Macroscopic",
                     "node_id": "e46b120a-9555-11ed-b0aa-8c85907a3f93",
                     "sortorder": null,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000019"
+                },
+                {
+                    "card_id": "26c4d192-7c54-441a-8de4-ccd914df4939",
+                    "config": {
+                        "acceptedFiles": "",
+                        "label": "Spectrum Interpreted Data",
+                        "maxFilesize": "200",
+                        "rerender": true
+                    },
+                    "id": "e3b82ff2-393e-449c-a5e3-463011ad3c9e",
+                    "label": "Spectrum Interpreted Data",
+                    "node_id": "e33844dc-d1f2-11ed-ba86-7d811dc7e87d",
+                    "sortorder": 2,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000019"
+                },
+                {
+                    "card_id": "26c4d192-7c54-441a-8de4-ccd914df4939",
+                    "config": {
+                        "acceptedFiles": ".txt, .mca, .dpt, .xy",
+                        "label": "Spectrum Raw Data",
+                        "maxFilesize": "200",
+                        "rerender": true
+                    },
+                    "id": "f6a71192-5a3e-46dc-b8af-6891fc838cf4",
+                    "label": "Spectrum Raw Data",
+                    "node_id": "c6a84060-d1f2-11ed-ba86-7d811dc7e87d",
+                    "sortorder": 1,
                     "visible": true,
                     "widget_id": "10000000-0000-0000-0000-000000000019"
                 }
@@ -711,7 +654,7 @@
             ],
             "graphid": "f8caf14f-500a-439d-9d81-c89399fe3a83",
             "iconclass": "fa fa-search",
-            "is_editable": false,
+            "is_editable": true,
             "isactive": true,
             "isresource": true,
             "jsonldcontext": null,
@@ -750,12 +693,6 @@
                 {
                     "cardinality": "1",
                     "legacygroupid": null,
-                    "nodegroupid": "98d1af5a-d1f2-11ed-ba86-7d811dc7e87d",
-                    "parentnodegroup_id": "84bc22de-d1f2-11ed-ba86-7d811dc7e87d"
-                },
-                {
-                    "cardinality": "1",
-                    "legacygroupid": null,
                     "nodegroupid": "98fc158a-9555-11ed-b0aa-8c85907a3f93",
                     "parentnodegroup_id": null
                 },
@@ -774,20 +711,8 @@
                 {
                     "cardinality": "1",
                     "legacygroupid": null,
-                    "nodegroupid": "c6a84060-d1f2-11ed-ba86-7d811dc7e87d",
-                    "parentnodegroup_id": "84bc22de-d1f2-11ed-ba86-7d811dc7e87d"
-                },
-                {
-                    "cardinality": "1",
-                    "legacygroupid": null,
                     "nodegroupid": "c767fc44-d840-11ed-9d63-5b700740407e",
                     "parentnodegroup_id": null
-                },
-                {
-                    "cardinality": "1",
-                    "legacygroupid": null,
-                    "nodegroupid": "e33844dc-d1f2-11ed-ba86-7d811dc7e87d",
-                    "parentnodegroup_id": "84bc22de-d1f2-11ed-ba86-7d811dc7e87d"
                 }
             ],
             "nodes": [
@@ -1054,12 +979,12 @@
                     "fieldname": null,
                     "graph_id": "f8caf14f-500a-439d-9d81-c89399fe3a83",
                     "hascustomalias": false,
-                    "is_collector": true,
+                    "is_collector": false,
                     "isrequired": true,
                     "issearchable": true,
                     "istopnode": false,
                     "name": "Spectrum Technique",
-                    "nodegroup_id": "98d1af5a-d1f2-11ed-ba86-7d811dc7e87d",
+                    "nodegroup_id": "84bc22de-d1f2-11ed-ba86-7d811dc7e87d",
                     "nodeid": "98d1af5a-d1f2-11ed-ba86-7d811dc7e87d",
                     "ontologyclass": null,
                     "parentproperty": null,
@@ -1138,12 +1063,12 @@
                     "fieldname": null,
                     "graph_id": "f8caf14f-500a-439d-9d81-c89399fe3a83",
                     "hascustomalias": false,
-                    "is_collector": true,
+                    "is_collector": false,
                     "isrequired": false,
                     "issearchable": true,
                     "istopnode": false,
                     "name": "Spectrum Raw Data",
-                    "nodegroup_id": "c6a84060-d1f2-11ed-ba86-7d811dc7e87d",
+                    "nodegroup_id": "84bc22de-d1f2-11ed-ba86-7d811dc7e87d",
                     "nodeid": "c6a84060-d1f2-11ed-ba86-7d811dc7e87d",
                     "ontologyclass": null,
                     "parentproperty": null,
@@ -1215,12 +1140,12 @@
                     "fieldname": null,
                     "graph_id": "f8caf14f-500a-439d-9d81-c89399fe3a83",
                     "hascustomalias": false,
-                    "is_collector": true,
+                    "is_collector": false,
                     "isrequired": false,
                     "issearchable": true,
                     "istopnode": false,
                     "name": "Spectrum Interpreted Data",
-                    "nodegroup_id": "e33844dc-d1f2-11ed-ba86-7d811dc7e87d",
+                    "nodegroup_id": "84bc22de-d1f2-11ed-ba86-7d811dc7e87d",
                     "nodeid": "e33844dc-d1f2-11ed-ba86-7d811dc7e87d",
                     "ontologyclass": null,
                     "parentproperty": null,
@@ -1295,13 +1220,13 @@
             },
             "slug": null,
             "subtitle": "Created for Marmora Phrygiae",
-            "template_id": "50000000-0000-0000-0000-000000000001",
+            "template_id": "7ded2153-65db-43f8-859f-a41d1a4f2b10",
             "version": ""
         }
     ],
     "metadata": {
         "db": "PostgreSQL 12.17 (Ubuntu 12.17-1.pgdg20.04+1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit",
-        "git hash": "373d3a0 2023-11-17 13:05:36 +0100",
+        "git hash": "0488ff4 2023-11-23 13:18:18 +0100",
         "os": "Linux",
         "os version": "5.4.0-166-generic"
     }
