@@ -2,25 +2,29 @@
 {% load i18n %}
 
 <div data-bind="css: {'print-hide': !reportExpanded()}">
-    <!-- ko if: showHeaderLine--><hr class="ds-separator"><!-- /ko -->
-    <div class="" data-bind="css: card.model.cssclass, visible: card.fullyProvisional() !== 'fullyprovisional'">
-        {% comment %} <span class="rp-tile-title" data-bind="text: card.model.get('name')"></span> {% endcomment %}
+    <!-- ko if: showHeaderLine--><hr class="rp-tile-separator"><!-- /ko -->
+    <div class="rp-card-section" data-bind="css: card.model.cssclass, visible: card.fullyProvisional() !== 'fullyprovisional'">
+        <!-- ko if: card.model.get('widgets')().length > 1 || card.tiles().length > 1 -->
+        <span class="rp-tile-title" data-bind="text: card.model.get('name')"></span>
+        <!-- /ko -->
         <!-- ko if: card.tiles().length > 0 -->
-        {% comment %} <i class="fa report-expander print-hide" data-bind="css: {'fa-angle-down': reportExpanded(), 'fa-angle-right': !reportExpanded()}, click: function () { reportExpanded(!reportExpanded()) }"></i> {% endcomment %}
+        <!-- ko if: card.model.get('widgets')().length > 1 || card.tiles().length > 1-->
+        <i class="fa report-expander print-hide" data-bind="css: {'fa-angle-down': reportExpanded(), 'fa-angle-right': !reportExpanded()}, click: function () { reportExpanded(!reportExpanded()) }"></i>
+        <!-- /ko -->
         <!-- ko if: reportExpanded() -->
         <!-- ko foreach: { data: self.preview ? [card.newTile] : card.tiles, as: 'tile' } -->
 
-        <div class="" data-bind="event : { dblclick: function(){tile.selected(true) }}, css: {'provisional': ko.unwrap(tile.provisionaledits) !== null && tile.userisreviewer === false, 'fullyprovisional': tile.isfullyprovisional()}, attr: {id: tile.tileid}">
-            <!-- ko if: $index() !== 0 --><hr class="ds-separator"><!-- /ko -->
+        <div class="rp-card-section" data-bind="event : { dblclick: function(){tile.selected(true) }}, css: {'provisional': ko.unwrap(tile.provisionaledits) !== null && tile.userisreviewer === false, 'fullyprovisional': tile.isfullyprovisional()}, attr: {id: tile.tileid}">
+            <!-- ko if: $index() !== 0 --><hr class="rp-tile-separator"><!-- /ko -->
             <div style="display: inline-flex; width: 100%; justify-content: space-between;">
                 <span data-bind="visible: tile.parent.model.get('widgets')().length === 0"></span>
                     {% block report_widgets %}
                     <!-- ko if: tile.parent.model.get('widgets')().length > 0 -->
-                        <div class="" data-bind="attr: { id: tile.tileid }">
+                        <div class="rp-report-tile" data-bind="attr: { id: tile.tileid }">
                             <!-- ko if: ko.unwrap(tile.provisionaledits) !== null && tile.userisreviewer === false -->
                             <div class="report-card-provisional-flag">{% trans 'These data are provisional and pending review' %}</div>
                             <!-- /ko-->
-                            <dl class="dl-horizontal ds-table" data-bind="css: {'provisional': ko.unwrap(tile.provisionaledits) !== null && tile.userisreviewer === false}">
+                            <dl class="dl-horizontal" data-bind="css: {'provisional': ko.unwrap(tile.provisionaledits) !== null && tile.userisreviewer === false}">
                                 <!-- ko foreach: { data: tile.parent.model.get('widgets'), as: 'widget' } -->
                                     <!-- ko if: widget.visible -->
                                     <!-- ko component: {

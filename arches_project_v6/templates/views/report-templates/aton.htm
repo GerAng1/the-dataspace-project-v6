@@ -2,11 +2,9 @@
 {% load i18n %}
 
 {% block header %}
-
 <link type="text/css" rel="stylesheet" href="{{ STATIC_URL }}css/sketchfab.css" />
 
-
-<div class="report-media-wrapper">
-{% include 'views/components/sketchfab/sketchfab-canvas.htm' %}
+<div class="report-media-wrapper" style="margin-bottom: 10px;">
+    {% include 'views/components/sketchfab/sketchfab-canvas.htm' %}
 </div>
 {% endblock header %}

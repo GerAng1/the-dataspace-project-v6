@@ -4,20 +4,30 @@
 {% block report %}
 
 
-<!-- Report Content -->
-<div class="rp-report-container-preview ds-rp-report-container-preview">
+{% block report_title_bar %}
+<!-- Report Title Bar -->
+<div class="relative report-title-bar">
 
-    <div class="ds-report-date">
-        <p class="report-print-date">{% trans "Report Date:" %} <span data-bind="text: reportDate"></span></p>
-        {% comment %} <div class="report-print-date ds-report-date" data-bind="component: { name: 'views/components/simple-switch', params: {value: hideEmptyNodes, config:{ label: '{% trans "Hide Null Values" %}', subtitle: ''}}}"></div> {% endcomment %}
+    <!-- Title Block -->
+    <div class="report-toolbar-preview ep-form-toolbar">
+        <h4 class="report-toolbar-title"><span data-bind="text: report.get('name')"></span> - <span data-bind="text: report.get('displayname') "></span></h4>
+
+        <!-- Tools -->
+        <div class="ep-form-toolbar-tools mar-no flex" style="position: relative; height: inherit">
+            <p class="report-print-date">{% trans "Report Date:" %} <span data-bind="text: reportDate"></span></p>
+            <div class="report-print-date" style="position: absolute; margin-top: 30px; margin-left: -11px; " data-bind="component: { name: 'views/components/simple-switch', params: {value: hideEmptyNodes, config:{ label: '{% trans "Hide Null Values" %}', subtitle: ''}}}"></div>
+        </div>
     </div>
+</div>
+{% endblock report_title_bar %}
+
+
+<!-- Report Content -->
+<div class="rp-report-container-preview">
 
     {% block header %}
     {% endblock header %}
 
-    <div class="ds-row">
-
-    <div class="ds-col">
     {% block body %}
     <!--ko if: hasProvisionalData() && (editorContext === false) -->
     <div class="report-provisional-flag">{% trans 'This resource has provisional edits (not displayed in this report) that are pending review' %}</div>
@@ -29,16 +39,12 @@
     <div class="report-provisional-flag">{% trans 'This resource has provisional edits that are pending review' %}</div>
     <!--/ko-->
 
-    <div class="relative ds-report-section">
-
-        <div class="rp-report-section-title ds-no-bg">
-            <h1 class="ds-report-title" data-bind="text: report.get('displayname') "></h1>
-            <span data-bind="text: report.get('name')"></span>
-            <hr class="ds-mini ds-separator">
+    <div class="rp-report-section relative rp-report-section-root">
+        <div class="rp-report-section-title">
             <!-- ko foreach: { data: report.cards, as: 'card' } -->
                 <!-- ko if: $parent.hideEmptyNodes() === false || card.tiles().length > 0 -->
-                <!-- ko if: $index() !== 0 --><hr class="ds-separator" style="margin-left: 280px;"><!-- /ko -->
-                <div style="text-align: justify;">
+                <!-- ko if: $index() !== 0 --><hr class="rp-tile-separator"><!-- /ko -->
+                <div class="rp-card-section">
                     <!-- ko component: {
                         name: card.model.cardComponentLookup[card.model.component_id()].componentname,
                         params: {
@@ -55,16 +61,13 @@
         </div>
     </div>
     {% endblock body %}
-    </div>
-
-    {% block sideviewer %}
-    {% endblock sideviewer %}
-
-    </div>
+    
     
     {% block related_resources %}
-    <div class="relative report-related-resources ds-related-resources-block">
-        <h3>{% trans 'Related Resources' %}</h3>
+    <div class="rp-report-section relative report-related-resources">
+        <div class="rp-report-section-title">
+            <h3 class="rp-section-title">{% trans 'Related Resources' %}</h3>
+        </div>
         
         <!-- ko foreach: { data: Object.values(report.relatedResourcesLookup()), as: 'resourceData' } -->
         <!-- ko if: resourceData.totalRelatedResources > 0 || !$parent.hideEmptyNodes() -->
@@ -74,14 +77,17 @@
 
         <div class="rp-card-section">
             <!-- ko foreach: { data: resourceData.loadedRelatedResources(), as: 'relatedResource' } -->
-            <div class="rp-report-container-tile ds-related-instance">
-                <div class="rp-report-tile ds-rp-report-tile">
-                    <dl class="ds-related-resource-instance">
-                        <dt><a data-bind="text: relatedResource.displayName, attr: {href: relatedResource.link}"></a></dt>
+            <div class="rp-report-container-tile">
+                <div class="row rp-report-tile related-resources-instance">
+                    <dl class="dl-horizontal">
+                        <dt>
                         <!-- ko if: relatedResource.relationship -->
-                        <dd data-bind="text: '( ' + relatedResource.relationship + ' )'"></dd>
+                        <a data-bind="text: ' << ' + ko.unwrap(relatedResource.relationship) + ' >> ', attr: {href: relatedResource.relationshipLink}"></a>
                         <!-- /ko -->
+<a data-bind="text: relatedResource.displayName, attr: {href: relatedResource.link}"></a>
+                        </dt>
                     </dl>
+
                 </div>
             </div>
             <!-- /ko -->
@@ -120,7 +126,7 @@
 <div class="relative report-title-bar">
 
     <!-- Title Block -->
-    <div class="report-toolbar-preview ep-form-toolbar ds-report-toolbar">
+    <div class="report-toolbar-preview ep-form-toolbar">
         <h4 class="report-toolbar-title"><span data-bind="text: report.get('name')"></span> - <span data-bind="text: report.get('displayname') "></span></h4>
 
         <!-- Tools -->
@@ -130,9 +136,9 @@
     </div>
 </div>
 
-<div class="rp-report-container-preview ds-rp-report-container-preview">
+<div class="rp-report-container-preview">
     <div class="rp-report-section relative rp-report-section-root">
-        <div class="rp-report-section-title ds-no-bg">
+        <div class="rp-report-section-title">
             <!-- ko if: report.cards.length > 0 -->
                 <!--ko let: { card: report.cards[0] }-->
                 <div class="rp-card-section">

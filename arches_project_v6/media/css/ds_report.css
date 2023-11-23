@@ -1,0 +1,94 @@
+.ds-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ds-col {
+    flex: 1;
+}
+
+.ds-col-header {
+    align-self: center;
+    padding-bottom: 10px
+}
+
+@media (max-width: 767px) {
+    .ds-col {
+        flex: 100%;
+    }
+
+    .ds-col-header {
+        order: -1; /* This changes the order for smaller screens */
+    }
+}
+
+
+.ds-mini {
+    width: 3rem;
+}
+
+.ds-report-title {
+    color: black;
+    margin-top: 0px;
+}
+
+.ds-report-section {
+    background: none;
+    padding: 5px 0px 20px 0px;
+    background-color: #ebeef0;
+    display: block; 
+}
+
+.ds-report-date {
+    text-align: end;
+}
+
+.ds-report-toolbar {
+    background: white;
+}
+
+.ds-rp-report-container-preview {
+    width: auto;
+}
+
+.ds-no-bg {
+    background: none;
+}
+
+.ds-separator {
+    margin: 10px 0px 0px;
+    border: 1px solid #d5d5d5;
+}
+
+.ds-table dt {
+    width: 260px;
+}
+
+.ds-table dd {
+    margin-left: 280px;
+}
+
+.ds-related-resources-block {
+    padding: 0px 60px;
+    border-top: solid 2px gray;
+}
+
+div.ds-related-resources-block h3 {
+    width: 260px;
+    text-align: end;
+}
+
+div.ds-related-resources-block .rp-tile-title {
+    text-align: end;
+    width: 260px;
+    margin-left: 0px;
+}
+
+.report-related-resources .rp-card-section .ds-related-instance {
+    padding-bottom: 0px;
+}
+
+.ds-related-resource-instance {
+    padding: 0px;
+    margin: 0px 0px 5px 210px;
+}

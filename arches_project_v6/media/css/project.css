@@ -1,10 +1,5 @@
-.related-resources-instance {
-    margin-left: 40px;
-}
-
-.rp-report-container-preview {
-    width: 80%;
-    margin: auto;
+.ep-toolbar {
+    box-shadow: 0 0 3px 0px lightgrey;
 }
 
 .rp-report-section-title {
@@ -13,20 +8,6 @@
 
 .rp-report-tile {
     width: inherit;
-}
-
-.rp-tile-separator {
-    margin: 0px 0px 20px;
-    border: 1px solid #9e9e9e;
-}
-
-.dl-horizontal dt {
-    width: 150px;
-    white-space: nowrap;
-}
-
-.dl-horizontal dd {
-    margin-left: 200px;
 }
 
 .iiif-widget-report {
@@ -38,16 +19,8 @@
     border: 1px dashed #ddd;
 }
 
-div.report-related-resources .rp-tile-title {
-    margin-left: 120px;
-}
-
 .tify-wrapper {
     width: 75%;
     height: 750px;
     margin-bottom: 15px;
-}
-
-.rp-report-tile {
-    width: 100%;
 }
