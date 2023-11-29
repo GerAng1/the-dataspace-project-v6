@@ -1,0 +1,9 @@
+{
+    "business_data_load_order": [
+        "Person.csv",
+        "Project.csv",
+        "Cultural_Context_MP.csv",
+        "Aton_3D_Model.csv"
+    ],
+    "permitted_resource_relationships": []
+}

@@ -1,0 +1,12 @@
+{
+    "business_data_load_order": [
+        "Person.csv",
+        "Project.csv",
+        "Collection_or_Set.csv",
+        "Cultural_Context_MP.csv",
+        "Object_MP.csv",
+        "Conservation_Analysis_MP.csv",
+        "Characterization_Analysis_MP.csv"
+    ],
+    "permitted_resource_relationships": []
+}

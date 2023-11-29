@@ -1,0 +1,2296 @@
+{
+    "graph": [
+        {
+            "author": " ",
+            "cards": [
+                {
+                    "active": true,
+                    "cardid": "0233d226-9fd5-43d1-84c5-61db4fb93494",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": false,
+                    "name": "Chronology",
+                    "nodegroup_id": "eb4d9d4e-9079-11ed-8aba-8c85907a3f93",
+                    "sortorder": 7,
+                    "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "093e2182-bb99-4439-ac8e-fb5c3ae020bc",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": false,
+                    "name": "Square meters",
+                    "nodegroup_id": "99fd6fe8-9081-11ed-8aba-8c85907a3f93",
+                    "sortorder": 8,
+                    "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "0ae31dca-8347-427e-a290-093432a793b9",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": false,
+                    "name": "Compiler",
+                    "nodegroup_id": "1f04cece-9083-11ed-8aba-8c85907a3f93",
+                    "sortorder": 18,
+                    "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "0c885eb9-8b33-479f-9bef-863270123bd6",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": false,
+                    "name": "Amount of debris (cm3)",
+                    "nodegroup_id": "dec2f86e-9081-11ed-8aba-8c85907a3f93",
+                    "sortorder": 14,
+                    "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "0d4e41b5-fb6b-4275-8105-1c5f1d35cf2b",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": false,
+                    "name": "Typology",
+                    "nodegroup_id": "ea56b3ae-9078-11ed-8aba-8c85907a3f93",
+                    "sortorder": 1,
+                    "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "19d8ad8c-3fe9-4813-86e9-33178eda8085",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": false,
+                    "name": "Description",
+                    "nodegroup_id": "38eae5b8-9082-11ed-8aba-8c85907a3f93",
+                    "sortorder": 4,
+                    "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "1b43a058-7308-4efb-b391-5b53a5038f40",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": true,
+                    "name": "Quantity of extracted material (cm3)",
+                    "nodegroup_id": "d5ec70d0-9081-11ed-8aba-8c85907a3f93",
+                    "sortorder": 13,
+                    "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "2894315a-2e88-40d1-a536-37d443178565",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": false,
+                    "name": "Bibliography",
+                    "nodegroup_id": "393c335e-9083-11ed-8aba-8c85907a3f93",
+                    "sortorder": 19,
+                    "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "29ae3720-5282-4e0b-88e4-9ee167a5e7db",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": false,
+                    "name": "Collections for the lifting machine",
+                    "nodegroup_id": "0b469274-9082-11ed-8aba-8c85907a3f93",
+                    "sortorder": 5,
+                    "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "2d2927db-5925-4455-bf81-ca30efaa9d44",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": false,
+                    "name": "Streets of contention",
+                    "nodegroup_id": "6a648248-9082-11ed-8aba-8c85907a3f93",
+                    "sortorder": 11,
+                    "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "62c55d07-8dbd-4cb7-b891-e32d6900a4cf",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": false,
+                    "name": "Name",
+                    "nodegroup_id": "cbafa154-9078-11ed-8aba-8c85907a3f93",
+                    "sortorder": 0,
+                    "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "674ad610-52dd-43c4-b875-6d37244ff088",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": false,
+                    "name": "Coordinates",
+                    "nodegroup_id": "0a0eb0c0-9083-11ed-8aba-8c85907a3f93",
+                    "sortorder": 17,
+                    "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "68a7d244-f18a-42ed-b96c-d5629f0e06fe",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [],
+                    "cssclass": null,
+                    "description": "",
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": false,
+                    "name": "Quality of the marble used/extracted",
+                    "nodegroup_id": "ac527a58-9081-11ed-8aba-8c85907a3f93",
+                    "sortorder": 15,
+                    "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "6f901cbf-2b81-4163-8f44-d661c9ea9050",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": false,
+                    "name": "Identifier",
+                    "nodegroup_id": "e455ec86-9082-11ed-8aba-8c85907a3f93",
+                    "sortorder": 2,
+                    "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "83bc4393-ca0d-4b71-be74-cd4f18e70025",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": false,
+                    "name": "Collection",
+                    "nodegroup_id": "61a48836-a939-11ed-b2a7-afded3edabff",
+                    "sortorder": 16,
+                    "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "848d617d-17f0-42a5-8998-0fc86eb160d8",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": false,
+                    "name": "Current status",
+                    "nodegroup_id": "b909b224-9082-11ed-8aba-8c85907a3f93",
+                    "sortorder": 9,
+                    "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "a0ae4212-89d2-4428-86c9-ff4e623fa2c5",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": false,
+                    "name": "Traces of extraction tools",
+                    "nodegroup_id": "42cf03e8-9082-11ed-8aba-8c85907a3f93",
+                    "sortorder": 10,
+                    "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "ad70e4d9-3dcf-47ee-810a-50886d028e23",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": false,
+                    "name": "Presence of unfinished materials",
+                    "nodegroup_id": "59318976-9082-11ed-8aba-8c85907a3f93",
+                    "sortorder": 6,
+                    "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "b551aecd-2b2f-4de6-a43a-5f517177a85a",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": false,
+                    "name": "Surface",
+                    "nodegroup_id": "6c386f86-9081-11ed-8aba-8c85907a3f93",
+                    "sortorder": 12,
+                    "visible": true
+                },
+                {
+                    "active": true,
+                    "cardid": "cd6df546-7656-4651-a671-5af1eb48e07c",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": false,
+                    "name": "Era",
+                    "nodegroup_id": "3266668a-907e-11ed-8aba-8c85907a3f93",
+                    "sortorder": 3,
+                    "visible": true
+                }
+            ],
+            "cards_x_nodes_x_widgets": [
+                {
+                    "card_id": "6f901cbf-2b81-4163-8f44-d661c9ea9050",
+                    "config": {
+                        "defaultValue": [
+                            "768b2f11-26e4-4ada-a699-7a8d3fe9fe5a"
+                        ],
+                        "label": "Identifier Type",
+                        "options": [],
+                        "placeholder": "Select an option"
+                    },
+                    "id": "015f98ee-fb87-49a4-9b63-329cb5478af8",
+                    "label": "Identifier Type",
+                    "node_id": "adb59eea-7cb0-11ee-b694-1fd4ebed8be7",
+                    "sortorder": null,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000012"
+                },
+                {
+                    "card_id": "1b43a058-7308-4efb-b391-5b53a5038f40",
+                    "config": {
+                        "defaultValue": "",
+                        "format": "",
+                        "label": "Quantity of extracted material (cm3)",
+                        "max": "",
+                        "min": "",
+                        "placeholder": "Enter number",
+                        "precision": "",
+                        "prefix": "",
+                        "step": "",
+                        "suffix": "",
+                        "uneditable": false,
+                        "width": "100%"
+                    },
+                    "id": "09d8fe47-0d8e-43e3-bd25-40b03d13c5d4",
+                    "label": "Quantity of extracted material (cm3)",
+                    "node_id": "d5ec70d0-9081-11ed-8aba-8c85907a3f93",
+                    "sortorder": 0,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000008"
+                },
+                {
+                    "card_id": "0233d226-9fd5-43d1-84c5-61db4fb93494",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Chronology",
+                        "placeholder": "Select an option"
+                    },
+                    "id": "1b035124-8af2-4fdb-9515-8ee229bb43c5",
+                    "label": "Chronology",
+                    "node_id": "eb4d9d4e-9079-11ed-8aba-8c85907a3f93",
+                    "sortorder": 0,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000015"
+                },
+                {
+                    "card_id": "0c885eb9-8b33-479f-9bef-863270123bd6",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Amount of debris (cm3)",
+                        "placeholder": "Select an option"
+                    },
+                    "id": "1fe18b33-d932-45f0-8275-37172036643b",
+                    "label": "Amount of debris (cm3)",
+                    "node_id": "dec2f86e-9081-11ed-8aba-8c85907a3f93",
+                    "sortorder": 0,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000015"
+                },
+                {
+                    "card_id": "2894315a-2e88-40d1-a536-37d443178565",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Bibliography",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "uneditable": false,
+                        "width": "100%"
+                    },
+                    "id": "333f406f-a1dc-4c45-90fd-dc7695d31aac",
+                    "label": "Bibliography",
+                    "node_id": "393c335e-9083-11ed-8aba-8c85907a3f93",
+                    "sortorder": 0,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                },
+                {
+                    "card_id": "093e2182-bb99-4439-ac8e-fb5c3ae020bc",
+                    "config": {
+                        "defaultValue": "",
+                        "format": "",
+                        "label": "Square meters",
+                        "max": "",
+                        "min": "",
+                        "placeholder": "Enter number",
+                        "precision": "",
+                        "prefix": "",
+                        "step": "",
+                        "suffix": "",
+                        "uneditable": false,
+                        "width": "100%"
+                    },
+                    "id": "369949d1-d8db-427e-947e-7835bd157d46",
+                    "label": "Square meters",
+                    "node_id": "99fd6fe8-9081-11ed-8aba-8c85907a3f93",
+                    "sortorder": 0,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000008"
+                },
+                {
+                    "card_id": "b551aecd-2b2f-4de6-a43a-5f517177a85a",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Surface",
+                        "placeholder": "Select an option"
+                    },
+                    "id": "3f4f85fb-6a89-4f74-a9df-a9610313ee0d",
+                    "label": "Surface",
+                    "node_id": "6c386f86-9081-11ed-8aba-8c85907a3f93",
+                    "sortorder": 0,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000015"
+                },
+                {
+                    "card_id": "0ae31dca-8347-427e-a290-093432a793b9",
+                    "config": {
+                        "defaultResourceInstance": [],
+                        "label": "Compiler",
+                        "placeholder": ""
+                    },
+                    "id": "7b8d4a1c-190c-4fde-a171-52728416c8af",
+                    "label": "Compiler",
+                    "node_id": "1f04cece-9083-11ed-8aba-8c85907a3f93",
+                    "sortorder": 0,
+                    "visible": true,
+                    "widget_id": "31f3728c-7613-11e7-a139-784f435179ea"
+                },
+                {
+                    "card_id": "19d8ad8c-3fe9-4813-86e9-33178eda8085",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Description",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "uneditable": false,
+                        "width": "100%"
+                    },
+                    "id": "806a1b4a-a0f5-4fd9-9ac5-a305f9e56be3",
+                    "label": "Description",
+                    "node_id": "38eae5b8-9082-11ed-8aba-8c85907a3f93",
+                    "sortorder": 0,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                },
+                {
+                    "card_id": "674ad610-52dd-43c4-b875-6d37244ff088",
+                    "config": {
+                        "basemap": "streets",
+                        "bearing": 0,
+                        "centerX": 3,
+                        "centerY": 8.5,
+                        "defaultValue": "",
+                        "defaultValueType": "",
+                        "featureColor": "#FF0000",
+                        "featureLineWidth": 1,
+                        "featurePointSize": 3,
+                        "geocodePlaceholder": "Search",
+                        "geocodeProvider": "10000000-0000-0000-0000-010000000000",
+                        "geocoderVisible": true,
+                        "geometryTypes": [
+                            {
+                                "id": "Point",
+                                "text": "Point"
+                            },
+                            {
+                                "id": "Line",
+                                "text": "Line"
+                            },
+                            {
+                                "id": "Polygon",
+                                "text": "Polygon"
+                            }
+                        ],
+                        "label": "Coordinates",
+                        "maxZoom": 20,
+                        "minZoom": 0,
+                        "overlayConfigs": [],
+                        "overlayOpacity": 0,
+                        "pitch": 0,
+                        "rerender": true,
+                        "zoom": 0
+                    },
+                    "id": "82c2c5c3-0726-4f01-b104-0bba630ad561",
+                    "label": "Coordinates",
+                    "node_id": "0a0eb0c0-9083-11ed-8aba-8c85907a3f93",
+                    "sortorder": 0,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000007"
+                },
+                {
+                    "card_id": "29ae3720-5282-4e0b-88e4-9ee167a5e7db",
+                    "config": {
+                        "defaultValue": null,
+                        "label": "Collections for the lifting machine"
+                    },
+                    "id": "85cdf6ef-6212-419a-968e-b044281bb1d7",
+                    "label": "Collections for the lifting machine",
+                    "node_id": "0b469274-9082-11ed-8aba-8c85907a3f93",
+                    "sortorder": 0,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000006"
+                },
+                {
+                    "card_id": "83bc4393-ca0d-4b71-be74-cd4f18e70025",
+                    "config": {
+                        "defaultResourceInstance": [],
+                        "label": "Collection",
+                        "placeholder": ""
+                    },
+                    "id": "89b111dc-fe82-4836-a44f-e2634dcfe1c7",
+                    "label": "Collection",
+                    "node_id": "61a48836-a939-11ed-b2a7-afded3edabff",
+                    "sortorder": 0,
+                    "visible": true,
+                    "widget_id": "31f3728c-7613-11e7-a139-784f435179ea"
+                },
+                {
+                    "card_id": "62c55d07-8dbd-4cb7-b891-e32d6900a4cf",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Name",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "uneditable": false,
+                        "width": "100%"
+                    },
+                    "id": "a08bc1f4-d8e8-40a0-9e65-fd12e7102065",
+                    "label": "Name",
+                    "node_id": "cbafa154-9078-11ed-8aba-8c85907a3f93",
+                    "sortorder": 0,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                },
+                {
+                    "card_id": "ad70e4d9-3dcf-47ee-810a-50886d028e23",
+                    "config": {
+                        "defaultValue": null,
+                        "label": "Presence of unfinished materials"
+                    },
+                    "id": "a1d3008c-4d8b-4316-a520-c267c61cc0a4",
+                    "label": "Presence of unfinished materials",
+                    "node_id": "59318976-9082-11ed-8aba-8c85907a3f93",
+                    "sortorder": 0,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000006"
+                },
+                {
+                    "card_id": "6f901cbf-2b81-4163-8f44-d661c9ea9050",
+                    "config": {
+                        "defaultResourceInstance": [],
+                        "label": "Project",
+                        "placeholder": ""
+                    },
+                    "id": "aabe6343-bce8-4b63-95df-269ceac31a5f",
+                    "label": "Project",
+                    "node_id": "e455ec86-9082-11ed-8aba-8c85907a3f93",
+                    "sortorder": 0,
+                    "visible": true,
+                    "widget_id": "31f3728c-7613-11e7-a139-784f435179ea"
+                },
+                {
+                    "card_id": "cd6df546-7656-4651-a671-5af1eb48e07c",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Era",
+                        "placeholder": "Select an option"
+                    },
+                    "id": "b209398b-c862-44bd-882e-975ed75780fa",
+                    "label": "Era",
+                    "node_id": "3266668a-907e-11ed-8aba-8c85907a3f93",
+                    "sortorder": 0,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000015"
+                },
+                {
+                    "card_id": "a0ae4212-89d2-4428-86c9-ff4e623fa2c5",
+                    "config": {
+                        "defaultValue": null,
+                        "label": "Traces of extraction tools"
+                    },
+                    "id": "b62fde1c-a17b-47e5-b6d7-709d96a53790",
+                    "label": "Traces of extraction tools",
+                    "node_id": "42cf03e8-9082-11ed-8aba-8c85907a3f93",
+                    "sortorder": 0,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000006"
+                },
+                {
+                    "card_id": "6f901cbf-2b81-4163-8f44-d661c9ea9050",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Identifier Content",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "uneditable": false,
+                        "width": "100%"
+                    },
+                    "id": "b78e2276-16d0-43fa-9097-d59dff94f3d6",
+                    "label": "Identifier Content",
+                    "node_id": "a37a4bd8-7cb0-11ee-b694-1fd4ebed8be7",
+                    "sortorder": null,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                },
+                {
+                    "card_id": "848d617d-17f0-42a5-8998-0fc86eb160d8",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Current status",
+                        "placeholder": "Select an option"
+                    },
+                    "id": "bce00c5b-b42f-42d8-b2cc-191b3c4ce88c",
+                    "label": "Current status",
+                    "node_id": "b909b224-9082-11ed-8aba-8c85907a3f93",
+                    "sortorder": 0,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000015"
+                },
+                {
+                    "card_id": "0d4e41b5-fb6b-4275-8105-1c5f1d35cf2b",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Typology",
+                        "options": [],
+                        "placeholder": "Select an option"
+                    },
+                    "id": "be47513f-d03f-44fc-890f-e7c7cbe71c12",
+                    "label": "Typology",
+                    "node_id": "ea56b3ae-9078-11ed-8aba-8c85907a3f93",
+                    "sortorder": 0,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000015"
+                },
+                {
+                    "card_id": "2d2927db-5925-4455-bf81-ca30efaa9d44",
+                    "config": {
+                        "defaultValue": null,
+                        "label": "Streets of contention"
+                    },
+                    "id": "d9579945-4859-4149-8eb9-21e80e86aac6",
+                    "label": "Streets of contention",
+                    "node_id": "6a648248-9082-11ed-8aba-8c85907a3f93",
+                    "sortorder": 0,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000006"
+                },
+                {
+                    "card_id": "68a7d244-f18a-42ed-b96c-d5629f0e06fe",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Quality of the marble used/extracted",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "uneditable": false,
+                        "width": "100%"
+                    },
+                    "id": "f76e22dd-9f90-43cf-b0b8-cd5704ce95f5",
+                    "label": "Quality of the marble used/extracted",
+                    "node_id": "ac527a58-9081-11ed-8aba-8c85907a3f93",
+                    "sortorder": 0,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                }
+            ],
+            "color": "rgba(159,81,190,1)",
+            "config": {
+                "basemap": "satellite",
+                "bearing": 0,
+                "featureColor": "#FF0000",
+                "featureEditingDisabled": true,
+                "featureLineWidth": 1,
+                "featurePointSize": 3,
+                "geocodePlaceholder": "Search",
+                "geocodeProvider": "10000000-0000-0000-0000-010000000000",
+                "geocoderVisible": true,
+                "mapControlsHidden": false,
+                "maxZoom": 20,
+                "minZoom": 0,
+                "overlayOpacity": 0,
+                "pitch": 0
+            },
+            "deploymentdate": null,
+            "deploymentfile": null,
+            "description": "",
+            "edges": [
+                {
+                    "description": null,
+                    "domainnode_id": "c9b6e864-9076-11ed-8aba-8c85907a3f93",
+                    "edgeid": "0235e45f-13e5-40d5-b91d-c0d8d4c20b7e",
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "name": null,
+                    "ontologyproperty": null,
+                    "rangenode_id": "b909b224-9082-11ed-8aba-8c85907a3f93"
+                },
+                {
+                    "description": null,
+                    "domainnode_id": "c9b6e864-9076-11ed-8aba-8c85907a3f93",
+                    "edgeid": "197220c5-2844-44f3-a1ff-a3c8ef4518a1",
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "name": null,
+                    "ontologyproperty": null,
+                    "rangenode_id": "61a48836-a939-11ed-b2a7-afded3edabff"
+                },
+                {
+                    "description": null,
+                    "domainnode_id": "c9b6e864-9076-11ed-8aba-8c85907a3f93",
+                    "edgeid": "1cbf89c1-9476-4e9d-a61d-b94a931add44",
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "name": null,
+                    "ontologyproperty": null,
+                    "rangenode_id": "d5ec70d0-9081-11ed-8aba-8c85907a3f93"
+                },
+                {
+                    "description": null,
+                    "domainnode_id": "c9b6e864-9076-11ed-8aba-8c85907a3f93",
+                    "edgeid": "1f33318a-4329-4aae-947b-0466de037c55",
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "name": null,
+                    "ontologyproperty": null,
+                    "rangenode_id": "6c386f86-9081-11ed-8aba-8c85907a3f93"
+                },
+                {
+                    "description": null,
+                    "domainnode_id": "c9b6e864-9076-11ed-8aba-8c85907a3f93",
+                    "edgeid": "3f091b3e-9db0-4c52-9c05-7dcca5710503",
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "name": null,
+                    "ontologyproperty": null,
+                    "rangenode_id": "dec2f86e-9081-11ed-8aba-8c85907a3f93"
+                },
+                {
+                    "description": null,
+                    "domainnode_id": "c9b6e864-9076-11ed-8aba-8c85907a3f93",
+                    "edgeid": "3f8e1ade-8631-4215-a3a0-106f41de79ea",
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "name": null,
+                    "ontologyproperty": null,
+                    "rangenode_id": "0a0eb0c0-9083-11ed-8aba-8c85907a3f93"
+                },
+                {
+                    "description": null,
+                    "domainnode_id": "c9b6e864-9076-11ed-8aba-8c85907a3f93",
+                    "edgeid": "482baef0-6a36-4c6b-9e6a-d3bd8556a778",
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "name": null,
+                    "ontologyproperty": null,
+                    "rangenode_id": "42cf03e8-9082-11ed-8aba-8c85907a3f93"
+                },
+                {
+                    "description": null,
+                    "domainnode_id": "c9b6e864-9076-11ed-8aba-8c85907a3f93",
+                    "edgeid": "49ea2a71-f19a-436f-89b3-a9a89c971502",
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "name": null,
+                    "ontologyproperty": null,
+                    "rangenode_id": "0b469274-9082-11ed-8aba-8c85907a3f93"
+                },
+                {
+                    "description": null,
+                    "domainnode_id": "c9b6e864-9076-11ed-8aba-8c85907a3f93",
+                    "edgeid": "61423d59-cd53-41dc-ade2-42f38ee5bf75",
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "name": null,
+                    "ontologyproperty": null,
+                    "rangenode_id": "cbafa154-9078-11ed-8aba-8c85907a3f93"
+                },
+                {
+                    "description": null,
+                    "domainnode_id": "c9b6e864-9076-11ed-8aba-8c85907a3f93",
+                    "edgeid": "7467476c-2e59-4a69-81d8-dbccc893a530",
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "name": null,
+                    "ontologyproperty": null,
+                    "rangenode_id": "1f04cece-9083-11ed-8aba-8c85907a3f93"
+                },
+                {
+                    "description": null,
+                    "domainnode_id": "e455ec86-9082-11ed-8aba-8c85907a3f93",
+                    "edgeid": "7d6af682-f97a-4510-b2a9-376e8f658c88",
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "name": null,
+                    "ontologyproperty": null,
+                    "rangenode_id": "a37a4bd8-7cb0-11ee-b694-1fd4ebed8be7"
+                },
+                {
+                    "description": null,
+                    "domainnode_id": "c9b6e864-9076-11ed-8aba-8c85907a3f93",
+                    "edgeid": "80425121-f42a-4a21-b27c-d1e480569e8e",
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "name": null,
+                    "ontologyproperty": null,
+                    "rangenode_id": "38eae5b8-9082-11ed-8aba-8c85907a3f93"
+                },
+                {
+                    "description": null,
+                    "domainnode_id": "c9b6e864-9076-11ed-8aba-8c85907a3f93",
+                    "edgeid": "8840cbce-7101-400d-8c01-ec0f8bd545bb",
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "name": null,
+                    "ontologyproperty": null,
+                    "rangenode_id": "e455ec86-9082-11ed-8aba-8c85907a3f93"
+                },
+                {
+                    "description": null,
+                    "domainnode_id": "c9b6e864-9076-11ed-8aba-8c85907a3f93",
+                    "edgeid": "9926b0be-a025-4c3e-a032-ddb890b2b31e",
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "name": null,
+                    "ontologyproperty": null,
+                    "rangenode_id": "ea56b3ae-9078-11ed-8aba-8c85907a3f93"
+                },
+                {
+                    "description": null,
+                    "domainnode_id": "e455ec86-9082-11ed-8aba-8c85907a3f93",
+                    "edgeid": "b763e347-8b40-4d39-ad59-2b63fef3cf97",
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "name": null,
+                    "ontologyproperty": null,
+                    "rangenode_id": "adb59eea-7cb0-11ee-b694-1fd4ebed8be7"
+                },
+                {
+                    "description": null,
+                    "domainnode_id": "c9b6e864-9076-11ed-8aba-8c85907a3f93",
+                    "edgeid": "ba811a8b-d2f9-4b08-bbe6-2453fe34bf7d",
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "name": null,
+                    "ontologyproperty": null,
+                    "rangenode_id": "3266668a-907e-11ed-8aba-8c85907a3f93"
+                },
+                {
+                    "description": null,
+                    "domainnode_id": "c9b6e864-9076-11ed-8aba-8c85907a3f93",
+                    "edgeid": "c406c7dc-b102-40cc-a8b8-a282b7bb7778",
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "name": null,
+                    "ontologyproperty": null,
+                    "rangenode_id": "99fd6fe8-9081-11ed-8aba-8c85907a3f93"
+                },
+                {
+                    "description": null,
+                    "domainnode_id": "c9b6e864-9076-11ed-8aba-8c85907a3f93",
+                    "edgeid": "cc1e23aa-9a74-490e-9fa6-5ced6b81fe0b",
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "name": null,
+                    "ontologyproperty": null,
+                    "rangenode_id": "59318976-9082-11ed-8aba-8c85907a3f93"
+                },
+                {
+                    "description": null,
+                    "domainnode_id": "c9b6e864-9076-11ed-8aba-8c85907a3f93",
+                    "edgeid": "ccacb822-8484-4426-8a53-4f52d091f26a",
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "name": null,
+                    "ontologyproperty": null,
+                    "rangenode_id": "393c335e-9083-11ed-8aba-8c85907a3f93"
+                },
+                {
+                    "description": null,
+                    "domainnode_id": "c9b6e864-9076-11ed-8aba-8c85907a3f93",
+                    "edgeid": "ce6f852c-15b9-43c3-908c-c6e163ed36bb",
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "name": null,
+                    "ontologyproperty": null,
+                    "rangenode_id": "6a648248-9082-11ed-8aba-8c85907a3f93"
+                },
+                {
+                    "description": null,
+                    "domainnode_id": "c9b6e864-9076-11ed-8aba-8c85907a3f93",
+                    "edgeid": "d4e1f784-ac0f-4169-99fc-d363ab8051a9",
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "name": null,
+                    "ontologyproperty": null,
+                    "rangenode_id": "eb4d9d4e-9079-11ed-8aba-8c85907a3f93"
+                },
+                {
+                    "description": null,
+                    "domainnode_id": "c9b6e864-9076-11ed-8aba-8c85907a3f93",
+                    "edgeid": "fc22d2bb-a975-452b-bee1-dd511a386435",
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "name": null,
+                    "ontologyproperty": null,
+                    "rangenode_id": "ac527a58-9081-11ed-8aba-8c85907a3f93"
+                }
+            ],
+            "functions_x_graphs": [
+                {
+                    "config": {
+                        "descriptor_types": {
+                            "description": {
+                                "nodegroup_id": "38eae5b8-9082-11ed-8aba-8c85907a3f93",
+                                "string_template": "<Context Description>"
+                            },
+                            "map_popup": {
+                                "nodegroup_id": "38eae5b8-9082-11ed-8aba-8c85907a3f93",
+                                "string_template": "<Context Description>"
+                            },
+                            "name": {
+                                "nodegroup_id": "cbafa154-9078-11ed-8aba-8c85907a3f93",
+                                "string_template": "<Context Name> (Cultural Context)"
+                            }
+                        },
+                        "triggering_nodegroups": []
+                    },
+                    "function_id": "60000000-0000-0000-0000-000000000001",
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "id": "ee8ae56c-3141-40eb-8443-f1085d9527bd"
+                }
+            ],
+            "graphid": "d4557c37-589f-4342-b184-ebf8be95c203",
+            "iconclass": "fa fa-circle-o-notch",
+            "is_editable": false,
+            "isactive": true,
+            "isresource": true,
+            "jsonldcontext": null,
+            "name": "Cultural Context MP",
+            "nodegroups": [
+                {
+                    "cardinality": "1",
+                    "legacygroupid": null,
+                    "nodegroupid": "0a0eb0c0-9083-11ed-8aba-8c85907a3f93",
+                    "parentnodegroup_id": null
+                },
+                {
+                    "cardinality": "1",
+                    "legacygroupid": null,
+                    "nodegroupid": "0b469274-9082-11ed-8aba-8c85907a3f93",
+                    "parentnodegroup_id": null
+                },
+                {
+                    "cardinality": "1",
+                    "legacygroupid": null,
+                    "nodegroupid": "1f04cece-9083-11ed-8aba-8c85907a3f93",
+                    "parentnodegroup_id": null
+                },
+                {
+                    "cardinality": "1",
+                    "legacygroupid": null,
+                    "nodegroupid": "3266668a-907e-11ed-8aba-8c85907a3f93",
+                    "parentnodegroup_id": null
+                },
+                {
+                    "cardinality": "1",
+                    "legacygroupid": null,
+                    "nodegroupid": "38eae5b8-9082-11ed-8aba-8c85907a3f93",
+                    "parentnodegroup_id": null
+                },
+                {
+                    "cardinality": "1",
+                    "legacygroupid": null,
+                    "nodegroupid": "393c335e-9083-11ed-8aba-8c85907a3f93",
+                    "parentnodegroup_id": null
+                },
+                {
+                    "cardinality": "1",
+                    "legacygroupid": null,
+                    "nodegroupid": "42cf03e8-9082-11ed-8aba-8c85907a3f93",
+                    "parentnodegroup_id": null
+                },
+                {
+                    "cardinality": "1",
+                    "legacygroupid": null,
+                    "nodegroupid": "59318976-9082-11ed-8aba-8c85907a3f93",
+                    "parentnodegroup_id": null
+                },
+                {
+                    "cardinality": "1",
+                    "legacygroupid": null,
+                    "nodegroupid": "61a48836-a939-11ed-b2a7-afded3edabff",
+                    "parentnodegroup_id": null
+                },
+                {
+                    "cardinality": "1",
+                    "legacygroupid": null,
+                    "nodegroupid": "6a648248-9082-11ed-8aba-8c85907a3f93",
+                    "parentnodegroup_id": null
+                },
+                {
+                    "cardinality": "1",
+                    "legacygroupid": null,
+                    "nodegroupid": "6c386f86-9081-11ed-8aba-8c85907a3f93",
+                    "parentnodegroup_id": null
+                },
+                {
+                    "cardinality": "1",
+                    "legacygroupid": null,
+                    "nodegroupid": "99fd6fe8-9081-11ed-8aba-8c85907a3f93",
+                    "parentnodegroup_id": null
+                },
+                {
+                    "cardinality": "1",
+                    "legacygroupid": null,
+                    "nodegroupid": "ac527a58-9081-11ed-8aba-8c85907a3f93",
+                    "parentnodegroup_id": null
+                },
+                {
+                    "cardinality": "1",
+                    "legacygroupid": null,
+                    "nodegroupid": "b909b224-9082-11ed-8aba-8c85907a3f93",
+                    "parentnodegroup_id": null
+                },
+                {
+                    "cardinality": "1",
+                    "legacygroupid": null,
+                    "nodegroupid": "cbafa154-9078-11ed-8aba-8c85907a3f93",
+                    "parentnodegroup_id": null
+                },
+                {
+                    "cardinality": "1",
+                    "legacygroupid": null,
+                    "nodegroupid": "d5ec70d0-9081-11ed-8aba-8c85907a3f93",
+                    "parentnodegroup_id": null
+                },
+                {
+                    "cardinality": "1",
+                    "legacygroupid": null,
+                    "nodegroupid": "dec2f86e-9081-11ed-8aba-8c85907a3f93",
+                    "parentnodegroup_id": null
+                },
+                {
+                    "cardinality": "n",
+                    "legacygroupid": null,
+                    "nodegroupid": "e455ec86-9082-11ed-8aba-8c85907a3f93",
+                    "parentnodegroup_id": null
+                },
+                {
+                    "cardinality": "1",
+                    "legacygroupid": null,
+                    "nodegroupid": "ea56b3ae-9078-11ed-8aba-8c85907a3f93",
+                    "parentnodegroup_id": null
+                },
+                {
+                    "cardinality": "1",
+                    "legacygroupid": null,
+                    "nodegroupid": "eb4d9d4e-9079-11ed-8aba-8c85907a3f93",
+                    "parentnodegroup_id": null
+                }
+            ],
+            "nodes": [
+                {
+                    "alias": "context_coordinates",
+                    "config": {
+                        "addToMap": true,
+                        "advancedStyle": "[\n\t{\n\t\t\"id\": \"geocontext-polygon-fill\",\n\t\t\"type\": \"fill\",\n\t\t\"source\": \"resources-0a0eb0c0-9083-11ed-8aba-8c85907a3f93\",\n\t\t\"source-layer\": \"0a0eb0c0-9083-11ed-8aba-8c85907a3f93\",\n\t\t\"layout\": {\n\t\t\t\"visibility\": \"visible\"\n\t\t},\n\t\t\"filter\": [\n\t\t\t\"all\",\n\t\t\t[\n\t\t\t\t\"==\",\n\t\t\t\t\"$type\",\n\t\t\t\t\"Polygon\"\n\t\t\t],\n\t\t\t[\n\t\t\t\t\"==\",\n\t\t\t\t\"total\",\n\t\t\t\t1\n\t\t\t]\n\t\t],\n\t\t\"paint\": {\n\t\t\t\"fill-color\": [\"case\", [\"boolean\", [\"feature-state\", \"hover\"], false], \"rgba(18,138,120,0.7)\", \"rgba(140,25,25,0.7)\"]\n\t\t}\n\t},\n\t{\n\t\t\"id\": \"geocontext-polygon-outline\",\n\t\t\"type\": \"line\",\n\t\t\"source\": \"resources-0a0eb0c0-9083-11ed-8aba-8c85907a3f93\",\n\t\t\"source-layer\": \"0a0eb0c0-9083-11ed-8aba-8c85907a3f93\",\n\t\t\"layout\": {\n\t\t\t\"visibility\": \"visible\"\n\t\t},\n\t\t\"filter\": [\n\t\t\t\"all\",\n\t\t\t[\n\t\t\t\t\"==\",\n\t\t\t\t\"$type\",\n\t\t\t\t\"Polygon\"\n\t\t\t],\n\t\t\t[\n\t\t\t\t\"==\",\n\t\t\t\t\"total\",\n\t\t\t\t1\n\t\t\t]\n\t\t],\n\t\t\"paint\": {\n\t\t\t\"line-width\": 2,\n\t\t\t\"line-color\": [\"case\", [\"boolean\", [\"feature-state\", \"hover\"], false], \"rgba(17,217,187,0.5)\", \"rgba(214,50,50,0.5)\"]\n\t\t}\n\t},\n\t{\n\t\t\"id\": \"geocontext-line-halo\",\n\t\t\"type\": \"line\",\n\t\t\"source\": \"resources-0a0eb0c0-9083-11ed-8aba-8c85907a3f93\",\n\t\t\"source-layer\": \"0a0eb0c0-9083-11ed-8aba-8c85907a3f93\",\n\t\t\"layout\": {\n\t\t\t\"visibility\": \"visible\"\n\t\t},\n\t\t\"filter\": [\n\t\t\t\"all\",\n\t\t\t[\n\t\t\t\t\"==\",\n\t\t\t\t\"$type\",\n\t\t\t\t\"LineString\"\n\t\t\t],\n\t\t\t[\n\t\t\t\t\"==\",\n\t\t\t\t\"total\",\n\t\t\t\t1\n\t\t\t]\n\t\t],\n\t\t\"paint\": {\n\t\t\t\"line-width\": 4,\n\t\t\t\"line-color\": [\"case\", [\"boolean\", [\"feature-state\", \"hover\"], false], \"rgba(17,217,187,0.5)\", \"rgba(214,50,50,0.5)\"]\n\t\t}\n\t},\n\t{\n\t\t\"id\": \"geocontext-line-fill\",\n\t\t\"type\": \"line\",\n\t\t\"source\": \"resources-0a0eb0c0-9083-11ed-8aba-8c85907a3f93\",\n\t\t\"source-layer\": \"0a0eb0c0-9083-11ed-8aba-8c85907a3f93\",\n\t\t\"layout\": {\n\t\t\t\"visibility\": \"visible\"\n\t\t},\n\t\t\"filter\": [\n\t\t\t\"all\",\n\t\t\t[\n\t\t\t\t\"==\",\n\t\t\t\t\"$type\",\n\t\t\t\t\"LineString\"\n\t\t\t],\n\t\t\t[\n\t\t\t\t\"==\",\n\t\t\t\t\"total\",\n\t\t\t\t1\n\t\t\t]\n\t\t],\n\t\t\"paint\": {\n\t\t\t\"line-width\": 2,\n\t\t\t\"line-color\": [\"case\", [\"boolean\", [\"feature-state\", \"hover\"], false], \"rgba(18,138,120,0.7)\", \"rgba(140,25,25,0.7)\"]\n\t\t}\n\t},\n\t{\n\t\t\"id\": \"geocontext-point-halo\",\n\t\t\"type\": \"circle\",\n\t\t\"source\": \"resources-0a0eb0c0-9083-11ed-8aba-8c85907a3f93\",\n\t\t\"source-layer\": \"0a0eb0c0-9083-11ed-8aba-8c85907a3f93\",\n\t\t\"layout\": {\n\t\t\t\"visibility\": \"visible\"\n\t\t},\n\t\t\"filter\": [\n\t\t\t\"all\",\n\t\t\t[\n\t\t\t\t\"==\",\n\t\t\t\t\"$type\",\n\t\t\t\t\"Point\"\n\t\t\t],\n\t\t\t[\n\t\t\t\t\"==\",\n\t\t\t\t\"total\",\n\t\t\t\t1\n\t\t\t]\n\t\t],\n\t\t\"paint\": {\n\t\t\t\"circle-radius\": [\"case\", [\"boolean\", [\"feature-state\", \"hover\"], false], 7, 4],\n\t\t\t\"circle-color\": [\"case\", [\"boolean\", [\"feature-state\", \"hover\"], false], \"rgba(17,217,187,0.5)\", \"rgba(214,50,50,0.5)\"]\n\t\t}\n\t},\n\t{\n\t\t\"id\": \"geocontext-point-fill\",\n\t\t\"type\": \"circle\",\n\t\t\"source\": \"resources-0a0eb0c0-9083-11ed-8aba-8c85907a3f93\",\n\t\t\"source-layer\": \"0a0eb0c0-9083-11ed-8aba-8c85907a3f93\",\n\t\t\"layout\": {\n\t\t\t\"visibility\": \"visible\"\n\t\t},\n\t\t\"filter\": [\n\t\t\t\"all\",\n\t\t\t[\n\t\t\t\t\"==\",\n\t\t\t\t\"$type\",\n\t\t\t\t\"Point\"\n\t\t\t],\n\t\t\t[\n\t\t\t\t\"==\",\n\t\t\t\t\"total\",\n\t\t\t\t1\n\t\t\t]\n\t\t],\n\t\t\"paint\": {\n\t\t\t\"circle-radius\": [\"case\", [\"boolean\", [\"feature-state\", \"hover\"], false], 5, 2],\n\t\t\t\"circle-color\": [\"case\", [\"boolean\", [\"feature-state\", \"hover\"], false], \"rgba(18,138,120,0.7)\", \"rgba(140,25,25,0.7)\"]\n\t\t}\n\t},\n\t{\n\t\t\"id\": \"geocontext-cluster-halo\",\n\t\t\"type\": \"circle\",\n\t\t\"source\": \"resources-0a0eb0c0-9083-11ed-8aba-8c85907a3f93\",\n\t\t\"source-layer\": \"0a0eb0c0-9083-11ed-8aba-8c85907a3f93\",\n\t\t\"layout\": {\n\t\t\t\"visibility\": \"visible\"\n\t\t},\n\t\t\"filter\": [\n\t\t\t\"all\",\n\t\t\t[\n\t\t\t\t\"==\",\n\t\t\t\t\"$type\",\n\t\t\t\t\"Point\"\n\t\t\t],\n\t\t\t[\n\t\t\t\t\">\",\n\t\t\t\t\"total\",\n\t\t\t\t1\n\t\t\t]\n\t\t],\n\t\t\"paint\": {\n\t\t\t\"circle-radius\": {\n\t\t\t\t\"property\": \"total\",\n\t\t\t\t\"stops\": [\n\t\t\t\t\t[\n\t\t\t\t\t\t0,\n\t\t\t\t\t\t22\n\t\t\t\t\t],\n\t\t\t\t\t[\n\t\t\t\t\t\t50,\n\t\t\t\t\t\t24\n\t\t\t\t\t],\n\t\t\t\t\t[\n\t\t\t\t\t\t100,\n\t\t\t\t\t\t26\n\t\t\t\t\t],\n\t\t\t\t\t[\n\t\t\t\t\t\t200,\n\t\t\t\t\t\t28\n\t\t\t\t\t],\n\t\t\t\t\t[\n\t\t\t\t\t\t400,\n\t\t\t\t\t\t30\n\t\t\t\t\t],\n\t\t\t\t\t[\n\t\t\t\t\t\t800,\n\t\t\t\t\t\t32\n\t\t\t\t\t],\n\t\t\t\t\t[\n\t\t\t\t\t\t1200,\n\t\t\t\t\t\t34\n\t\t\t\t\t],\n\t\t\t\t\t[\n\t\t\t\t\t\t1600,\n\t\t\t\t\t\t36\n\t\t\t\t\t],\n\t\t\t\t\t[\n\t\t\t\t\t\t2000,\n\t\t\t\t\t\t38\n\t\t\t\t\t],\n\t\t\t\t\t[\n\t\t\t\t\t\t2500,\n\t\t\t\t\t\t40\n\t\t\t\t\t],\n\t\t\t\t\t[\n\t\t\t\t\t\t3000,\n\t\t\t\t\t\t42\n\t\t\t\t\t],\n\t\t\t\t\t[\n\t\t\t\t\t\t4000,\n\t\t\t\t\t\t44\n\t\t\t\t\t],\n\t\t\t\t\t[\n\t\t\t\t\t\t5000,\n\t\t\t\t\t\t46\n\t\t\t\t\t]\n\t\t\t\t]\n\t\t\t},\n\t\t\t\"circle-color\": \"rgba(214,50,50,0.5)\"\n\t\t}\n\t},\n\t{\n\t\t\"id\": \"geocontext-cluster-fill\",\n\t\t\"type\": \"circle\",\n\t\t\"source\": \"resources-0a0eb0c0-9083-11ed-8aba-8c85907a3f93\",\n\t\t\"source-layer\": \"0a0eb0c0-9083-11ed-8aba-8c85907a3f93\",\n\t\t\"layout\": {\n\t\t\t\"visibility\": \"visible\"\n\t\t},\n\t\t\"filter\": [\n\t\t\t\"all\",\n\t\t\t[\n\t\t\t\t\"==\",\n\t\t\t\t\"$type\",\n\t\t\t\t\"Point\"\n\t\t\t],\n\t\t\t[\n\t\t\t\t\">\",\n\t\t\t\t\"total\",\n\t\t\t\t1\n\t\t\t]\n\t\t],\n\t\t\"paint\": {\n\t\t\t\"circle-radius\": {\n\t\t\t\t\"property\": \"total\",\n\t\t\t\t\"type\": \"exponential\",\n\t\t\t\t\"stops\": [\n\t\t\t\t\t[\n\t\t\t\t\t\t0,\n\t\t\t\t\t\t12\n\t\t\t\t\t],\n\t\t\t\t\t[\n\t\t\t\t\t\t50,\n\t\t\t\t\t\t14\n\t\t\t\t\t],\n\t\t\t\t\t[\n\t\t\t\t\t\t100,\n\t\t\t\t\t\t16\n\t\t\t\t\t],\n\t\t\t\t\t[\n\t\t\t\t\t\t200,\n\t\t\t\t\t\t18\n\t\t\t\t\t],\n\t\t\t\t\t[\n\t\t\t\t\t\t400,\n\t\t\t\t\t\t20\n\t\t\t\t\t],\n\t\t\t\t\t[\n\t\t\t\t\t\t800,\n\t\t\t\t\t\t22\n\t\t\t\t\t],\n\t\t\t\t\t[\n\t\t\t\t\t\t1200,\n\t\t\t\t\t\t24\n\t\t\t\t\t],\n\t\t\t\t\t[\n\t\t\t\t\t\t1600,\n\t\t\t\t\t\t26\n\t\t\t\t\t],\n\t\t\t\t\t[\n\t\t\t\t\t\t2000,\n\t\t\t\t\t\t28\n\t\t\t\t\t],\n\t\t\t\t\t[\n\t\t\t\t\t\t2500,\n\t\t\t\t\t\t30\n\t\t\t\t\t],\n\t\t\t\t\t[\n\t\t\t\t\t\t3000,\n\t\t\t\t\t\t32\n\t\t\t\t\t],\n\t\t\t\t\t[\n\t\t\t\t\t\t4000,\n\t\t\t\t\t\t34\n\t\t\t\t\t],\n\t\t\t\t\t[\n\t\t\t\t\t\t5000,\n\t\t\t\t\t\t36\n\t\t\t\t\t]\n\t\t\t\t]\n\t\t\t},\n\t\t\t\"circle-color\": \"rgba(140,25,25,0.7)\"\n\t\t}\n\t},\n\t{\n\t\t\"id\": \"geocontext-cluster-text\",\n\t\t\"type\": \"symbol\",\n\t\t\"source\": \"resources-0a0eb0c0-9083-11ed-8aba-8c85907a3f93\",\n\t\t\"source-layer\": \"0a0eb0c0-9083-11ed-8aba-8c85907a3f93\",\n\t\t\"layout\": {\n\t\t\t\"text-field\": \"{total}\",\n\t\t\t\"text-size\": 10\n\t\t},\n\t\t\"paint\": {\n\t\t\t\"text-color\": \"#fff\"\n\t\t},\n\t\t\"filter\": [\n\t\t\t\"all\",\n\t\t\t[\n\t\t\t\t\">\",\n\t\t\t\t\"total\",\n\t\t\t\t1\n\t\t\t]\n\t\t]\n\t}\n]\n",
+                        "advancedStyling": true,
+                        "clusterDistance": "20",
+                        "clusterMaxZoom": "11",
+                        "clusterMinPoints": 3,
+                        "fillColor": "rgba(210,42,192,0.7)",
+                        "haloRadius": 4,
+                        "haloWeight": 4,
+                        "layerActivated": true,
+                        "layerIcon": "",
+                        "layerLegend": "",
+                        "layerName": "Geografical Contexts",
+                        "lineColor": "rgba(210,42,192,0.7)",
+                        "lineHaloColor": "rgba(221,89,222,0.5)",
+                        "outlineColor": "rgba(221,89,222,0.5)",
+                        "outlineWeight": 2,
+                        "pointColor": "rgba(210,42,192,0.7)",
+                        "pointHaloColor": "rgba(221,89,222,0.5)",
+                        "radius": 2,
+                        "simplification": 0.3,
+                        "weight": 2
+                    },
+                    "datatype": "geojson-feature-collection",
+                    "description": null,
+                    "exportable": true,
+                    "fieldname": null,
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "hascustomalias": false,
+                    "is_collector": true,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Context Coordinates",
+                    "nodegroup_id": "0a0eb0c0-9083-11ed-8aba-8c85907a3f93",
+                    "nodeid": "0a0eb0c0-9083-11ed-8aba-8c85907a3f93",
+                    "ontologyclass": null,
+                    "parentproperty": null,
+                    "sortorder": 0
+                },
+                {
+                    "alias": "context_collections_for_the_lifting_machine",
+                    "config": {
+                        "falseLabel": "No",
+                        "trueLabel": "Yes"
+                    },
+                    "datatype": "boolean",
+                    "description": null,
+                    "exportable": true,
+                    "fieldname": null,
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "hascustomalias": false,
+                    "is_collector": true,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Context Collections for the lifting machine",
+                    "nodegroup_id": "0b469274-9082-11ed-8aba-8c85907a3f93",
+                    "nodeid": "0b469274-9082-11ed-8aba-8c85907a3f93",
+                    "ontologyclass": null,
+                    "parentproperty": null,
+                    "sortorder": 0
+                },
+                {
+                    "alias": "context_compiler",
+                    "config": {
+                        "graphs": [
+                            {
+                                "graphid": "f71f7b9c-b25b-11e9-901e-a4d18cec433a",
+                                "name": "Person"
+                            }
+                        ],
+                        "searchDsl": "",
+                        "searchString": ""
+                    },
+                    "datatype": "resource-instance",
+                    "description": null,
+                    "exportable": true,
+                    "fieldname": null,
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "hascustomalias": false,
+                    "is_collector": true,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Context Compiler",
+                    "nodegroup_id": "1f04cece-9083-11ed-8aba-8c85907a3f93",
+                    "nodeid": "1f04cece-9083-11ed-8aba-8c85907a3f93",
+                    "ontologyclass": null,
+                    "parentproperty": null,
+                    "sortorder": 0
+                },
+                {
+                    "alias": "context_era",
+                    "config": {
+                        "nodeid": null,
+                        "options": [
+                            {
+                                "id": "8181856c-8115-406a-9c8e-719f1d48ebcb",
+                                "selected": false,
+                                "text": "Non id."
+                            },
+                            {
+                                "id": "d56a5828-b059-4565-b379-15ff57406863",
+                                "selected": false,
+                                "text": "Moderna"
+                            },
+                            {
+                                "id": "f524474e-1f02-42b4-8bee-110c9165cea0",
+                                "selected": false,
+                                "text": "Giustiniaea"
+                            },
+                            {
+                                "id": "c63d9326-c3ca-483b-a38e-750d88017316",
+                                "selected": false,
+                                "text": "Severiana"
+                            },
+                            {
+                                "id": "25971161-47e2-4a68-8b72-0ab24fbc09da",
+                                "selected": false,
+                                "text": "Antonino-severiana"
+                            },
+                            {
+                                "id": "4b0daa0c-4432-4373-94ac-6a5ad1336210",
+                                "selected": false,
+                                "text": "Antonina"
+                            },
+                            {
+                                "id": "316cb975-15ee-4c99-b533-dd7ad3aa4a29",
+                                "selected": false,
+                                "text": "Adrianeo-antonina"
+                            },
+                            {
+                                "id": "4516edc3-9170-4ea9-99de-c80afabf92b3",
+                                "selected": false,
+                                "text": "Adrianea"
+                            },
+                            {
+                                "id": "30fc33f0-45d9-4b15-bf18-571f9cd0e71f",
+                                "selected": false,
+                                "text": "Flavia"
+                            },
+                            {
+                                "id": "1e4bcc2e-297b-489b-9268-df027c410698",
+                                "selected": false,
+                                "text": "Giulio-claudia"
+                            },
+                            {
+                                "id": "4e004230-b434-4ce7-8825-ba9bc5677cfd",
+                                "selected": false,
+                                "text": "Tiberiana"
+                            },
+                            {
+                                "id": "4388e350-3d79-4637-a5f0-cde4b79f0895",
+                                "selected": false,
+                                "text": "Augustea"
+                            },
+                            {
+                                "id": "1c811d30-df46-4ea3-93b0-6643c46e2b5a",
+                                "selected": false,
+                                "text": "Bizantina"
+                            },
+                            {
+                                "id": "462e9cb7-67eb-417b-8e88-bfcb705cc476",
+                                "selected": false,
+                                "text": "Medio-bizantina"
+                            },
+                            {
+                                "id": "e6303af3-ab21-4802-bc58-0ae43ec708c5",
+                                "selected": false,
+                                "text": "Proto-bizantina"
+                            },
+                            {
+                                "id": "4dd34263-2e77-43a6-b308-100ef53d3511",
+                                "selected": false,
+                                "text": "Romano-imperiale"
+                            },
+                            {
+                                "id": "6e1d79be-66ab-4930-8df3-9a284b307d44",
+                                "selected": false,
+                                "text": "Ellenistica/Imperiale"
+                            },
+                            {
+                                "id": "121990ff-2950-47ac-8127-68982bcd3468",
+                                "selected": false,
+                                "text": "Ellenistica"
+                            }
+                        ],
+                        "property": null,
+                        "rdmCollection": null
+                    },
+                    "datatype": "domain-value",
+                    "description": null,
+                    "exportable": true,
+                    "fieldname": null,
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "hascustomalias": false,
+                    "is_collector": true,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Context Era",
+                    "nodegroup_id": "3266668a-907e-11ed-8aba-8c85907a3f93",
+                    "nodeid": "3266668a-907e-11ed-8aba-8c85907a3f93",
+                    "ontologyclass": null,
+                    "parentproperty": null,
+                    "sortorder": 0
+                },
+                {
+                    "alias": "context_description",
+                    "config": null,
+                    "datatype": "string",
+                    "description": null,
+                    "exportable": true,
+                    "fieldname": null,
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "hascustomalias": false,
+                    "is_collector": true,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Context Description",
+                    "nodegroup_id": "38eae5b8-9082-11ed-8aba-8c85907a3f93",
+                    "nodeid": "38eae5b8-9082-11ed-8aba-8c85907a3f93",
+                    "ontologyclass": null,
+                    "parentproperty": null,
+                    "sortorder": 0
+                },
+                {
+                    "alias": "context_bibliography",
+                    "config": null,
+                    "datatype": "string",
+                    "description": null,
+                    "exportable": true,
+                    "fieldname": null,
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "hascustomalias": false,
+                    "is_collector": true,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Context Bibliography",
+                    "nodegroup_id": "393c335e-9083-11ed-8aba-8c85907a3f93",
+                    "nodeid": "393c335e-9083-11ed-8aba-8c85907a3f93",
+                    "ontologyclass": null,
+                    "parentproperty": null,
+                    "sortorder": 0
+                },
+                {
+                    "alias": "context_traces_of_extraction_tools",
+                    "config": {
+                        "falseLabel": "No",
+                        "trueLabel": "Yes"
+                    },
+                    "datatype": "boolean",
+                    "description": null,
+                    "exportable": true,
+                    "fieldname": null,
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "hascustomalias": false,
+                    "is_collector": true,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Context Traces of extraction tools",
+                    "nodegroup_id": "42cf03e8-9082-11ed-8aba-8c85907a3f93",
+                    "nodeid": "42cf03e8-9082-11ed-8aba-8c85907a3f93",
+                    "ontologyclass": null,
+                    "parentproperty": null,
+                    "sortorder": 0
+                },
+                {
+                    "alias": "context_presence_of_unfinished_materials",
+                    "config": {
+                        "falseLabel": "No",
+                        "trueLabel": "Yes"
+                    },
+                    "datatype": "boolean",
+                    "description": null,
+                    "exportable": true,
+                    "fieldname": null,
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "hascustomalias": false,
+                    "is_collector": true,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Context Presence of unfinished materials",
+                    "nodegroup_id": "59318976-9082-11ed-8aba-8c85907a3f93",
+                    "nodeid": "59318976-9082-11ed-8aba-8c85907a3f93",
+                    "ontologyclass": null,
+                    "parentproperty": null,
+                    "sortorder": 0
+                },
+                {
+                    "alias": "context_collection",
+                    "config": {
+                        "graphs": [
+                            {
+                                "graphid": "1b210ef3-b25c-11e9-a037-a4d18cec433a",
+                                "name": "Collection or Set"
+                            }
+                        ],
+                        "searchDsl": "",
+                        "searchString": ""
+                    },
+                    "datatype": "resource-instance",
+                    "description": null,
+                    "exportable": true,
+                    "fieldname": null,
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "hascustomalias": false,
+                    "is_collector": true,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Context Collection",
+                    "nodegroup_id": "61a48836-a939-11ed-b2a7-afded3edabff",
+                    "nodeid": "61a48836-a939-11ed-b2a7-afded3edabff",
+                    "ontologyclass": null,
+                    "parentproperty": null,
+                    "sortorder": 0
+                },
+                {
+                    "alias": "context_streets_of_contention",
+                    "config": {
+                        "falseLabel": "No",
+                        "trueLabel": "Yes"
+                    },
+                    "datatype": "boolean",
+                    "description": null,
+                    "exportable": true,
+                    "fieldname": null,
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "hascustomalias": false,
+                    "is_collector": true,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Context Streets of contention",
+                    "nodegroup_id": "6a648248-9082-11ed-8aba-8c85907a3f93",
+                    "nodeid": "6a648248-9082-11ed-8aba-8c85907a3f93",
+                    "ontologyclass": null,
+                    "parentproperty": null,
+                    "sortorder": 0
+                },
+                {
+                    "alias": "context_surface",
+                    "config": {
+                        "nodeid": null,
+                        "options": [
+                            {
+                                "id": "8181856c-8115-406a-9c8e-719f1d48ebcb",
+                                "selected": false,
+                                "text": "non id"
+                            },
+                            {
+                                "id": "53d9367c-5c77-4e00-8562-9b1a61c60eb9",
+                                "selected": false,
+                                "text": "reale"
+                            },
+                            {
+                                "id": "df6c31af-6965-4c8b-8ec9-8c702e3f50a5",
+                                "selected": false,
+                                "text": "ricostruita"
+                            }
+                        ],
+                        "property": null,
+                        "rdmCollection": null
+                    },
+                    "datatype": "domain-value",
+                    "description": null,
+                    "exportable": true,
+                    "fieldname": null,
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "hascustomalias": false,
+                    "is_collector": true,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Context Surface",
+                    "nodegroup_id": "6c386f86-9081-11ed-8aba-8c85907a3f93",
+                    "nodeid": "6c386f86-9081-11ed-8aba-8c85907a3f93",
+                    "ontologyclass": null,
+                    "parentproperty": null,
+                    "sortorder": 0
+                },
+                {
+                    "alias": "context_square_meters",
+                    "config": null,
+                    "datatype": "number",
+                    "description": null,
+                    "exportable": true,
+                    "fieldname": null,
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "hascustomalias": false,
+                    "is_collector": true,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Context Square meters",
+                    "nodegroup_id": "99fd6fe8-9081-11ed-8aba-8c85907a3f93",
+                    "nodeid": "99fd6fe8-9081-11ed-8aba-8c85907a3f93",
+                    "ontologyclass": null,
+                    "parentproperty": null,
+                    "sortorder": 0
+                },
+                {
+                    "alias": "identifier_content",
+                    "config": null,
+                    "datatype": "string",
+                    "description": null,
+                    "exportable": false,
+                    "fieldname": null,
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "hascustomalias": false,
+                    "is_collector": false,
+                    "isrequired": true,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Identifier Content",
+                    "nodegroup_id": "e455ec86-9082-11ed-8aba-8c85907a3f93",
+                    "nodeid": "a37a4bd8-7cb0-11ee-b694-1fd4ebed8be7",
+                    "ontologyclass": null,
+                    "parentproperty": null,
+                    "sortorder": 0
+                },
+                {
+                    "alias": "context_quality_of_the_marble_used_extracted",
+                    "config": null,
+                    "datatype": "string",
+                    "description": "",
+                    "exportable": true,
+                    "fieldname": null,
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "hascustomalias": false,
+                    "is_collector": true,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Context Quality of the marble used/extracted",
+                    "nodegroup_id": "ac527a58-9081-11ed-8aba-8c85907a3f93",
+                    "nodeid": "ac527a58-9081-11ed-8aba-8c85907a3f93",
+                    "ontologyclass": null,
+                    "parentproperty": null,
+                    "sortorder": 0
+                },
+                {
+                    "alias": "identifier_type",
+                    "config": {
+                        "rdmCollection": "4096365e-4fe7-412d-906c-16f3d356e8be"
+                    },
+                    "datatype": "concept-list",
+                    "description": null,
+                    "exportable": false,
+                    "fieldname": null,
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "hascustomalias": false,
+                    "is_collector": false,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Identifier Type",
+                    "nodegroup_id": "e455ec86-9082-11ed-8aba-8c85907a3f93",
+                    "nodeid": "adb59eea-7cb0-11ee-b694-1fd4ebed8be7",
+                    "ontologyclass": null,
+                    "parentproperty": null,
+                    "sortorder": 0
+                },
+                {
+                    "alias": "context_current_status",
+                    "config": {
+                        "nodeid": null,
+                        "options": [
+                            {
+                                "id": "1ba2d3f0-3c5c-41cc-9a15-6d4f325e11de",
+                                "selected": false,
+                                "text": "Parzialmente interrato"
+                            },
+                            {
+                                "id": "00d4f0d3-8eb0-4914-ad09-ae80377e97fc",
+                                "selected": false,
+                                "text": "Parzialmente scavato"
+                            },
+                            {
+                                "id": "8edd2324-bf25-4905-b725-a197fb972a51",
+                                "selected": false,
+                                "text": "Non scavato"
+                            },
+                            {
+                                "id": "253f816d-d1b5-4d43-8779-9f1db5ac0f8f",
+                                "selected": false,
+                                "text": "Interamente scavato"
+                            },
+                            {
+                                "id": "af5a31fa-c641-4e69-8500-0f4d04bfbaf0",
+                                "selected": false,
+                                "text": "In uso"
+                            },
+                            {
+                                "id": "02a2388b-f689-4889-bd92-76e2522e5f1b",
+                                "selected": false,
+                                "text": "In abbandono"
+                            },
+                            {
+                                "id": "c153389d-082f-4df7-b886-062cc352f198",
+                                "selected": false,
+                                "text": "Discarica"
+                            },
+                            {
+                                "id": "27e76e4a-a443-4273-a2ec-043e3e0be52a",
+                                "selected": false,
+                                "text": "Danneggiato"
+                            }
+                        ],
+                        "property": null,
+                        "rdmCollection": null
+                    },
+                    "datatype": "domain-value",
+                    "description": null,
+                    "exportable": true,
+                    "fieldname": null,
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "hascustomalias": false,
+                    "is_collector": true,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Context Current status",
+                    "nodegroup_id": "b909b224-9082-11ed-8aba-8c85907a3f93",
+                    "nodeid": "b909b224-9082-11ed-8aba-8c85907a3f93",
+                    "ontologyclass": null,
+                    "parentproperty": null,
+                    "sortorder": 0
+                },
+                {
+                    "alias": null,
+                    "config": null,
+                    "datatype": "semantic",
+                    "description": "",
+                    "exportable": false,
+                    "fieldname": null,
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "hascustomalias": false,
+                    "is_collector": false,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": true,
+                    "name": "Cultural Context MP",
+                    "nodegroup_id": null,
+                    "nodeid": "c9b6e864-9076-11ed-8aba-8c85907a3f93",
+                    "ontologyclass": null,
+                    "parentproperty": "",
+                    "sortorder": 0
+                },
+                {
+                    "alias": "context_name",
+                    "config": null,
+                    "datatype": "string",
+                    "description": null,
+                    "exportable": true,
+                    "fieldname": null,
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "hascustomalias": false,
+                    "is_collector": true,
+                    "isrequired": true,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Context Name",
+                    "nodegroup_id": "cbafa154-9078-11ed-8aba-8c85907a3f93",
+                    "nodeid": "cbafa154-9078-11ed-8aba-8c85907a3f93",
+                    "ontologyclass": null,
+                    "parentproperty": null,
+                    "sortorder": 0
+                },
+                {
+                    "alias": "context_quantity_of_extracted_material_cm3_",
+                    "config": null,
+                    "datatype": "number",
+                    "description": null,
+                    "exportable": true,
+                    "fieldname": null,
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "hascustomalias": false,
+                    "is_collector": true,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Context Quantity of extracted material (cm3)",
+                    "nodegroup_id": "d5ec70d0-9081-11ed-8aba-8c85907a3f93",
+                    "nodeid": "d5ec70d0-9081-11ed-8aba-8c85907a3f93",
+                    "ontologyclass": null,
+                    "parentproperty": null,
+                    "sortorder": 0
+                },
+                {
+                    "alias": "context_amount_of_debris_cm3_",
+                    "config": {
+                        "nodeid": null,
+                        "options": [
+                            {
+                                "id": "8181856c-8115-406a-9c8e-719f1d48ebcb",
+                                "selected": false,
+                                "text": "molti"
+                            },
+                            {
+                                "id": "53d9367c-5c77-4e00-8562-9b1a61c60eb9",
+                                "selected": false,
+                                "text": "pochi"
+                            }
+                        ],
+                        "property": null,
+                        "rdmCollection": null
+                    },
+                    "datatype": "domain-value",
+                    "description": null,
+                    "exportable": true,
+                    "fieldname": null,
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "hascustomalias": false,
+                    "is_collector": true,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Context Amount of debris (cm3)",
+                    "nodegroup_id": "dec2f86e-9081-11ed-8aba-8c85907a3f93",
+                    "nodeid": "dec2f86e-9081-11ed-8aba-8c85907a3f93",
+                    "ontologyclass": null,
+                    "parentproperty": null,
+                    "sortorder": 0
+                },
+                {
+                    "alias": "context_identifier",
+                    "config": null,
+                    "datatype": "semantic",
+                    "description": null,
+                    "exportable": false,
+                    "fieldname": null,
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "hascustomalias": false,
+                    "is_collector": true,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Context Identifier",
+                    "nodegroup_id": "e455ec86-9082-11ed-8aba-8c85907a3f93",
+                    "nodeid": "e455ec86-9082-11ed-8aba-8c85907a3f93",
+                    "ontologyclass": null,
+                    "parentproperty": null,
+                    "sortorder": 0
+                },
+                {
+                    "alias": "context_typology",
+                    "config": {
+                        "nodeid": null,
+                        "options": [
+                            {
+                                "id": "9b0a02d9-a946-4d2a-b417-c5d61d71c2bb",
+                                "selected": false,
+                                "text": "Terma"
+                            },
+                            {
+                                "id": "115004fa-781a-459f-a79f-269801115ee1",
+                                "selected": false,
+                                "text": "Tempio"
+                            },
+                            {
+                                "id": "b193b472-7288-4f93-b267-f26de1cd75db",
+                                "selected": false,
+                                "text": "Teatro-cavea"
+                            },
+                            {
+                                "id": "a83417ea-6d88-4f97-8df3-0fb86c5ce4bf",
+                                "selected": false,
+                                "text": "Teatro"
+                            },
+                            {
+                                "id": "08c9d7ce-e0e9-4a61-9ac5-09389dadcddd",
+                                "selected": false,
+                                "text": "Scalinata"
+                            },
+                            {
+                                "id": "07273e31-72b7-4ace-b14e-60736904e3e6",
+                                "selected": false,
+                                "text": "Scala"
+                            },
+                            {
+                                "id": "9c0df15a-39ea-4e41-b030-8daf3aa43067",
+                                "selected": false,
+                                "text": "Portico"
+                            },
+                            {
+                                "id": "c94c08a1-7915-40dc-86e9-344057c16524",
+                                "selected": false,
+                                "text": "Necropoli"
+                            },
+                            {
+                                "id": "4a29f27b-c338-47c1-966e-297497f7d3bd",
+                                "selected": false,
+                                "text": "Monumento funerario"
+                            },
+                            {
+                                "id": "91e0a998-cded-4613-aed9-3cb9dae9e2d8",
+                                "selected": false,
+                                "text": "Fortificazione"
+                            },
+                            {
+                                "id": "cc46a233-0345-450c-ae35-fdf753039752",
+                                "selected": false,
+                                "text": "Fontana monumentale"
+                            },
+                            {
+                                "id": "4d3f2942-f52d-4ab6-8b58-640a4d364ad9",
+                                "selected": false,
+                                "text": "Edificio sacro"
+                            },
+                            {
+                                "id": "177fa206-74ad-4787-b7d9-abd089712641",
+                                "selected": false,
+                                "text": "Edificio pubblico"
+                            },
+                            {
+                                "id": "e3ac7080-99b7-4fc1-ab4e-7e24cc3df630",
+                                "selected": false,
+                                "text": "Edificio non id."
+                            },
+                            {
+                                "id": "5bb2a710-f412-44ef-9caf-c3e5f54eb2f4",
+                                "selected": false,
+                                "text": "Corte porticata"
+                            },
+                            {
+                                "id": "28e765da-7a1b-4513-9e20-ac2e56546338",
+                                "selected": false,
+                                "text": "Chiesa"
+                            },
+                            {
+                                "id": "185ce74a-b2f4-4772-bbb5-e42ef9f9f8bf",
+                                "selected": false,
+                                "text": "Cava sommitale"
+                            },
+                            {
+                                "id": "e2c6abb7-2d4d-4fbf-a971-dfe8cc33b5b7",
+                                "selected": false,
+                                "text": "Cava in trincea"
+                            },
+                            {
+                                "id": "021a9273-f755-45e3-8659-8c42b6b05a4e",
+                                "selected": false,
+                                "text": "Cava di versante"
+                            },
+                            {
+                                "id": "37fdfcc4-7bd8-4580-b86b-c54bf9cc792f",
+                                "selected": false,
+                                "text": "Altare"
+                            },
+                            {
+                                "id": "cc10e489-82c3-4d74-8414-e3c6ce5c98ff",
+                                "selected": false,
+                                "text": "Abitazione"
+                            }
+                        ],
+                        "property": null,
+                        "rdmCollection": null
+                    },
+                    "datatype": "domain-value",
+                    "description": null,
+                    "exportable": true,
+                    "fieldname": null,
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "hascustomalias": false,
+                    "is_collector": true,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Context Typology",
+                    "nodegroup_id": "ea56b3ae-9078-11ed-8aba-8c85907a3f93",
+                    "nodeid": "ea56b3ae-9078-11ed-8aba-8c85907a3f93",
+                    "ontologyclass": null,
+                    "parentproperty": null,
+                    "sortorder": 0
+                },
+                {
+                    "alias": "context_chronology",
+                    "config": {
+                        "nodeid": null,
+                        "options": [
+                            {
+                                "id": "9b0a02d9-a946-4d2a-b417-c5d61d71c2bb",
+                                "selected": false,
+                                "text": "non id."
+                            },
+                            {
+                                "id": "115004fa-781a-459f-a79f-269801115ee1",
+                                "selected": false,
+                                "text": "III sec. a.C."
+                            },
+                            {
+                                "id": "b193b472-7288-4f93-b267-f26de1cd75db",
+                                "selected": false,
+                                "text": "prima met\u00e0 III sec. a.C."
+                            },
+                            {
+                                "id": "a83417ea-6d88-4f97-8df3-0fb86c5ce4bf",
+                                "selected": false,
+                                "text": "II sec. a.C."
+                            },
+                            {
+                                "id": "08c9d7ce-e0e9-4a61-9ac5-09389dadcddd",
+                                "selected": false,
+                                "text": "prima met\u00e0 del II sec. a.C."
+                            },
+                            {
+                                "id": "07273e31-72b7-4ace-b14e-60736904e3e6",
+                                "selected": false,
+                                "text": "seconda met\u00e0 del II sec. a.C."
+                            },
+                            {
+                                "id": "9c0df15a-39ea-4e41-b030-8daf3aa43067",
+                                "selected": false,
+                                "text": "II-I sec. a. C."
+                            },
+                            {
+                                "id": "c94c08a1-7915-40dc-86e9-344057c16524",
+                                "selected": false,
+                                "text": "I sec. a.C."
+                            },
+                            {
+                                "id": "4a29f27b-c338-47c1-966e-297497f7d3bd",
+                                "selected": false,
+                                "text": "prima met\u00e0 del I sec. a.C."
+                            },
+                            {
+                                "id": "0eeae2a4-9efe-40d7-992d-7a98e59de97f",
+                                "selected": false,
+                                "text": "seconda met\u00e0 del I sec. a.C."
+                            },
+                            {
+                                "id": "12da08d3-e23e-4c85-879f-5e1cbd9a2710",
+                                "selected": false,
+                                "text": "fine I sec. a.C. - inizi I sec. d.C."
+                            },
+                            {
+                                "id": "b312a632-8529-4062-9ab1-c7f8376a9d58",
+                                "selected": false,
+                                "text": "I sec. d.C."
+                            },
+                            {
+                                "id": "4187750e-50cd-4e94-b015-52e81988c7a7",
+                                "selected": false,
+                                "text": "prima met\u00e0 del I sec. d.C."
+                            },
+                            {
+                                "id": "3de85c61-259a-4919-b02e-fe0b765e6244",
+                                "selected": false,
+                                "text": "met\u00e0 del I sec. d.C."
+                            },
+                            {
+                                "id": "00152213-4d2a-41ba-b50a-6fb29f7e83d9",
+                                "selected": false,
+                                "text": "seconda met\u00e0 del I sec. d.C."
+                            },
+                            {
+                                "id": "9589d422-2c4e-467e-bd27-9d34de4e73f5",
+                                "selected": false,
+                                "text": "I-II sec.d.C."
+                            },
+                            {
+                                "id": "bd50639b-3636-42b1-b825-b87f43534063",
+                                "selected": false,
+                                "text": "II sec. d.C."
+                            },
+                            {
+                                "id": "251c2790-a85c-439c-abac-efb390f737ea",
+                                "selected": false,
+                                "text": "prima met\u00e0 del II sec. d.C."
+                            },
+                            {
+                                "id": "4fef7e49-5511-4044-a895-f293354d0b39",
+                                "selected": false,
+                                "text": "met\u00e0 del II sec. d.C."
+                            },
+                            {
+                                "id": "a4f4b05a-56c0-491e-9859-08b315bc6453",
+                                "selected": false,
+                                "text": "seconda met\u00e0 del II sec. d.C."
+                            },
+                            {
+                                "id": "81e054ac-a399-4d46-85ff-e6b95506484b",
+                                "selected": false,
+                                "text": "fine II sec. d.C. - inizi III sec. d.C."
+                            },
+                            {
+                                "id": "dabf3a6c-7fc5-45bf-bd7e-7c3e022041d3",
+                                "selected": false,
+                                "text": "II-III sec. d.C"
+                            },
+                            {
+                                "id": "59b59689-01a7-4e7d-a3eb-88413a881c41",
+                                "selected": false,
+                                "text": "III sec. d.C."
+                            },
+                            {
+                                "id": "92bbf994-0ba5-4514-aaa8-87416d887c26",
+                                "selected": false,
+                                "text": "prima met\u00e0 del III sec. d.C."
+                            },
+                            {
+                                "id": "43ab381f-e719-4990-951a-a35624333cae",
+                                "selected": false,
+                                "text": "seconda met\u00e0 del III sec. d.C."
+                            },
+                            {
+                                "id": "63227cdf-ddff-4f3d-8767-1695c64557fb",
+                                "selected": false,
+                                "text": "III sec. d.C. - IV sec. d.C."
+                            },
+                            {
+                                "id": "563ea4ab-91f5-4b7b-9b70-9b47f6754101",
+                                "selected": false,
+                                "text": "IV sec. d.C."
+                            },
+                            {
+                                "id": "5bec0716-197c-4042-b8a3-158c8524b1f9",
+                                "selected": false,
+                                "text": "prima met\u00e0 del IV sec. d.C."
+                            },
+                            {
+                                "id": "4cb85c99-2a8d-40db-a192-d8fa75420faf",
+                                "selected": false,
+                                "text": "seconda met\u00e0 del IV sec. d.C."
+                            },
+                            {
+                                "id": "e93f63d4-d273-4fc0-bc47-d317cf3a2f98",
+                                "selected": false,
+                                "text": "V sec. d.C."
+                            },
+                            {
+                                "id": "150903dd-5b13-46c2-a015-291ef98c1e85",
+                                "selected": false,
+                                "text": "prima met\u00e0 del V sec. d.C."
+                            },
+                            {
+                                "id": "4ad3ff72-4d44-40e0-b75a-7f039bd6605e",
+                                "selected": false,
+                                "text": "seconda met\u00e0 del V sec. d.C."
+                            },
+                            {
+                                "id": "3988237b-9084-42e2-8161-b160004f4395",
+                                "selected": false,
+                                "text": "V-VI sec. d.C."
+                            },
+                            {
+                                "id": "9d818a63-329b-4c49-b712-4ad64f30bc92",
+                                "selected": false,
+                                "text": "VI sec. d.C."
+                            },
+                            {
+                                "id": "31b67358-0379-463b-bc36-d130ba8e5b3c",
+                                "selected": false,
+                                "text": "prima met\u00e0 del VI sec. d.C."
+                            },
+                            {
+                                "id": "b2c3f1f8-bd56-422a-aadd-020992faaa61",
+                                "selected": false,
+                                "text": "seconda met\u00e0 del VI sec. d.C."
+                            },
+                            {
+                                "id": "bef57259-d6ce-4493-9725-ea15eb6f72dc",
+                                "selected": false,
+                                "text": "fine VI - inizi VII sec. d.C"
+                            },
+                            {
+                                "id": "10148083-067c-4651-9a46-d7cf850ce38c",
+                                "selected": false,
+                                "text": "VII sec. d.C."
+                            },
+                            {
+                                "id": "322ace85-a3e6-4658-9f5d-b49fcb966e1b",
+                                "selected": false,
+                                "text": "prima met\u00e0 del VII sec. d.C."
+                            },
+                            {
+                                "id": "3741e9a3-8c9a-4bd0-a5e5-72021c1b09ad",
+                                "selected": false,
+                                "text": "seconda met\u00e0 del VII sec. d.C."
+                            },
+                            {
+                                "id": "00831a00-77a7-4663-9f3e-8560c94d349f",
+                                "selected": false,
+                                "text": "VIII sec. d.C."
+                            },
+                            {
+                                "id": "fde6acab-363a-47a0-8432-1a7219d98f06",
+                                "selected": false,
+                                "text": "prima met\u00e0 del VIII sec. d.C."
+                            },
+                            {
+                                "id": "6dad44e5-3914-4394-aff4-89844c173c5b",
+                                "selected": false,
+                                "text": "seconda met\u00e0 del VIII sec. d.C."
+                            },
+                            {
+                                "id": "2c90ad85-2587-4b1f-827c-7560ebb7f08b",
+                                "selected": false,
+                                "text": "IX sec. d.C."
+                            },
+                            {
+                                "id": "62a556a8-1989-4517-8472-a8e54fba6bbf",
+                                "selected": false,
+                                "text": "prima met\u00e0 del IX sec. d.C."
+                            },
+                            {
+                                "id": "5ccb91f2-ffa3-4b53-8e12-c17fd1b7a965",
+                                "selected": false,
+                                "text": "seconda met\u00e0 del IX sec. d.C."
+                            },
+                            {
+                                "id": "f5d382a8-54f9-402a-b2d5-1a36fdcc349f",
+                                "selected": false,
+                                "text": "IX-X sec. d.C"
+                            },
+                            {
+                                "id": "0b115360-17ce-4bf4-b832-81bbdb988a18",
+                                "selected": false,
+                                "text": "X sec. d.C."
+                            },
+                            {
+                                "id": "0572657d-fb9c-4242-bf5c-27ca65b18da7",
+                                "selected": false,
+                                "text": "prima met\u00e0 del X sec. d.C."
+                            },
+                            {
+                                "id": "9891c1e9-408a-473e-a59e-d306ee19972e",
+                                "selected": false,
+                                "text": "seconda met\u00e0 del X sec. d.C."
+                            },
+                            {
+                                "id": "5eb53988-e442-458b-8bbb-c89c4635bf37",
+                                "selected": false,
+                                "text": "X-XI sec. d.C"
+                            },
+                            {
+                                "id": "020a06ec-2a92-4c2e-adc6-be57eb81f16d",
+                                "selected": false,
+                                "text": "XI sec. d.C."
+                            },
+                            {
+                                "id": "97563e26-2faf-4fe1-8e10-ae71d1a19f86",
+                                "selected": false,
+                                "text": "prima met\u00e0 del XI sec. d.C."
+                            },
+                            {
+                                "id": "47e9f37b-9f66-45f9-80da-84adb755e5c0",
+                                "selected": false,
+                                "text": "seconda met\u00e0 del XI sec. d.C."
+                            },
+                            {
+                                "id": "ca999039-2dd3-40ab-8f90-22c182da501f",
+                                "selected": false,
+                                "text": "XII sec. d.C."
+                            },
+                            {
+                                "id": "65a93c5f-4b2d-401b-9d80-e16c7df0e5c0",
+                                "selected": false,
+                                "text": "prima met\u00e0 del XII sec. d.C."
+                            },
+                            {
+                                "id": "5d8aadb0-36c2-46bd-a643-464096f29fd4",
+                                "selected": false,
+                                "text": "seconda met\u00e0 del XII sec. d.C."
+                            },
+                            {
+                                "id": "11492cac-dc13-4210-bba8-21480480d3ee",
+                                "selected": false,
+                                "text": "XIII sec. d.C."
+                            },
+                            {
+                                "id": "798e4d6a-1399-4f8a-a3fc-2e9d32232cdf",
+                                "selected": false,
+                                "text": "prima met\u00e0 del XIII sec. d.C."
+                            },
+                            {
+                                "id": "6d3006a9-d400-4e2b-8704-df5dac5b40a7",
+                                "selected": false,
+                                "text": "seconda met\u00e0 del XIII sec. d.C."
+                            },
+                            {
+                                "id": "8091d6b6-041c-4492-9cfc-3a8e6a5068c9",
+                                "selected": false,
+                                "text": "XIV sec. d.C."
+                            },
+                            {
+                                "id": "47c1fbc6-4082-4a86-90f4-a58f19287fee",
+                                "selected": false,
+                                "text": "prima met\u00e0 del XIV sec. d.C."
+                            },
+                            {
+                                "id": "f4cf5089-2333-41e7-92d7-546c6fc3e875",
+                                "selected": false,
+                                "text": "seconda met\u00e0 del XIV sec. d.C."
+                            }
+                        ],
+                        "property": null,
+                        "rdmCollection": null
+                    },
+                    "datatype": "domain-value",
+                    "description": null,
+                    "exportable": true,
+                    "fieldname": null,
+                    "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                    "hascustomalias": false,
+                    "is_collector": true,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Context Chronology",
+                    "nodegroup_id": "eb4d9d4e-9079-11ed-8aba-8c85907a3f93",
+                    "nodeid": "eb4d9d4e-9079-11ed-8aba-8c85907a3f93",
+                    "ontologyclass": null,
+                    "parentproperty": null,
+                    "sortorder": 0
+                }
+            ],
+            "ontology_id": null,
+            "relatable_resource_model_ids": [],
+            "resource_2_resource_constraints": [],
+            "root": {
+                "alias": null,
+                "config": null,
+                "datatype": "semantic",
+                "description": "",
+                "exportable": false,
+                "fieldname": null,
+                "graph_id": "d4557c37-589f-4342-b184-ebf8be95c203",
+                "hascustomalias": false,
+                "is_collector": false,
+                "isrequired": false,
+                "issearchable": true,
+                "istopnode": true,
+                "name": "Cultural Context MP",
+                "nodegroup_id": null,
+                "nodeid": "c9b6e864-9076-11ed-8aba-8c85907a3f93",
+                "ontologyclass": null,
+                "sortorder": 0
+            },
+            "slug": null,
+            "subtitle": "Created for Marmora Phrygiae",
+            "template_id": "50000000-0000-0000-0000-000000000001",
+            "version": ""
+        }
+    ],
+    "metadata": {
+        "db": "PostgreSQL 12.17 (Ubuntu 12.17-1.pgdg20.04+1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit",
+        "git hash": "0488ff4 2023-11-23 13:18:18 +0100",
+        "os": "Linux",
+        "os version": "5.4.0-166-generic"
+    }
+}
