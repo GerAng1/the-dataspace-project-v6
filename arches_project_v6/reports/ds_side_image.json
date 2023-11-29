@@ -1,8 +1,0 @@
-{
-    "name": "Side Image",
-    "component": "reports/ds_side_image",
-    "defaultconfig": {},
-    "description": "Shows selected images on the right side of the report.",
-    "componentname": "ds_side_image",
-    "templateid": "b76edb58f-c362-193d-7451-ab4ce0204b98"
-}

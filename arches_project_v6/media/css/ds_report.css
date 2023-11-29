@@ -1,3 +1,8 @@
+.ds-sticky {
+    position: sticky;
+    top: 135px;
+}
+
 .ds-row {
     display: flex;
     flex-wrap: wrap;
@@ -8,8 +13,8 @@
 }
 
 .ds-col-header {
-    align-self: center;
-    padding-bottom: 10px
+    padding-bottom: 10px;
+    padding-top: 105px;
 }
 
 @media (max-width: 767px) {

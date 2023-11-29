@@ -62,7 +62,7 @@ define([
             );
         },
         template: {
-            require: 'text!report-templates/image'
+            require: 'text!report-templates/ds_side_image'
         }
     });
 });

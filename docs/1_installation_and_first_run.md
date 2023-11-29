@@ -217,4 +217,5 @@ After the initial setup, a reboot, or stopping all processes, running DataSpace 
 2. Run server
    - `python manage.py runserver XXX.XXX.XXX.XXX:8000`
   - Replace "XXX.XXX.XXX.XXX" with your IP address!
+  - Remember to have your Python Virtual Environment active!
 

@@ -7,7 +7,7 @@ define([
     'knockstrap',
     'bindings/chosen'
 ], function(_, ko, koMapping, ReportViewModel, arches) {
-    return ko.components.register('ds_side_image', {
+    return ko.components.register('image-header-alt', {
         viewModel: function(params) {
             var self = this;
             params.configKeys = ['nodes'];
@@ -62,7 +62,7 @@ define([
             );
         },
         template: {
-            require: 'text!report-templates/ds_side_image'
+            require: 'text!report-templates/image-header-alt'
         }
     });
 });

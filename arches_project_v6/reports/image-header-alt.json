@@ -1,0 +1,8 @@
+{
+    "name": "Image Alt Template",
+    "component": "reports/image-header-alt",
+    "defaultconfig": {},
+    "description": "Shows selected images on the top side of the report.",
+    "componentname": "image-header-alt",
+    "templateid": "7ded2153-65db-43f8-859f-a41d1a4f6b10"
+}
