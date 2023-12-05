@@ -321,45 +321,41 @@ define([
                   })
                   .catch(error => console.error(error));
             }
+            
 
             // Generates plot
             function generateSpectra(fileData, graphData, fileIsPlottable) {
                 const x = [];
                 const y = [];
-                const sep = graphData.includes('\r') ? '\r': '\n';
-                let axes = graphData.split(sep);
+                let xAxisTitle = '';
+                let yAxisTitle = '';
+
+                console.log(`This is ${fileIsPlottable}!`);
                 
-                if (fileIsPlottable === 'XRF') {
-                    xAxisTitle = 'Energy (keV)';
-                    yAxisTitle = 'Intensity (Counts)';
-
-                    axes = axes.slice(19,-1);
-
-                    axes.forEach((val, index) => {
-                        x.push(index);
-                        y.push(val);
+                // Aux function to generateSpectra() that correctly push x & y values
+                function processValues(vals) {
+                    vals.forEach(function (val, index) {
+                        var rec = val.trim().split(/[\s,]+/);
+                        y.push(fileIsPlottable === 'XRF' ? val : Number(rec[1]));
+                        x.push(fileIsPlottable === 'XRF' ? index : Number(rec[0]));
                     });
+                }
 
+                if (fileIsPlottable === 'XRF') {
+                    xAxisTitle = 'Energy / KeV';
+                    yAxisTitle = 'Intensity / Counts';
+                    const vals = graphData.split('\n').slice(19, -1);
+                    processValues(vals);
                 } else if (fileIsPlottable === 'XRD') {
-                    xAxisTitle = '2Theta (°)';
-                    yAxisTitle = 'Intensity (Counts)';
-
-                    for (let i = 0; i < axes.length; i++) {
-                        const values = axes[i].split(" ");
-                        x.push(parseFloat(values[0]));
-                        y.push(parseFloat(values[1]));
-                    }
-
+                    xAxisTitle = '2Theta / Degrees';
+                    yAxisTitle = 'Diffraction Intensity';
+                    const vals = graphData.split('\n').slice(8, -1);
+                    processValues(vals);
                 } else if (fileIsPlottable === 'MIR') { 
-                    xAxisTitle = 'x axis';
-                    yAxisTitle = 'y axis';
-
-                    for (let i = 0; i < axes.length; i++) {
-                        const values = axes[i].split(" ");
-                        x.push(parseFloat(values[0]));
-                        y.push(parseFloat(values[1]));
-                    }
-
+                    xAxisTitle = 'Wavenumber / cm-1';
+                    yAxisTitle = 'log 1 / R';
+                    const vals = graphData.split('\n');
+                    processValues(vals);
                 } else {
                     console.log(`'${fileData.ext}' not found in dictionary`);
                     return false;
@@ -424,17 +420,31 @@ define([
                     fetch(fileData.url)
                         .then(response => response.text())
                         .then(rawData => {
-                            const fileIsPlottableMap = {
-                                '<': 'XRF',
-                                '#': 'XRD'
-                              };
-                              
-                            const firstChar = rawData[0];
-                            const isXRF = rawData.startsWith('<');
-                            const isXRD = rawData.startsWith('#');
-                            const isMIR = !isNaN(firstChar);
                             
-                            fileIsPlottable = fileIsPlottableMap[firstChar] || (isXRF && 'XRF') || (isMIR && 'MIR') || (isXRD && 'XRD');
+                            // Instructions to set fileIsPlottable
+                            const firstChar = rawData.trim()[0];
+
+                            if (firstChar === '<') {
+                                fileIsPlottable = 'XRF';
+                            } else if (firstChar === '#') {
+                                fileIsPlottable = 'XRD';
+                            } else if (!isNaN(firstChar)) {
+                                // Currently we've seen files that start directly with numbers (no metadata)
+                                // With the files given, in some cases, 
+                                // it is MIR, but sometimes it is XRD. 
+                                // We reached the concluion that XRD usually start with values
+                                // between 0 and 10; while the MIR files we have begin 
+                                // with numbers higher that the thousands
+                                const firstNumber = parseFloat(rawData.split(/\s+/)[0]);
+                                
+                                if (0 <= firstNumber && firstNumber <= 10) {
+                                    fileIsPlottable = 'XRD';
+                                } else if (firstNumber > 1000) {
+                                    fileIsPlottable = 'MIR';
+                                }
+                            } else {
+                                fileIsPlottable = null;
+                            }
                             
                             if (!fileIsPlottable) {
                                 console.log(`'${fileData.ext}' file not compatible.`);

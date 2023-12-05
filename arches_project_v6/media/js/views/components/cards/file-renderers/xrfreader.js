@@ -32,9 +32,9 @@ define(['jquery',
                     series.value.push(index);		
                 });
             };
-            this.chartTitle("XRF Spectrometer");
-            this.xAxisLabel("Energy (keV)");
-            this.yAxisLabel("Intensity (Counts)");
+            this.chartTitle("XRF Spectrum");
+            this.xAxisLabel("Energy / KeV");
+            this.yAxisLabel("Intensity / Counts");
         },
         template: { require: 'text!templates/views/components/cards/file-renderers/afsreader.htm' }
     });

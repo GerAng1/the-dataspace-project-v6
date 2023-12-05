@@ -18,8 +18,8 @@ define(['jquery',
                 });
             };
             this.chartTitle("FT-MIR Spectrum");
-            this.xAxisLabel("x axis");
-            this.yAxisLabel("y axis");
+            this.xAxisLabel("Wavenumber / cm-1");
+            this.yAxisLabel("log 1 / R");
         },
         template: { require: 'text!templates/views/components/cards/file-renderers/afsreader.htm' }
     });

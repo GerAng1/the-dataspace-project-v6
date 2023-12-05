@@ -16,7 +16,7 @@
                 <span data-bind="visible: tile.parent.model.get('widgets')().length === 0"></span>
                     {% block report_widgets %}
                     <!-- ko if: tile.parent.model.get('widgets')().length > 0 -->
-                        <div class="" data-bind="attr: { id: tile.tileid }">
+                        <div style="width:inherit" data-bind="attr: { id: tile.tileid }">
                             <!-- ko if: ko.unwrap(tile.provisionaledits) !== null && tile.userisreviewer === false -->
                             <div class="report-card-provisional-flag">{% trans 'These data are provisional and pending review' %}</div>
                             <!-- /ko-->

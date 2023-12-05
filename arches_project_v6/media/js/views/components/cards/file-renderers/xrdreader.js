@@ -17,9 +17,9 @@ define(['jquery',
                     series.value.push(Number(rec[0]));
                 });
             };
-            this.chartTitle("XRD Diffractometer");
-            this.xAxisLabel("2Theta (°)");
-            this.yAxisLabel("Intensity (Counts)");
+            this.chartTitle("XRD Spectrum");
+            this.xAxisLabel("2Theta / degrees");
+            this.yAxisLabel("Diffraction Intensity");
         },
         template: { require: 'text!templates/views/components/cards/file-renderers/afsreader.htm' }
     });
