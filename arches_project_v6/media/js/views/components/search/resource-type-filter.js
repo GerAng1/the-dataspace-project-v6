@@ -17,6 +17,8 @@ define([
                 const response = await fetch(arches.urls.api_search_component_data + componentName);
                 if (response.ok) {
                     const data = await response.json();
+                    // Sorts the options within the Resource Type Button
+                    data.resources.sort((a, b) => a.name.localeCompare(b.name));
                     data.resources.forEach(function(res) {
                         if (res.isactive === true) {
                             self.resourceModels.push(res);
