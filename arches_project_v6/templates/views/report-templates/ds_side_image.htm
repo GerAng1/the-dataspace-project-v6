@@ -2,11 +2,9 @@
 {% load i18n %}
 
 {% block sideviewer %}
-<div class="ds-col ds-col-header">
+<div class="ds-col ds-col-header" data-bind="style: { 'display': imgs().length > 0 ? 'block' : 'none'}">
     <div class="ds-sticky" data-bind="carousel: { content: { name: 'carouselItemTemplate', data: imgs } }"></div>
-    
-    <template id="carouselItemTemplate">
-    </template>
+    <template id="carouselItemTemplate"></template>
 </div>
 {% endblock sideviewer %}
 

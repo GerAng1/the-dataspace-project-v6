@@ -107,7 +107,8 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
             // Create a wrapper div element
             const wrapper = document.createElement('div');
             wrapper.classList.add('tify-wrapper'); // Add CSS class for styling
-
+            wrapper.classList.add('ds-sticky'); // Add CSS class for styling
+        
             // Insert the Tify code within the wrapper
             const tify = new Tify({
                 container: wrapper,
@@ -115,11 +116,26 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
                 fullScreen: true
             });
         
-            // Insert the wrapper before the target element
-            element.parentNode.insertBefore(wrapper, element);
-        }
+            // Find the main-col div
+            const mainCol = document.getElementById('main-col');
         
+            // Check if the main-col div exists
+            if (mainCol) {
+                // Create a side-col div
+                const sideCol = document.createElement('div');
+                sideCol.classList.add('ds-col');
+                sideCol.classList.add('col-header');
+                
+                sideCol.appendChild(wrapper); // Insert the wrapper inside the side-col div
         
+                // Insert the side-col div after the main-col div
+                mainCol.parentNode.insertBefore(sideCol, mainCol.nextSibling);
+            } else {
+                // If main-col is not found, insert the wrapper before the target element
+                element.parentNode.insertBefore(wrapper, element);
+            }
+        }        
+
         // Define a function to process the elements
         function processElements(elements) {
             for (const element of elements) {

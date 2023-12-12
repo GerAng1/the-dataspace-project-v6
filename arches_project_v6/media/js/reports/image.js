@@ -37,10 +37,10 @@ define([
                     }, self);
                 }, self);
                 if (imgs.length === 0) {
-                    imgs = [{
-                        src: arches.urls.media + 'img/photo_missing.png',
-                        alt: ''
-                    }];
+                    // imgs = [{
+                    //     src: arches.urls.media + 'img/photo_missing.png',
+                    //     alt: ''
+                    // }];
                 }
                 return imgs;
             });
