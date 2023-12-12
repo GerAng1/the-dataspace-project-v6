@@ -67,7 +67,7 @@ Assuming we're on a clean Ubuntu install:
 - `sudo apt install python3-dev python3-pip python3-venv -y`
 
 ### Postgres & PostGIS
-- `sudo apt install postgresql-14-postgis-3 libpq-dev -y`
+- `sudo apt install postgresql-15-postgis-3 libpq-dev -y`
 
 
 ### Node 16.20.2 & Yarn 1
@@ -123,7 +123,10 @@ We will be cloning the repository using SSH. It will take additional steps in th
 
 #### Step 3: Clone reposiotry onto server:
 - `cd /opt/DIGILAB`
-- `git clone git@github.com:GerAng1/the-dataspace-project-v6.git`
+- `git clone git@github.com:CNR-DHILab/dataspace-fisso.git`
+- Once it's cloned, `cd` into the directory and switch Github branches:
+- `cd dataspace-fisso`
+- `git checkout dataspace-6`
 
 ### Setup PostgreSQL
 - Set `postgres` user password:  
@@ -142,7 +145,7 @@ We will be cloning the repository using SSH. It will take additional steps in th
   - `exit`  
 
 ### Download and setup Elasticsearch 7
-- `cd /opt/DIGILAB/the-dataspace-project-v6`
+- `cd /opt/DIGILAB/`
 - `wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.17.13-linux-x86_64.tar.gz`
 - `tar -zxvf elasticsearch-7.17.13-linux-x86_64.tar.gz`
 - `mv elasticsearch-7.17.13 elasticsearch`
@@ -151,7 +154,7 @@ We will be cloning the repository using SSH. It will take additional steps in th
 
 ### Create & setup Python Virtual Environment  
 In a new terminal we'll setup a Virtual Environment that allows us to manage the package installations for DataSpace in an isolated way.
-- `cd /opt/DIGILAB/the-dataspace-project-v6`  
+- `cd /opt/DIGILAB/`  
 - `python3 -m venv ENV`  
 - `source ENV/bin/activate`  
 - `pip install -U pip setuptools wheel`  
@@ -160,11 +163,11 @@ In a new terminal we'll setup a Virtual Environment that allows us to manage the
 
 ## 4. Running DataSpace for the first time  
 From now own, make sure you are running elasticsearch at all times in a **second terminal** with:  
-- **`cd /opt/DIGILAB/the-dataspace-project-v6/elasticsearch`**  
+- **`cd /opt/DIGILAB/elasticsearch`**  
 - **`./bin/elasticsearch`**  
 
 From now own, make sure everything is run from the (ENV) virtual environment with:  
-- **`source /opt/DIGILAB/the-dataspace-project-v6/ENV/bin/activate`**
+- **`source /opt/DIGILAB/ENV/bin/activate`**
 
 The main steps to run DataSpace the first time are:  
 1. Add node_modules to project  
@@ -173,12 +176,12 @@ The main steps to run DataSpace the first time are:
 4. Run the server
 
 ### Add node_modules to project
-- `cd /opt/DIGILAB/the-dataspace-project-v6/arches_project-v6`
+- `cd /opt/DIGILAB/dataspace-fisso/dataspace`
 - `yarn install`
   - This might take a minute or two
 
 ### Create the database
-- `cd /opt/DIGILAB/the-dataspace-project-v6`  
+- `cd /opt/DIGILAB/dataspace-fisso`  
 - `python manage.py setup_db`
   - Confirm "destroy & rebuild database" with '`y`' 
 
@@ -186,7 +189,7 @@ The main steps to run DataSpace the first time are:
 Once the `setup_db` command has finished executing with no errors, we have to add the IP address a variable in the settings file to be able to access it.
 
 - Create a copy of settings_local.py.template & rename it to settings_local.py: 
-  - `cd /opt/DIGILAB/the-dataspace-project-v6/arches-project-v6`
+  - `cd /opt/DIGILAB/dataspace-fisso/dataspace`
   - `cp settings_local.py.template settings_local.py`  
 - Find your computers IP address:
   - `hostname -I`
@@ -197,7 +200,7 @@ Once the `setup_db` command has finished executing with no errors, we have to ad
 
 ### Run the server
 DataSpace provides a local server service to run and test the platform while on a development phase. You can activate and run the server with:
-- `cd /opt/DIGILAB/the-dataspace-project-v6`
+- `cd /opt/DIGILAB/dataspace-fisso`
 - `python manage.py runserver XXX.XXX.XXX.XXX:8000`
   - Replace "XXX.XXX.XXX.XXX" with your IP address!
 
@@ -207,10 +210,10 @@ DataSpace provides a local server service to run and test the platform while on 
 ## 5. Future DataSpace runs
 After the initial setup, a reboot, or stopping all processes, running DataSpace will require at least this two things:  
 1. Run elasticsearch:
-   - `./opt/DIGILAB/the-dataspace-project-v6/elasticsearch/bin/elasticsearch`
+   - `./opt/DIGILAB/elasticsearch/bin/elasticsearch`
   
     (You can also add the flag `-d` at the end to run as a process in the background:)
-   - `./opt/DIGILAB/the-dataspace-project-v6/elasticsearch/bin/elasticsearch -d`
+   - `./opt/DIGILAB/elasticsearch/bin/elasticsearch -d`
      - To stop the process either reboot computer or:
        - `kill [PID]`
 

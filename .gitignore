@@ -18,3 +18,5 @@ cidoc/
 packages/*
 
 docs/config-scripts/ALLOWED_HOSTS.json
+
+elasticsearch-7.17.13-linux-x86_64.tar.gz
